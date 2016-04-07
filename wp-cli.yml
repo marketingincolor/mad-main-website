@@ -1,0 +1,5 @@
+url: madico.dev
+user: joesmith
+color: true
+disabled_commands:
+  - db drop

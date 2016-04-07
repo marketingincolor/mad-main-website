@@ -1,0 +1,219 @@
+/*
+body { 
+	font: normal 18px Trebuchet, Lucida Sans Unicode, Lucida Grande, Lucida Sans, Arial, sans-serif;
+	padding:0;
+	margin:0;
+	text-align: center;
+	color:#FFFFFF;
+	background:url("../images/background.jpg") repeat;
+}
+*/
+
+div.clearBox { clear:both; width:1px; height:1px; overflow:hidden; }
+
+#header {
+	width:100%;
+	background:url("../images/headerStripe.png") repeat-x 0px 12px #333;
+	float:left;
+	margin:40px auto 0px auto;
+}
+
+.headerContent {
+  	text-align: left;
+  	vertical-align: top;	
+  	margin: 0px auto 0px auto;
+ 	padding:0px;
+  	width:700px;
+  	height: 100%;
+  	clear:both;
+  	position:relative;
+}
+
+.headerContent .logo { float:left; }
+.headerContent .downloadApp { float:right; margin-top:7px; margin-right:-15px; }
+
+#inhalt {
+  	text-align: left;
+  	vertical-align: top;	
+  	margin: 0px auto 0px auto;
+ 	 padding:0px;
+  	clear:both;
+  	position:relative;
+}
+
+/*
+#content {
+	float:left;
+	width:100%;
+	position:relative;
+}
+*/
+
+#inhalt_content {
+	float:left;
+	width:100%;
+	position:relative;
+}
+
+#filmPicker, #callout {
+	float:left;
+	width:660px;
+	height:420px;
+	overflow:hidden;
+	position:relative;
+	background:#527793;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+     -moz-box-shadow: 0px 0px 16px #253e50 inset; 
+  -webkit-box-shadow: 0px 0px 16px #253e50 inset; 
+          box-shadow: 0px 0px 16px #253e50 inset;
+}
+
+#breadcrumb, .appStoreCallout {
+	background: #1d354c;
+	padding:15px 25px;
+	margin:22px 0px 0;
+     -moz-box-shadow: 0px 0px 8px #253e50; 
+  -webkit-box-shadow: 0px 0px 8px #253e50; 
+          box-shadow: 0px 0px 8px #253e50;
+}
+
+#breadcrumb a { color:#FBF8C2; text-decoration:none; display:inline-block !important; padding-top:2px;}
+#breadcrumb a.current { color:#FFFFFF; text-decoration:none; }
+#breadcrumb a:hover { color:#FFFFFF; text-decoration:none; }
+
+.b2, .b3 { 
+	display:none; 
+	background:url("../images/breadcrumbArrow.png") no-repeat 0px 4px;
+	padding-left:25px;
+	margin-left:10px;
+}
+
+.stage1, .stage2 { padding:0px 8px; }
+.stage3 { padding:15px 0px 0px 0px; }
+
+.stage1 .wrap {
+	float:left;
+	margin:15px;
+	cursor:pointer;
+	color:#FFFFFF;
+	position:relative;
+	border:5px solid #dddddd;
+     -moz-box-shadow: 0px 0px 6px #253e50; 
+  -webkit-box-shadow: 0px 0px 6px #253e50; 
+          box-shadow: 0px 0px 6px #253e50;
+}
+
+.stage1 .overlay {
+	position:absolute;
+	height:60px;
+	padding-top:60px;
+	width:120px;
+	text-align:center;
+	background:url("../images/transparentTiles/60pb.png") repeat;
+	display:none;
+}
+
+.stage1 .wrap:hover .overlay {
+	display:block;
+}
+
+.stage2 img {
+	float:left;
+	margin:15px;
+	border:5px solid #555B5F;
+	cursor:pointer;
+	border:5px solid #dddddd;
+     -moz-box-shadow: 0px 0px 6px #253e50; 
+  -webkit-box-shadow: 0px 0px 6px #253e50; 
+          box-shadow: 0px 0px 6px #253e50;
+}
+
+#filmPicker ul {
+	left: 0px;
+	list-style:none;
+	overflow: hidden;
+	position: absolute;
+	top: 0px;
+	width: 32700px;
+	margin:80px 0px 0px 0px;
+	padding:0px;
+}
+#filmPicker img {
+	display:block;
+}
+#filmPicker ul li {
+	display: block;
+	float: left;
+	height: 313px;
+	margin: 0px;
+	width: 660px;
+	position:relative;
+}
+
+#calloutWrap { height:290px; }
+#callout { height:290px; }	
+
+.appStoreCallout img {
+	margin:-6px 170px 0px 0px;
+	float:right;
+}
+
+.webVersions {
+	float:left;
+	clear:left;
+}
+
+.webVersions p { margin:15px 25px; display:block; }
+
+.webVersions .webVersions../images {
+	float:left;
+	clear:left;
+	margin-top:15px;
+	display:block;
+}
+
+.webVersions .webVersions../images img { display:inline; border-right:1px solid #2D3538; } 
+
+.iphoneScreen {
+	position:relative;
+	right:-20px;
+	margin-top:-400px;
+	float:right;
+}
+
+#footer {
+	width:100%;
+	background:url("../images/transparentTiles/30pb.png") repeat;
+	height:85px;
+	margin:20px auto 0px auto;
+	float:left;
+}
+
+.footerContent {
+  	clear:both;
+	width:700px;
+	margin:0px auto 0px auto; 
+	text-align:left;
+ 	padding:0px;
+  	position:relative;
+  	font-size:12px;
+  	line-height:24px;
+}
+
+.footerContent .footerLeft {
+	position:absolute;
+	left:0px;
+	margin:15px 0px 0px 0px;
+	width:50%;
+}
+
+.footerContent .footerRight {
+	position:absolute;
+	right:0px;
+	margin:15px 0px 0px 0px;
+	width:30%;
+	text-align:right;
+}
+

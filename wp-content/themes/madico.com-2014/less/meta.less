@@ -1,0 +1,131 @@
+/**
+ *	Meta box CSS
+ *	WPAlchemy MetaBox PHP Class library
+ *	http://www.farinspace.com/wpalchemy-metabox/
+ */
+.rounded-corners(@size) {
+	-webkit-border-radius:@size;
+	-moz-border-radius:@size;
+	border-radius:@size;
+}
+.metabox-class-container {
+	padding:10px;
+	.field {
+		margin:10px 0 0;
+		&:first-child {
+			margin-top:5px;
+		}
+	}
+	.description {
+		line-height:1.5em;
+		font-style:normal;
+	}
+	p {
+		margin:5px 0 10px !important;
+	}
+	h4 {
+		color:#999;
+		font-size:1em;
+		margin:20px 6px 10px;
+		line-height:1.3em;
+		text-transform:uppercase;
+		letter-spacing:1px;
+		&:first-child {
+			margin-top:6px;
+		}
+	}
+	label {
+		display:block;
+		font-weight:700;
+		margin:0;
+		line-height:1.3em;
+		font-size:12px;
+	}
+	label span {
+		display:inline;
+		font-weight:400;
+	}
+	span {
+		color:#999;
+		display:block;
+		&.checkbox {
+			display:inline-block;
+			margin:0 0 5px;
+			input {
+				margin-right:4px;
+			}
+			&.alert {
+				padding:5px 10px 5px 7px;
+				background:#FFBBBE;
+				border:1px solid #ff888c;
+				color:#ff0000;
+				.rounded-corners(6px);
+			}
+		}
+		&.reminder {
+			display:inline;
+			color:#FF0000;
+			margin:0 0 0 10px;
+			font-size:13px
+		}
+	}
+	textarea,
+	input[type='text'] {
+		margin:0 0 3px;
+		width:99%;
+		color:#777;
+		line-height:1.4em;
+		font-size:12px;
+	}
+	.group-entry {
+		background:#EAF2FA;
+		.rounded-corners(6px);
+		border:1px solid rgba(0,0,0,0.05);
+		padding:4px 8px 12px;
+		margin:5px 0 15px;
+		.button-primary {
+			margin-top:4px;
+		}
+		.upload input[type="text"] {
+			width:86.5%;
+		}
+	}
+	a.button, a.button-primary {
+		display:inline-block;
+	}
+	.add-field {
+		margin-bottom:4px !important;
+	}
+}
+
+
+/*------------------------------------------------------------------------------
+  Custom Field Template Over-rides
+------------------------------------------------------------------------------*/
+
+body #wpbody {
+	#cft {
+		width: auto;
+		dt {
+			display: none !important;
+		}
+		dd {
+			margin-left: 0;
+			font-size: 12px;
+		}
+		fieldset {
+			&[style="width:100%;"],
+			&[style="width:100%"] {
+				width: 93.5% !important;
+			}
+			width: 43.5%;
+			min-width: 300px;
+			margin: 0 1% 20px !important;
+			padding: 1% 2% !important;
+			border: 1px solid #ccc;
+			legend {
+				display: block;
+			}
+		}
+	}
+}

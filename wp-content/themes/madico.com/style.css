@@ -1,0 +1,22 @@
+/* 
+Theme Name: Madico.com
+Theme URL: http://www.madico.com
+Description: A custom theme created exclusively for Madico.
+Author: Kevin Leary & Fresh Tilled Soil
+Author URI: http://www.freshtilledsoil.com
+Version: 1.21
+*/
+
+/* CSS Reset */
+@import 'css/reset.css';
+@import 'css/forms.css';
+@import 'css/style.css';/* misc. overrides [MIC 12/08/15] */
+.main a:link, .main a:visited { color: #00467f; text-decoration: underline; }
+.splash .full { height:100%; width:100%; padding:0; background: rgba(0, 0, 0, 0) none repeat scroll 0 0; }
+.splash .full a { height:100%; width:100%; position:relative; display:block; z-index:10; }
+body.home #columns .col { width:280px; text-align:center; }
+body.home #columns .text { text-align: center; }
+.tagline { left: 196px; }
+#lang_sel_click { top: -64px; z-index: 9999999 !important; position:absolute !important; left:250px; }
+#lang_sel_click ul { list-style:none; display:block; float:right; margin:0; }
+#lang_sel_click li { display:inline; float:left; }
