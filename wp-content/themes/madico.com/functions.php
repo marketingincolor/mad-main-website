@@ -1369,3 +1369,14 @@ class Madico_Custom_Walker_Menu extends Walker_Nav_Menu {
         parent::display_element($element, $children_elements, $max_depth, $depth, $args, $output);
     }
 }
+
+function language_selector_flags(){
+	$languages = apply_filters( 'wpml_active_languages', NULL, 'orderby=id&order=desc' );
+	if(!empty($languages)){
+		foreach($languages as $l){
+			if(!$l['active']) echo '<a href="'.$l['url'].'">';
+			echo '<img src="'.$l['country_flag_url'].'" height="12" alt="'.$l['language_code'].'" width="18" />';
+			if(!$l['active']) echo '</a>';
+		}
+	}
+}

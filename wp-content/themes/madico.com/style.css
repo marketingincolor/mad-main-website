@@ -17,6 +17,5 @@ Version: 1.21
 body.home #columns .col { width:280px; text-align:center; }
 body.home #columns .text { text-align: center; }
 .tagline { left: 196px; }
-#lang_sel_click { top: -64px; z-index: 9999999 !important; position:absolute !important; left:250px; }
-#lang_sel_click ul { list-style:none; display:block; float:right; margin:0; }
-#lang_sel_click li { display:inline; float:left; }
+#lang_flag_sel { top: -64px; z-index: 9999999 !important; position:absolute !important; left:250px; }
+#lang_flag_sel img {padding:2px 4px; }

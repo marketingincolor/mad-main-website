@@ -25,6 +25,7 @@
 		</div>
 		<?php //do_action('icl_language_selector'); ?>
 		<?php //do_action('wpml_add_language_selector'); ?>
+		<div id="lang_flag_sel"><?php language_selector_flags(); ?></div>
 		<?php if ( $language != 'chinese' ): ?>
 		<div class="search">
 			<?php require_once(TEMPLATEPATH . "/searchform.php"); ?>
