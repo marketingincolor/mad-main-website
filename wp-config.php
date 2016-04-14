@@ -1,14 +1,10 @@
 <?php
 # Database Configuration
-define( 'DB_NAME', 'madico_real' );
-define( 'DB_USER', 'root' );
-define( 'DB_PASSWORD', 'shiva69' );
-define( 'DB_HOST', 'localhost' );
-//define( 'DB_NAME', 'wp_madico' );
-//define( 'DB_USER', 'madico' );
-//define( 'DB_PASSWORD', '3O6gvcfJ3jPER9t5' );
-//define( 'DB_HOST', '127.0.0.1' );
-//define( 'DB_HOST_SLAVE', '127.0.0.1' );
+define( 'DB_NAME', 'wp_madico' );
+define( 'DB_USER', 'madico' );
+define( 'DB_PASSWORD', '3O6gvcfJ3jPER9t5' );
+define( 'DB_HOST', '127.0.0.1' );
+define( 'DB_HOST_SLAVE', '127.0.0.1' );
 define( 'DB_CHARSET', 'utf8' );
 define( 'DB_COLLATE', 'utf8_unicode_ci' );
 $table_prefix = 'wp_';
@@ -79,7 +75,7 @@ define( 'FORCE_SSL_LOGIN', false );
 
 define( 'WPE_EXTERNAL_URL', false );
 
-define( 'WP_POST_REVISIONS', FALSE );
+define( 'WP_POST_REVISIONS', true );
 
 define( 'WPE_WHITELABEL', 'wpengine' );
 
@@ -117,9 +113,40 @@ $memcached_servers=array ( 'default' =>  array ( 0 => 'unix:///tmp/memcached.soc
 define( 'WPLANG', '' );
 
 
+
 # WP Engine Settings
-//define( 'PWP_DOMAIN_CONFIG', 'www.madico.com' );
-//define( 'WPE_CACHE_TYPE', 'standard' );
+define( 'PWP_DOMAIN_CONFIG', 'www.madico.com' );
+
+
+
+
+
+define( 'WPE_CACHE_TYPE', 'standard' );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*SSLSTART*/
@@ -130,9 +157,19 @@ if ( isset( $_SERVER['HTTP_X_WPE_SSL'] ) && $_SERVER['HTTP_X_WPE_SSL'] ) $_SERVE
 
 # Custom Settings
 
+
+
+
+
+
+
+
+
+
+
 define( 'MULTISITE', true );
 define( 'SUBDOMAIN_INSTALL', false );
-define( 'DOMAIN_CURRENT_SITE', 'localhost/madico/' );
+define( 'DOMAIN_CURRENT_SITE', 'www.madico.com' );
 define( 'PATH_CURRENT_SITE', '/' );
 define( 'SITE_ID_CURRENT_SITE', 1 );
 define( 'BLOG_ID_CURRENT_SITE', 1 );
