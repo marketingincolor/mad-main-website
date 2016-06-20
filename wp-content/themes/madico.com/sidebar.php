@@ -35,7 +35,7 @@ $cat = get_query_var('cat');
 	</li>
 	<?php endif; ?>
 
-    <?php 
+    <?php
     if ( $GLOBALS['section'] == 'window-film' && is_page('contact') )
         dynamic_sidebar('Window Film Pages');
     ?>
@@ -64,6 +64,20 @@ $cat = get_query_var('cat');
 		<h2>For More Information</h2>
 		<div class="textwidget">
 			<p><a href="/<?php echo $section; ?>/contact/" class="button contact">Contact Us</a></p>
+		</div>
+	</li>
+	<?php endif; ?>
+
+	<?php if ( $GLOBALS['section'] == 'contract-coating' && ! is_page('contact') ) : ?>
+	<li class="more-information feature">
+		<h2>For More Information</h2>
+		<div class="textwidget">
+			<p>
+			<strong>Rob Comeau</strong><br />
+			Director of Business Development<br />
+			+1 781-756-4211<br />
+			<a href="mailto:rcomeau@madico.com">rcomeau@madico.com</a>
+			</p>
 		</div>
 	</li>
 	<?php endif; ?>

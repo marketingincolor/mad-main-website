@@ -1143,13 +1143,17 @@ function madico_define_globals() {
 	// Photovoltaic page and category ID's
 	$sf_page = get_page_by_path('pv-backsheets');
 	$GLOBALS['pv_page_id'] = intval($sf_page->ID);
+
+	// Contract Coating page and category ID's
+	$cc_page = get_page_by_path('contract-coating');
+	$GLOBALS['cc_page_id'] = intval($cc_page->ID);
 	
-	global $post, $sf_page_id, $sf_category_id, $wf_page_id, $wf_category_id, $pv_page_id;
+	global $post, $sf_page_id, $sf_category_id, $wf_page_id, $wf_category_id, $pv_page_id, $cc_page_id;
 	
 	$ancestors = ( isset($post->ancestors) && is_array($post->ancestors) && !empty($post->ancestors) ) ? $post->ancestors : array();
 	
 	// Define site section
-	if ( !empty($wf_page_id) || !empty($sf_page_id) ) {
+	if ( !empty($wf_page_id) || !empty($sf_page_id) || !empty($cc_page_id) ) {
 
 		// Window films site section
 		if ( 
@@ -1176,7 +1180,15 @@ function madico_define_globals() {
 		) {
 			$GLOBALS['section'] = 'pv-backsheets';
 		}
-		
+
+		// Contract coating site section
+		else if (
+			is_page($cc_page_id) ||
+			in_array($cc_page_id, $ancestors)
+		) {
+			$GLOBALS['section'] = 'contract-coating';
+		}
+
 		// No site section
 		else {
 			$GLOBALS['section'] = 'none';

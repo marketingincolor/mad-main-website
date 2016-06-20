@@ -25,7 +25,7 @@
 		</div>
 		<?php //do_action('icl_language_selector'); ?>
 		<?php //do_action('wpml_add_language_selector'); ?>
-		<div id="lang_flag_sel" style="display:none;"><?php //language_selector_flags(); ?></div>
+		<div id="lang_flag_sel"><?php language_selector_flags(); ?></div>
 		<?php if ( $language != 'chinese' ): ?>
 		<div class="search">
 			<?php require_once(TEMPLATEPATH . "/searchform.php"); ?>
@@ -42,7 +42,7 @@
 			<!--<a href="http://madico.know-where.com/madico/" class="sicon dealer-locator external-ga-link">Dealer Locator</a>-->
 			<a href="https://plus.google.com/109912744876993567602" rel="publisher" class="sicon google"><i class="ion-social-googleplus"></i></a>
 			<?php endif; ?>
-			<a href="http://www.linkedin.com/company/madico?trk=hb_tab_compy_id_119045" class="sicon linkedin"><i class="ion-social-linkedin"></i></a>
+			<!--<a href="http://www.linkedin.com/company/madico?trk=hb_tab_compy_id_119045" class="sicon linkedin"><i class="ion-social-linkedin"></i></a>-->
 			<?php
 			/* Disabled until translation is updated
 			if ( class_exists('SitePress') && ( is_page('pv-backsheets') || is_child('pv-backsheets') || $language == 'chinese' ) )
