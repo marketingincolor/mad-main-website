@@ -7,7 +7,7 @@ Author: WPEngine
 Author URI: wpengine.com
 License: GPLv2
 */
-add_filter( 'pre_comment_content', 'wpengine_die_on_long_comment', 9999 );
+//add_filter( 'pre_comment_content', 'wpengine_die_on_long_comment', 9999 );
 
 function wpengine_die_on_long_comment( $text ) {
     if ( strlen($text) > 13000 ) {

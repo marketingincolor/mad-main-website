@@ -9,7 +9,7 @@
  * License GPL3
  */
 
-add_filter( 'limit_login_whitelist_ip', 'wpe_bnseosnvlsoie', 10, 2 );
+//add_filter( 'limit_login_whitelist_ip', 'wpe_bnseosnvlsoie', 10, 2 );
 /**
  * Ensure that certain IP addresses are whitelisted.
  * 

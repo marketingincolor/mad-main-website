@@ -10,6 +10,6 @@ License: GPLv2
 */
 
 // mu-plugins/slt-force-strong-passwords.php
-if ( getenv( 'WPENGINE_FORCE_STRONG_PASSWORDS' ) !== 'off' ) {
-	require WPMU_PLUGIN_DIR.'/force-strong-passwords/slt-force-strong-passwords.php';
-}
+//if ( getenv( 'WPENGINE_FORCE_STRONG_PASSWORDS' ) !== 'off' ) {
+//	require WPMU_PLUGIN_DIR.'/force-strong-passwords/slt-force-strong-passwords.php';
+//}

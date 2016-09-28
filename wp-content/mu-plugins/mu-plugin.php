@@ -12,63 +12,63 @@
 define( 'WPE_PLUGIN_BASE', __FILE__ );
 
 // Allow changing the version number in only one place (the header above)
-$plugin_data = get_file_data( WPE_PLUGIN_BASE, array( 'Version' => 'Version' ) );
-define( 'WPE_PLUGIN_VERSION', $plugin_data['Version'] );
+//$plugin_data = get_file_data( WPE_PLUGIN_BASE, array( 'Version' => 'Version' ) );
+//define( 'WPE_PLUGIN_VERSION', $plugin_data['Version'] );
 
 //setup wpe plugin url
 if(is_multisite()) {
-	define('WPE_PLUGIN_URL', network_site_url('/wp-content/mu-plugins/wpengine-common'));
+//	define('WPE_PLUGIN_URL', network_site_url('/wp-content/mu-plugins/wpengine-common'));
 } else {
-	define( 'WPE_PLUGIN_URL', content_url('/mu-plugins/wpengine-common') );
+//	define( 'WPE_PLUGIN_URL', content_url('/mu-plugins/wpengine-common') );
 }
 
-require_once(dirname(__FILE__)."/wpengine-common/plugin.php");
-require_once(dirname(__FILE__)."/wpengine-common/dify-widget.php");
+//require_once(dirname(__FILE__)."/wpengine-common/plugin.php");
+//require_once(dirname(__FILE__)."/wpengine-common/dify-widget.php");
 
 // Prevent weird problems with logging in due to Object Caching
 // example: password has been changed, but Object Cache still holds old password, and therefore prevents login
 if ( defined( 'WP_CACHE' ) && WP_CACHE ) {
-    add_filter( 'wp_authenticate_user', 'wpe_refresh_user' );
-    function wpe_refresh_user( $user ) {
-        wp_cache_delete( $user->user_login, 'userlogins' );
-        return get_user_by( 'login', $user->user_login );
-    }
+//    add_filter( 'wp_authenticate_user', 'wpe_refresh_user' );
+ //   function wpe_refresh_user( $user ) {
+//        wp_cache_delete( $user->user_login, 'userlogins' );
+//        return get_user_by( 'login', $user->user_login );
+//    }
 }
 
 if ( getenv( 'WPE_HEARTBEAT_AUTOSAVE_ONLY' ) == 'on' ) {
-	require_once __DIR__ . '/wpengine-common/class.heartbeatthrottle.php';
-	$heartbeat_throttle = new WPE_Heartbeat_Throttle();
-	$heartbeat_throttle->register();
+//	require_once __DIR__ . '/wpengine-common/class.heartbeatthrottle.php';
+//	$heartbeat_throttle = new WPE_Heartbeat_Throttle();
+//	$heartbeat_throttle->register();
 }
 
 // Force destroy login cookies if invalid, expired, etc. This prevents stale cookies (which never expire
 // in the browser) from cache busting. 
 // This feature is controlled by an environment variable, but defaulted to on.
 if ( getenv( 'WPENGINE_CLEAR_EXPIRED_COOKIES' ) !== 'off' ) {
-	require_once __DIR__ . '/wpengine-common/class.cookies.php';
-	\wpe\plugin\Cookies::register_hooks();
+//	require_once __DIR__ . '/wpengine-common/class.cookies.php';
+//	\wpe\plugin\Cookies::register_hooks();
 }
 
 // Enforce sanity checking on wp_sessions. This became a problem when EDD had a bug that had sessions
 // expiring in the year 2058.
-require_once __DIR__ . '/wpengine-common/class.sessionsanity.php';
-$wpe_session_sanity = new \wpe\plugin\SessionSanity();
-$wpe_session_sanity->register_hooks();
+//require_once __DIR__ . '/wpengine-common/class.sessionsanity.php';
+//$wpe_session_sanity = new \wpe\plugin\SessionSanity();
+//$wpe_session_sanity->register_hooks();
 
 // Custom site preview
-require_once( __DIR__ . '/wpengine-common/class.site-preview.php' );
-\WPE\Site_Preview::get_instance()->register_hooks();
+//require_once( __DIR__ . '/wpengine-common/class.site-preview.php' );
+//\WPE\Site_Preview::get_instance()->register_hooks();
 
 // Useful for multisite: Add a Site ID column to the Network Admin > Sites page
 if ( is_multisite() ) {
-    add_filter( 'wpmu_blogs_columns', 'wpe_site_id' );
+    //add_filter( 'wpmu_blogs_columns', 'wpe_site_id' );
     function wpe_site_id( $columns ) {
         $columns['site_id'] = __( 'ID', 'site_id' );
         return $columns;
     }
 
-    add_action( 'manage_sites_custom_column', 'wpe_site_id_columns', 10, 3 );
-    add_action( 'manage_blogs_custom_column', 'wpe_site_id_columns', 10, 3 );
+    //add_action( 'manage_sites_custom_column', 'wpe_site_id_columns', 10, 3 );
+    //add_action( 'manage_blogs_custom_column', 'wpe_site_id_columns', 10, 3 );
     function wpe_site_id_columns( $column, $blog_id ) {
         if ( $column == 'site_id' ) {
             echo $blog_id;
@@ -81,8 +81,8 @@ if ( is_multisite() ) {
 
 //Some user-plugins have site_filters that don't always persist the query args that we set in wpe_filter_site_url
 //So let's up our priority to 99 (default 10) so that our filter gets run later than the other plugin filters
-add_filter( 'site_url', 'wpe_filter_site_url', 99, 4 );
-add_filter( 'network_site_url', 'wpe_filter_site_url', 99, 3 );
+//add_filter( 'site_url', 'wpe_filter_site_url', 99, 4 );
+//add_filter( 'network_site_url', 'wpe_filter_site_url', 99, 3 );
 /**
  * Filter the value returned for 'site_url'
  *
@@ -150,7 +150,7 @@ endif;
  *   altogether, but we're just being sure.
  * - 'send_core_update_notification_email' determines whether to alert a site admin that an update is available.
  */
-add_filter( 'auto_update_core', '__return_false', 9999 );
-add_filter( 'auto_update_translation', '__return_false', 9999 );
-add_filter( 'auto_core_update_send_email', '__return_false', 9999 );
-add_filter( 'send_core_update_notification_email', '__return_false', 9999 );
+//add_filter( 'auto_update_core', '__return_false', 9999 );
+//add_filter( 'auto_update_translation', '__return_false', 9999 );
+//add_filter( 'auto_core_update_send_email', '__return_false', 9999 );
+//add_filter( 'send_core_update_notification_email', '__return_false', 9999 );
