@@ -34,14 +34,14 @@
             #slideshow { position:relative; height:396px; }
             #slideshow > div { position:absolute; }
             
-            .fadein { position:relative; height:396px; overflow:hidden; }
+            .fadein { position:relative; overflow:hidden; }
             .fadein img { max-width:none; display:block; position:absolute; }
             
             .slides img { width:100%; }
             .item { display:inline-block; }
-            .item h3 { line-height:1; color:#00467f; }
+            .item h3 { line-height:1.2em; color:#00467f; }
             .item p { line-height:2em; }
-            .item li { margin:2em; }
+            .item li { margin:1em 2em 0em 2em; font-size:19px; }
             .overlay { position:relative; display:inline-block; }
             .quote-bar { background:#eeeef0 /*url(/img/dm16-land-quote.png) no-repeat center center*/ ; min-height:180px; }
             .quote { margin:3em 6em; }
@@ -71,26 +71,25 @@
             .gform_footer .button { background-color:#f5971d; color:#00467f; font-weight:bold; width: 25%; }
             
             #gform_2 { background-color:#00467f; }
-            .new-quote { font-size: 19px; line-height: 38px; margin-top: 10%; }
+            .new-quote { line-height: 38px; margin-top: 10%; }
             
             
             /* Small screens */
             @media only screen {
                 .item { margin:2em 2em 1em 2em;}
-                .item h3, item h4 { font-size:21px; margin-bottom: 0.5em; }
+                .item h3, item h4 { font-size:21px; margin-bottom: 0.5em; line-height: 1.4em; }
                 .item p, .item li { font-size:16px; }
-                .fadein { height:258px; }
-                .fadein img { left:-300px; top:-30px; }
+                .new-quote { font-size: 16px; }
+                .fadein { height:208px; }
+                .fadein img { left:-60px; top:0px; max-height: 158px; }
                 .gform_wrapper { max-width:100%; }
                 .gform_heading { top:0px; }
                 .gform_body { margin:0 1em; margin-top:0px; }
                 .gform_body li { width:95%; }
                 .gform_footer .button { width: 80%; }
                 .logo { padding: 1em; text-align: center;}
-                .quote-background {background:#eeeef0 url(/img/dm16-land-quote.png) no-repeat center center; }
-                .fadein img { left: -168px; top: -10px; max-height: 280px; }
-                
-
+                .quote-background {background:#eeeef0 url(/img/information-logo.png) no-repeat center center; }
+                .logo img { width: 80%; }
 
             }
             /* Medium screens */
@@ -98,8 +97,9 @@
                 .item { margin:1em 2em;}
                 .item h3, item h4 { font-size:21px; margin-bottom: 0.5em; }
                 .item p, .item li { font-size:16px; }
+                .new-quote { font-size: 16px; margin-top:15%; line-height:1.6em; }
                 .fadein { height:396px; }
-                .fadein img { left:0; top:0; }
+                .fadein img { left:-78px; top:0; max-height: 222px;}
                 .gform_wrapper { max-width:80%; }
                 .gform_heading { top:-140px; }
                 .gform_body { margin:0 1em; margin-top:-100px; }
@@ -108,22 +108,26 @@
                 .quote-background {background:#eeeef0; }
                 .gform_body li { width: 95%; }
                 .fadein { height:258px; }
-                .fadein img { left:-118px; top:-15px; }
                 .gform_footer .button { width: 80%; }
+                .logo img { width: initial; margin: 0% 28%;}
 
 
             }
             /* Large screens */
             @media only screen and (min-width: 64.063em) {
                 .item { margin:2em 4em; }
-                .item h3, item h4 { font-size:30px; margin-bottom: 0.75em; }
-                .item p, .item li { font-size:21px; }
+                .item h3, item h4 { font-size:30px; margin-bottom: 0.75em; margin-top: 0em; margin-top:1.5em;}
+                 div:nth-child(n+2) > div > h3{ margin-top:2em; }
+                 body > div:nth-child(6) > div:nth-child(1) > div > h3 { margin-top:2em; }
+                .item li, .item p { font-size: 19px; }
+                .new-quote { font-size: 19px;  margin-top:10%;}
                 .fadein { height:396px; }
-                .fadein img { left:0; top:0; }
+                .fadein img { left:0; top:0; max-height:initial; }
                 .gform_wrapper { max-width:80%; }
                 .gform_body li { width:46%; }
                 .gform_footer .button { width: 45%; }
-                .fadein img { left:0; top:0; max-height:initial; }
+                .logo { margin-left: 8.33333%;padding-left: .9375rem; }
+                .logo img { margin: initial; }
 
             }
         </style>
@@ -147,7 +151,7 @@
         <div class="row collapse">
             <div class="show-for-medium medium-6 columns">
                 <div class="item" style="margin-left:19%;">
-                    <h3 style="margin-top:1.5em;">Bomb Blast Protection Window Films From Madico: Performance You Can Trust.</h3>
+                    <h3 style="">Bomb Blast Protection Window Films From Madico: Performance You Can Trust.</h3>
                     <ul style="margin:0; padding:0;">
                         <li style="margin-left:1em;">Designed to fight today’s threats, from crime and vandalism to storms and explosions. </li>
                         <li style="margin-left:1em;">Extensively tested to have met or exceeded the requirements of more U.S. and international standards than any other blast protection films, including the U.S. Consumer Product Safety Commission and Underwriterss Laboratories.</li>
@@ -163,7 +167,7 @@
             </div>
             <div class="hide-for-medium small-12 columns">
                 <div class="item">
-                    <h3 style="margin-top:1.5em;">Bomb Blast Protection Window Films From Madico: Performance You Can Trust.</h3>
+                    <h3 style="">Bomb Blast Protection Window Films From Madico: Performance You Can Trust.</h3>
                     <ul style="margin:0; padding:0;">
                         <li style="margin-left:1em;">Designed to fight today’s threats, from crime and vandalism to storms and explosions. </li>
                         <li style="margin-left:1em;">Extensively tested to have met or exceeded the requirements of more U.S. and international standards than any other blast protection films, including the U.S. Consumer Product Safety Commission and Underwriterss Laboratories.</li>
@@ -181,7 +185,7 @@
                         <p class="new-quote">In addition to holding shattered glass together, our bomb protection films will also hold something else together: your peace of mind.</p>
                     </div>
                     <div class="hide-for-small-only small-2 columns end">
-                        <img src="/img/dm16-land-quote.png">
+                        <img src="/img/information-logo.png">
                     </div>
                 </div>
             </div>
@@ -216,14 +220,14 @@
                         <p class="new-quote">Did you know? A single square foot of glass can produce up to 200 deadly, razor-sharp fragments.</p>
                     </div>
                     <div class="hide-for-small-only small-2 columns end">
-                        <img src="/img/dm16-land-quote.png">
+                        <img src="/img/information-logo.png">
                     </div>
                 </div>
             </div>
         </div>
         <div class="row" style="text-align:center;">
             <div class="item" style="margin:0em;">
-            <p style="margin-bottom:0em;"><a href="http://www.safetyshield.com/" style="color: #0a0a0a;">SafetyShield.com</a> | <a href="http://www.madico.com/window-film/privacy-policy/" style="color: #0a0a0a;">Privacy Policy</a></p>
+            <p style="margin-bottom:0em;font-size: .75em;"><a href="http://www.safetyshield.com/" style="color: #0a0a0a;">SafetyShield.com</a> | <a href="http://www.safetyshield.com/privacy-policy/" style="color: #0a0a0a;">Privacy Policy</a></p>
             </div>
         </div>
         
