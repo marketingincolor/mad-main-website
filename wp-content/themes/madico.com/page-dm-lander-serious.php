@@ -81,7 +81,7 @@
                 .dm16 .gform_body { margin:0 1em; margin-top:0px; }
                 .dm16 .gform_heading { top:0px; }
                 .dm16 .gform_body li { width:95%; }
-            }
+                .quote { margin: 3em 3em; }
             /* Medium screens */
             @media only screen and (min-width: 40.063em) {
                 .item { margin:1em 2em 0em 2em;}
@@ -93,7 +93,8 @@
                 .dm16_wrapper { max-width:80%; }
                 .dm16 .gform_body { margin:0 1em; margin-top:-100px; }
                 .dm16 .gform_heading { top:-140px; }
-                .dm16 .gform_body li { width:46%; }
+                .dm16 .gform_body li { width: 95%; }
+                .quote { margin: 3em 6em; }
             }
             /* Large screens */
             @media only screen and (min-width: 64.063em) {
@@ -104,6 +105,7 @@
                 .fadein { height:396px; }
                 .fadein img { left:0; top:0; }
                 .dm16_wrapper { max-width:80%; }
+                .dm16 .gform_body li { width:46%; }
             }
         </style>
     </head>
