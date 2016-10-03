@@ -7,7 +7,14 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
-    <head> 
+    <head>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-PXJ38D');</script>
+        <!-- End Google Tag Manager --> 
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta charset="utf-8">
         <title>Madico Window Films - Dealers</title>
@@ -76,6 +83,10 @@
         End Old Facebook Pixel Code -->
     </head>
     <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXJ38D"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
         <div class="row">
             <div class="header small-12 medium-8 medium-offset-1 columns">
             <img src="/img/SafetyShield-Logo.png">
@@ -99,7 +110,7 @@
             </div>
         </div>
 
-<!--        <div class="row collapse">
+        <div class="row collapse">
             <div class="small-12 small-centered">
                 <div class="q-item" style="text-align:center;">
                 <div style="position:relative; margin-bottom:20px;">
@@ -127,15 +138,15 @@
                    </div>
 
                    <div class="sm-meta" style="position:relative; display:inline-block; vertical-align:middle;" >
-                     Place this tag in your head or just before your close body tag. 
+                     <!-- Place this tag in your head or just before your close body tag.  -->
                     <script src="https://apis.google.com/js/platform.js" async defer></script>
-                     Place this tag where you want the widget to render. 
+                    <!--  Place this tag where you want the widget to render.  -->
                     <div class="g-follow" data-annotation="none" data-height="24" data-href="https://plus.google.com/109912744876993567602" data-rel="publisher"></div>
                    </div>
                 </div>
                 </div>
             </div>
-        </div>-->
+        </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.js"></script>
