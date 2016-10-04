@@ -82,6 +82,8 @@
                 .dm16 .gform_heading { top:0px; }
                 .dm16 .gform_body li { width:95%; }
                 .quote { margin: 3em 3em; }
+                .logo { margin: 0 auto; display:block; height: auto; width: 175px; padding: .5em; }
+                .fadein img { left: -100px; top: 7px; height: 192px; }
             /* Medium screens */
             @media only screen and (min-width: 40.063em) {
                 .item { margin:1em 2em 0em 2em;}
@@ -89,7 +91,7 @@
                 .item h2, .item p, .item li { font-size:16px; }
                 .item .mark { vertical-align:super; font-size:8px;}
                 .fadein { height:396px; }
-                .fadein img { left:0; top:0; }
+                .fadein img { left:-218px; top:0; height:390px;}
                 .dm16_wrapper { max-width:80%; }
                 .dm16 .gform_body { margin:0 1em; margin-top:-100px; }
                 .dm16 .gform_heading { top:-140px; }
@@ -106,19 +108,21 @@
                 .fadein img { left:0; top:0; }
                 .dm16_wrapper { max-width:80%; }
                 .dm16 .gform_body li { width:46%; }
+                .logo { margin: initial; display:initial; }
+                .fadein img { left:0px top: 0px;  height: auto;}
             }
         </style>
     </head>
     <body>
         <div class="row">
-            <div class="header small-12 medium-8 medium-offset-1 columns">
-             <img src="/img/dm16-land-logo.png">
+            <div class="header small-12 large-8 large-offset-1 columns">
+             <img class="logo" src="/img/dm16-land-logo.png">
             </div>
         </div>
         
         <div class="row">
             <div class="fadein small-12">
-                <img src="/img/dm16-land-slide-auto.jpg"/>
+                <img class="auto" src="/img/dm16-land-slide-auto.jpg"/>
             </div>
         </div>
         
