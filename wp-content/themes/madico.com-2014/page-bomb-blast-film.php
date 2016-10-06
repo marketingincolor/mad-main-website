@@ -28,7 +28,6 @@
         <script type='text/javascript' src='http://www.madico.com/wp-content/plugins/gravityforms/js/jquery.json.js?ver=1.9.16'></script>
         <script type='text/javascript' src='http://www.madico.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=1.9.16'></script>
         <script type='text/javascript' src='http://www.madico.com/wp-content/plugins/gravityforms/js/conditional_logic.min.js?ver=1.9.16'></script>
-
         <style>
             /* Foundation Overrides */
             .row {
@@ -111,15 +110,19 @@
                 .gform_heading { top:-140px; }
                 .gform_body { margin:0 1em; margin-top:-100px; }
                 .gform_footer .button { width: 25%; }
-                .logo { padding: 0em; text-align: initial;}
+                .logo { padding: 0em; }
                 .quote-background {background:#eeeef0; }
                 .gform_body li { width: 95%; }
                 .fadein { height:258px; }
                 .gform_footer .button { width: 80%; }
-                .logo img { width: initial; margin: 0% 28%;}
-
-
+                .logo img { width:45%; }
             }
+
+            /*For IE10*/
+            @media screen and (min-width: 768px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            .logo img{ width:45%; }
+            }
+
             /* Large screens */
             @media only screen and (min-width: 64.063em) {
                 .item { margin:2em 4em; }
@@ -129,13 +132,17 @@
                 .item li, .item p { font-size: 19px; }
                 .new-quote { font-size: 19px;  margin-top:10%;}
                 .fadein { height:396px; }
-                .fadein img { left:0; top:0; max-height:initial; }
+                .fadein img { left:0; top:0; max-height:396px; }
                 .gform_wrapper { max-width:80%; }
                 .gform_body li { width:46%; }
                 .gform_footer .button { width: 45%; }
-                .logo { margin-left: 8.33333%;padding-left: .9375rem; }
-                .logo img { margin: initial; }
-
+                .logo { margin-left: 8.33333%; text-align:left;}
+                .logo img { width: 25%; margin: .5em; }
+            }
+            
+            @media screen and (min-width: 64.063em) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            /* IE10+ CSS styles go here */
+            .logo img { width:25%; }
             }
         </style>
     <?php //wp_head(); ?>
@@ -146,7 +153,7 @@
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
         <div class="row">
-            <div class="header small-12 medium-8 medium-offset-1 columns logo">
+            <div class="header small-12 large-8 large-offset-1 columns logo">
                 <img src="/img/SafetyShield-Logo.png">
             </div>
         </div>

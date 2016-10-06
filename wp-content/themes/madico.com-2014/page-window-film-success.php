@@ -66,6 +66,11 @@
                 .item { margin:2em 4em;}
                 .item h3 { font-size:32px; }
                 .item p, .item li { font-size:23px; }
+                .logo img { width:25%;margin:.5em;}
+            }
+            @media screen and (min-width: 64.063em) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            /* IE10+ CSS styles go here */
+            .logo img { width:25%; }
             }
         </style>
         <!-- Old Facebook Pixel Code
@@ -89,7 +94,7 @@
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
         <div class="row">
-            <div class="header small-12 medium-8 medium-offset-1 columns">
+            <div class="header small-12 medium-8 medium-offset-1 columns logo">
             <img src="/img/SafetyShield-Logo.png">
             </div>
         </div>
