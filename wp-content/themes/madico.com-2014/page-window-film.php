@@ -79,7 +79,8 @@
             
             #gform_2 { background-color:#00467f; }
             .new-quote { line-height: 38px; margin-top: 10%; }
-            
+            .validation_error { display: none; }
+
             
             /* Small screens */
             @media only screen {

@@ -75,6 +75,7 @@
             .gform_footer:before { clear:both; }
             .gform_footer { color:#fff; margin:1em 2em; background-color:#00467f; display:block; text-align:center; }
             .gform_footer .button { background-color:#f5971d; color:#00467f; font-weight:bold; width: 25%; }
+            .validation_error { display: none; }
             
             #gform_2 { background-color:#00467f; }
             .new-quote { line-height: 38px; margin-top: 10%; }
