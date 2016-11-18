@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * Template Name: Bomb blast protection film success
  *
@@ -14,7 +14,7 @@
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-PXJ38D');</script>
-        <!-- End Google Tag Manager --> 
+        <!-- End Google Tag Manager -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta charset="utf-8">
         <title>Madico Window Films - Dealers</title>
@@ -33,10 +33,10 @@
             html, body, h1, h2, h3, h4, h5, h6 { font-family: 'Lato', sans-serif; }
             #slideshow { position:relative; height:396px; }
             #slideshow > div { position:absolute; }
-            
+
             .fadein { position:relative; height:396px; overflow:hidden; }
             .fadein img { max-width:none; display:block; position:absolute; }
-            
+
             .slides img { width:100%; }
             .item { display:inline-block; text-align:center; }
             .item h3 { line-height:1; color:#00467f; }
@@ -47,7 +47,7 @@
             .quote h4 { font-size:19px; }
             .sm-meta { padding:1em; }
             .fb_iframe_widget { top: -3px; }
-            
+
             /* Small screens */
             @media only screen {
                 .item { margin:1em 2em;}
@@ -65,6 +65,7 @@
                 .item { margin:2em 4em;}
                 .item h3 { font-size:32px; }
                 .item p, .item li { font-size:23px; }
+                .logo img { width:25%; margin:.5em; }
             }
         </style>
         <!-- Old Facebook Code
@@ -81,6 +82,24 @@
         src="https://www.facebook.com/tr?id=590212837814531&ev=PageView&noscript=1"
         /></noscript>
         End Old Facebook Pixel Code -->
+        <!-- Google Code for Thank You Page Conversion Page --> <script type="text/javascript">
+        /* <![CDATA[ */
+        var google_conversion_id = 870693699;
+        var google_conversion_language = "en";
+        var google_conversion_format = "3";
+        var google_conversion_color = "ffffff";
+        var google_conversion_label = "WQbvCPyltWsQw_aWnwM"; var google_remarketing_only = false;
+        /* ]]> */
+        </script>
+        <script type="text/javascript"
+        src="//www.googleadservices.com/pagead/conversion.js">
+        </script>
+        <noscript>
+        <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt=""
+        src="//www.googleadservices.com/pagead/conversion/870693699/?label=WQbvCPyltWsQw_a…"/>
+        </div>
+        </noscript>
     </head>
     <body>
         <!-- Google Tag Manager (noscript) -->
@@ -88,18 +107,18 @@
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
         <div class="row">
-            <div class="header small-12 medium-8 medium-offset-1 columns">
+            <div class="header small-12 medium-8 medium-offset-1 columns logo">
             <img src="/img/SafetyShield-Logo.png">
             </div>
         </div>
-        
+
         <div class="row">
             <div class="small-12">
                                <img src="/img/bomb-blast-landing-page-for-businesses.jpg"/>
 
             </div>
         </div>
-        
+
         <div class="row collapse">
             <div class="small-12 columns">
                 <div class="item" style="display:inline;">
@@ -124,13 +143,13 @@
                       fjs.parentNode.insertBefore(js, fjs);
                     }(document, 'script', 'facebook-jssdk'));</script>
                        <div class="fb-like" data-href="https://www.facebook.com/MadicoWindowFilms/" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-                       
+
                    </div>
 
                    <div class="sm-meta" style="position:relative; display:inline-block; vertical-align:middle;" >
                     <a href="https://twitter.com/MadicoInc" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow </a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                   </div> 
+                   </div>
 
                    <div class="sm-meta" style="position:relative; display:inline-block; vertical-align:middle;" >
                     <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
@@ -153,6 +172,6 @@
         <script>
             $(document).foundation();
         </script>
-        
+
     </body>
 </html>
