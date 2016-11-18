@@ -82,6 +82,20 @@ $cat = get_query_var('cat');
 	</li>
 	<?php endif; ?>
 
+	<?php if ( is_page('anti-fog-film') || is_page('anti-fog-film-test-data') || is_page('anti-fog-faqs') ) : ?>
+		<li class="more-information feature">
+			<h2 style="display:inline-block;">For More Information or to place an order please call:</h2>
+			<div class="textwidget">
+				<p>
+					<strong>Rob Comeau</strong><br />
+					Director of Business Development<br />
+					+1 781-756-4211<br />
+					<a href="mailto:rcomeau@madico.com">rcomeau@madico.com</a>
+				</p>
+			</div>
+		</li>
+	<?php endif; ?>
+
 	<?php 
 	if ( $sidebar_nav = madico_sidebar_nav() )
 		echo $sidebar_nav;
