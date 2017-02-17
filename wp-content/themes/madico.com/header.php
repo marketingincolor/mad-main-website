@@ -37,6 +37,9 @@
 		<?php endif; ?>
 
 		<div class="utility">
+			<?php if ( is_front_page() || is_home()  ): ?>
+			<a href="http://dealerdirectory.madico.com/" class="sicon external-ga-link" style="color:#fff !important;">Dealer Directory</a>
+			<?php endif; ?>
 			<?php global $section; if ( $section == 'window-film' ): ?>
 			<a href="http://dealerdirectory.madico.com/" class="sicon external-ga-link" style="color:#fff !important;">Dealer Directory</a>
 			<a href="https://hub.hubcentrix.com/Madico" class="sicon brand-hub">Brand Hub</a>
