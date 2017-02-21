@@ -209,6 +209,17 @@
             </div>
         </div>
         
+        <div class="row collapse">
+            <div class="hide-for-medium small-12 columns"><img src="/img/dm16-land-grfx-cplex.jpg" /></div>
+            <div class="small-12 medium-6 columns">
+                <div class="item">
+                    <h3>Introducing ClearPlex by Madico.</h3>
+                    <p>The world's best performing windshield protection film; designed to absorb the impact of standard road hazards. Ready to make an impact on your bottom line.</p>
+                </div>
+            </div>
+            <div class="show-for-medium medium-6 columns"><img src="/img/dm16-land-grfx-cplex.jpg" /></div>
+        </div>
+
         <div class="row quote-bar">
             <div class="small-12 medium-6 columns">
                 <div class="quote">
