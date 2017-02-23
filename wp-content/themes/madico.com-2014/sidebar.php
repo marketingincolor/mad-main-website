@@ -46,6 +46,7 @@ $cat = get_query_var('cat');
 		<div class="textwidget">
 			<p><a href="/safety-shield/contact/" class="button contact">Contact Us</a></p>
 			<p>If US, call your local service center at <strong>562-277-8775</strong> or <a href="/safety-shield/locate-partner/">locate a partner</a>.</p>
+			<p>Find all <a href="http://dealerdirectory.madico.com" target="_blank">Madico film dealers</a>.</p>
 		</div>
 	</li>
 	<?php endif; ?>
