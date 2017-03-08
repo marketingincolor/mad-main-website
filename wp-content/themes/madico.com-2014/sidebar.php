@@ -46,9 +46,10 @@ $cat = get_query_var('cat');
 		<div class="textwidget">
 			<p><a href="/safety-shield/contact/" class="button contact">Contact Us</a></p>
 			<p>If US, call your local service center at <strong>562-277-8775</strong> or <a href="/safety-shield/locate-partner/">locate a partner</a>.</p>
-			<p>Find all <a href="http://dealerdirectory.madico.com" target="_blank">Madico film dealers</a>.</p>
+			<!--<p>Find all <a href="http://dealerdirectory.madico.com" target="_blank">Madico film dealers</a>.</p>-->
 		</div>
 	</li>
+	<p style="text-align:center;"><a href="http://dealerdirectory.madico.com" class="button" style="background-color:#e76f00; padding:10px; color:white; font-weight:bold; font-size:14px;" target="_blank">Find All Madico film dealers</a></p>
 	<?php endif; ?>
 
 	<?php if( function_exists('madico_related_links') ) madico_related_links(); ?>
