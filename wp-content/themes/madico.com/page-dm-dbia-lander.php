@@ -143,10 +143,10 @@
                 <div class="item" style="margin-left:19%;">
                     <h4 style="margin-top:1.5em;">Whether you're an architect, interior designer, or facility manager, we offer commercial and residential window films that improve the glass that surrounds you.</h4>
                     <ul style="margin:0; padding:0;">
-                        <li style="margin-left:1em;">Blocks up to 80% of the sun's heat</li>
-                        <li style="margin-left:1em;">Reduces glare</li>
-                        <li style="margin-left:1em;">Protects against fading</li>
-                        <li style="margin-left:1em;">Blocks 99% or more of UV rays</li>
+                        <li style="margin-left:1em;">Block up to 80% of the sun's heat</li>
+                        <li style="margin-left:1em;">Reduce glare</li>
+                        <li style="margin-left:1em;">Protect against fading</li>
+                        <li style="margin-left:1em;">Block 99% or more of UV rays</li>
                         <li style="margin-left:1em;">Available in a wide range of styles and shades</li>
                     </ul>
                 </div>
@@ -160,10 +160,10 @@
                 <div class="item">
                     <h4>Whether you're an architect, interior designer, or facility manager, we offer commercial and residential window films that improve the glass that surrounds you.</h4>
                     <ul>
-                        <li>Blocks up to 80% of the sun's heat</li>
-                        <li>Reduces glare</li>
-                        <li>Protects against fading</li>
-                        <li>Blocks 99% or more of UV rays</li>
+                        <li>Block up to 80% of the sun's heat</li>
+                        <li>Reduce glare</li>
+                        <li>Protect against fading</li>
+                        <li>Block 99% or more of UV rays</li>
                         <li>Available in a wide range of styles and shades</li>
                     </ul>
                 </div>

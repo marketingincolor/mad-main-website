@@ -141,11 +141,11 @@
         <div class="row collapse">
             <div class="show-for-medium medium-6 columns">
                 <div class="item" style="margin-left:19%;">
-                    <h4 style="margin-top:1.5em;">Sunscape<sup style="font-size:50%;">&reg;</sup> Window Films celebrates everything you love about the sun while creating a safe environment in residences and commercial buildings.</h4>
+                    <h4 style="margin-top:1.5em;">Sunscape<sup style="font-size:50%;">&reg;</sup> window films celebrate everything you love about the sun while creating a safe environment in residences and commercial buildings.</h4>
                     <ul style="margin:0; padding:0;">
-                        <li style="margin-left:1em;">Blocks 99% or more of UV rays</li>
-                        <li style="margin-left:1em;">Rejects up to 80% of the sun's energy</li>
-                        <li style="margin-left:1em;">Reduces glare</li>
+                        <li style="margin-left:1em;">Block 99% or more of UV rays</li>
+                        <li style="margin-left:1em;">Reject up to 80% of the sun's energy</li>
+                        <li style="margin-left:1em;">Reduce glare</li>
                         <li style="margin-left:1em;">The choice of interior designers worldwide</li>
                         <li style="margin-left:1em;">Available in a wide range of styles and shades</li>
                     </ul>
@@ -158,11 +158,11 @@
             </div>
             <div class="hide-for-medium small-12 columns">
                 <div class="item">
-                    <h4>Sunscape<sup style="font-size:50%;">&reg;</sup> Window Films celebrates everything you love about the sun while creating a safe environment in residences and commercial buildings.</h4>
+                    <h4>Sunscape<sup style="font-size:50%;">&reg;</sup> window films celebrate everything you love about the sun while creating a safe environment in residences and commercial buildings.</h4>
                     <ul>
-                        <li>Blocks 99% or more of UV rays</li>
-                        <li>Rejects up to 80% of the sun's energy</li>
-                        <li>Reduces glare</li>
+                        <li>Block 99% or more of UV rays</li>
+                        <li>Reject up to 80% of the sun's energy</li>
+                        <li>Reduce glare</li>
                         <li>The choice of interior designers worldwide</li>
                         <li>Available in a wide range of styles and shades</li>
                     </ul>
