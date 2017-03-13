@@ -1,6 +1,6 @@
 <?php 
 /**
- * Template Name: DM DBIA ASID Success Page
+ * Template Name: DM DBIA Success Page
  *
  * Landing page template without a sidebar
  */
@@ -75,13 +75,13 @@
         <!-- End Google Tag Manager (noscript) -->
         <div class="row">
             <div class="header small-12 medium-8 medium-offset-1 columns">
-             <img src="/img/dm16-land-logo.png">
+                <img src="/img/dbia-land-logo.png">
             </div>
         </div>
         
         <div class="row">
             <div class="small-12">
-                <img src="/img/dm16-land-slide-opp.jpg"/>
+                <img src="/img/dbia-land-slide-success.jpg"/>
             </div>
         </div>
         
@@ -89,7 +89,7 @@
             <div class="small-12 columns">
                 <div class="item" style="display:inline;">
                     <h1>Success!</h1>
-                    <p>We've received your information and will be in touch soon. <br />We look forward to discussing the promising possibilities of partnering with you.
+                    <p>We've received your information and will be sending you additional materials on Madico Architectural Window Films. <br />Thank you for your interest!
                     </p>
                 </div>
             </div>

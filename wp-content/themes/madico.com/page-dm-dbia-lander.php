@@ -127,24 +127,27 @@
         <!-- End Google Tag Manager (noscript) -->
         <div class="row">
             <div class="header small-12 large-8 large-offset-1 columns">
-             <img class="logo" src="/img/dm16-land-logo.png">
+             <img class="logo" src="/img/dbia-land-logo.png">
             </div>
         </div>
         
         <div class="row">
             <div class="fadein small-12">
-                <img class="auto" src="/img/dm16-land-slide-auto.jpg"/>
+                <img src="/img/dbia-land-slide-kit.jpg"/>
+                <img src="/img/dbia-land-slide-hot.jpg"/>
             </div>
         </div>
         
         <div class="row collapse">
             <div class="show-for-medium medium-6 columns">
                 <div class="item" style="margin-left:19%;">
-                    <h4 style="margin-top:1.5em;">With Madico, you always have a product and a partner you can trust.</h4>
+                    <h4 style="margin-top:1.5em;">Whether you're an architect, interior designer, or facility manager, we offer commercial and residential window films that improve the glass that surrounds you.</h4>
                     <ul style="margin:0; padding:0;">
-                        <li style="margin-left:1em;">Unmatched combination of quality, function, and style in automotive tinted films.</li>
-                        <li style="margin-left:1em;">An industry favorite for more than 40 years.</li>
-                        <li style="margin-left:1em;">Oustanding support and personal attention through a dedicated, knowledgeable team.</li>
+                        <li style="margin-left:1em;">Blocks up to 80% of the sun's heat</li>
+                        <li style="margin-left:1em;">Reduces glare</li>
+                        <li style="margin-left:1em;">Protects against fading</li>
+                        <li style="margin-left:1em;">Blocks 99% or more of UV rays</li>
+                        <li style="margin-left:1em;">Available in a wide range of styles and shades</li>
                     </ul>
                 </div>
             </div>
@@ -155,24 +158,26 @@
             </div>
             <div class="hide-for-medium small-12 columns">
                 <div class="item">
-                    <h4>With Madico, you always have a product and a partner you can trust.</h4>
+                    <h4>Whether you're an architect, interior designer, or facility manager, we offer commercial and residential window films that improve the glass that surrounds you.</h4>
                     <ul>
-                        <li>Unmatched combination of quality, function, and style in automotive tinted films.</li>
-                        <li>An industry favorite for more than 40 years.</li>
-                        <li>Oustanding support and personal attention through a dedicated, knowledgeable team.</li>
+                        <li>Blocks up to 80% of the sun's heat</li>
+                        <li>Reduces glare</li>
+                        <li>Protects against fading</li>
+                        <li>Blocks 99% or more of UV rays</li>
+                        <li>Available in a wide range of styles and shades</li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="row quote-bar">
+        <div class="row not-quote-bar">
             <div class="small-12 medium-6 columns">
                 <div class="quote">
-                    <h4>"Superb product and customer support throughout 20 years."<br />- <i>Mike Amado, Tint Master</i></h4>
+                    <h4><br /></h4>
                 </div>
             </div>
             <div class="hide-for-small-only medium-6 columns">
                 <div class="quote">
-                    <h4>"Products and service second to none."<br />- <i>Leonard Aguanno, Cool World Solutions</i></h4>
+                    <h4><br /></h4>
                 </div>
             </div>
         </div>
@@ -181,7 +186,16 @@
         <script>
             $(document).foundation();
         </script>
-        
+        <script>
+            $(function(){
+                $('.fadein img:gt(0)').hide();
+                setInterval(function(){
+                  $('.fadein :first-child').fadeOut(1000)
+                     .next('img').fadeIn()
+                     .end().appendTo('.fadein');}, 
+                  5000);
+            });
+        </script>
         <?php //wp_footer(); ?>
 
         <script type="text/javascript"> 
