@@ -181,6 +181,12 @@
                 </div>
             </div>
         </div>
+
+        <div class="row" style="text-align:center;">
+            <div class="item" style="margin:0em;">
+            <p style="margin-bottom:0em; font-size: .75em;"><a href="http://madico.com/" style="color: #0a0a0a;">Madico.com</a> | <a href="http://www.madico.com/window-film/privacy-policy/" style="color: #0a0a0a;">Privacy Policy</a></p>
+            </div>
+        </div>
         
         <script src="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.js"></script>
         <script>
