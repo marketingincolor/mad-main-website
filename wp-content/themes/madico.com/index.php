@@ -1,4 +1,5 @@
 <?php 
+$GLOBALS['section'] = 'blog';
 get_header(); 
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 ?>
