@@ -1,6 +1,6 @@
 <?php 
 /**
- * Template Name: Protection Pro Landing Page
+ * Template Name: Protection Pro Landing SUCCESS Page
  *
  * Landing page template without a sidebar
  */
@@ -9,11 +9,11 @@
 <html lang="en">
     <head> 
         <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        <!--<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-KQ2BB3');</script>
+        })(window,document,'script','dataLayer','GTM-KQ2BB3');</script>-->
         <!-- End Google Tag Manager -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta charset="utf-8">
@@ -58,7 +58,6 @@
             .slide .title sup { font-size:45%; top:-1.25em; }
             .slide p { display:block; font-weight:300; color:#fff; }
             .cta-button { color:#6D1611; font-weight:700; }
-            .cta-button.black { color:#000; font-weight:700; }
             #main-content {  }
             #main-slider + #main-content {  margin-top:15px; }
             .item { display:inline-block; }
@@ -196,7 +195,7 @@
                 .fadein div { left:0; top:0; }
                 .dm16 .gform_body li { width:46%; }
                 .quote-bar { background:#eeeef0 url(/img/information-logo.png) no-repeat center center; }
-                .logo { margin: initial; display:initial; padding:1.5em 0em; }
+                .logo { margin: 0 auto; display:block; padding:1.5em 0em; }
             }
         </style>
     </head>
@@ -206,154 +205,17 @@
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
         <div class="row">
-            <div class="header small-12 large-8 large-offset-1 columns">
+            <div class="header small-12 large-10 large-offset-1 columns">
                 <img class="logo" src="/img/prop-land-grfx-logo.png">
-            </div>
-        </div>
-        
-        <div id="main-slider" class="row">
-            <div id="slideshow" class="fadein small-12">
-                <div id="img-1" class="slide">
-                    <img class="auto" src="/img/prop-land-grfx-slide1.jpg"/>
-                    <div class="slide-copy">
-                        <h2 class="title">By the time you finish reading this,</h2>
-                        <p>you could have custom-made a screen protector. And closed a sale.</p> 
-                        <p><a href="#page-form"><button class="cta-button">Get Started</button></a></p>
-                    </div>
-                </div>
-
-                <div id="img-2" class="slide">
-                    <img class="auto" src="/img/prop-land-grfx-slide2.jpg"/>
-                    <div class="slide-copy">
-                        <h2 class="title">Introducing ClearPlex<sup>&reg;</sup> ProtectionPro</h2>
-                        <p>Imagine offering custom cut screen protectors on demand, for any touchscreen device, in seconds flat!</p> 
-                        <p><a href="#page-form"><button class="cta-button black">Get Started</button></a></p>
-                    </div>
-                </div>
-
-                <div id="img-3" class="slide">
-                    <img class="auto" src="/img/prop-land-grfx-slide3.jpg"/>
-                    <div class="slide-copy">
-                        <h2 class="title">Imagine increasing sales.</h2><br />
-                        <p><a href="#page-form"><button class="cta-button">Get Started</button></a></p>
-                    </div>
-                </div>
-
-                <div id="img-4" class="slide">
-                    <img class="auto" src="/img/prop-land-grfx-slide3.jpg"/>
-                    <div class="slide-copy">
-                        <h2 class="title">Imagine freeing up retail space.</h2><br />
-                        <p><a href="#page-form"><button class="cta-button">Get Started</button></a></p>
-                    </div>
-                </div>
-
-                <div id="img-5" class="slide">
-                    <img class="auto" src="/img/prop-land-grfx-slide3.jpg"/>
-                    <div class="slide-copy">
-                        <h2 class="title">Imagine fewer inventory headaches.</h2><br />
-                        <p><a href="#page-form"><button class="cta-button">Get Started</button></a></p>
-                    </div>
-                </div>
-
-                <div id="img-6" class="slide">
-                    <img class="auto" src="/img/prop-land-grfx-slide6.jpg"/>
-                    <div class="slide-copy">
-                        <h2 class="title">ClearPlex<sup>&reg;</sup> ProtectionPro</h2>
-                        <p>Screen Protectors on Demand, on Any Device</p> 
-                        <p><a href="#page-form"><button class="cta-button black">Get Started</button></a></p>
-                    </div>
-                </div>
             </div>
         </div>
         
         <div id="main-content" class="row collapse">
             <div class="small-10 small-centered columns">
-                <div class="copy">
-                    <h3>Capture every sale and maximize profits with ClearPlex<sup>&reg;</sup> ProtectionPro.</h3>
-                    <p>Give every customer what they want, every time, with ProtectionPro custom-cut screen protectors.</p>
-                    <p>Utilizing the most advanced technology, ProtectionPro allows you to create screen and full-body protectors instantly, right on the spot.</p>
-                    <p>Access our cloud-based library of more than 3000 devices and choose one. Press the button and our industrial-grade cutter makes exactly what you want.</p>
-                    <p>Installation is just as efficient. With proper training, screen protectors can be installed on a device in as little as five minutes.</p>
-                    <p>It's that easy and fast - to make, install, and improve your bottom line.</p>
-                    <h4>Increase Sales with ProtectionPro:</h4>
-                    <ul>
-                        <li>Sell to every customer - those with older devices to those with the latest releases</li>
-                        <li>Free up your retail space</li>
-                        <li>Reduce inventory and costs</li>
-                        <li>Reduce time to market - sell the day a product is released</li>
-                        <li>Available for all devices including mobile phones, smart watches, tablets, laptops, cameras, e-readers, and gaming devices</li>
-                        <li>Relatively low investment to add to your portfolio</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="row video-bar collapse">
-            <div class="small-12 columns">
-                <div class="video-headline"><img src="/img/prop-land-grfx-vid-hdr.png" width="400px" /></div>
-                <div class="inner-video"><span class="outline"><iframe src="https://www.youtube.com/embed/m1okRTjMxp8?rel=0" frameborder="0" allowfullscreen></iframe></span></div>
-            </div>
-        </div>
-
-        <div class="row quote-bar">
-            <div class="small-12 large-6 columns">
-                <div class="quote">
-                    <h4>22.22% smoother than glass for less finger friction</h4>
-                </div>
-            </div>
-            <div class="hide-for-small show-for-large large-6 columns">
-                <div class="quote">
-                    <h4>Increases your device breaking point by 22%</h4>
-                </div>
-            </div>
-        </div>
-
-        <div class="row collapse">
-            <div class="centered small-12 large-6 columns"><img src="/img/prop-land-grfx-block-shield.jpg" /></div>
-            <div class="small-12 large-6 columns">
-                <div class="item">
-                    <h3>The Most Advanced Touchscreen Shield on the Market</h3>
-                    <ul>
-                        <li>Offers the highest degree of clarity, texture, and strength</li>
-                        <li>Guaranteed to remain optically clear</li>
-                        <li>Far out-performed ZAGG and other competitors in light distortion testing</li>
-                        <li>Slickest and smoothest shield on the market</li>
-                        <li>Invisible to the touch</li>
-                        <li>Acts as scratch-protecting barrier for devices</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="row collapse">
-            <div class="centered hide-for-large small-12 columns"><img src="/img/prop-land-grfx-block-madico.jpg" /></div>
-            <div class="small-12 large-6 columns">
-                <div class="item">
-                    <h3>Brought to You by Madico, a World Leader in Cutting-Edge Protection Technology</h3>
-                    <p>As an award-winning organization, we provide high performance, complex, multilayer films engineered to exceed customer expectations.</p>
-                    <p>As a Madico dealer, expect exceptional support and the highest level of customer service from us. We value all of our dealers and work dilligently to ensure your experience with us is rewarding. We will earn your business every day.</p>
-                </div>
-            </div>
-            <div class="centered show-for-large large-6 columns"><img src="/img/prop-land-grfx-block-madico.jpg" /></div>
-        </div>
-        
-        <div class="row quote-bar">
-            <div class="small-12 large-6 columns">
-                <div class="quote">
-                    <h4>270 times more resistant to repetitive rubbing and wear than ZAGG</h4>
-                </div>
-            </div>
-            <div class="hide-for-small show-for-large large-6 columns">
-                <div class="quote">
-                    <h4>39% increase in break resistance when compared with bare glass screen</h4>
-                </div>
-            </div>
-        </div>
-
-        <div class="row form-bar collapse">
-            <div class="small-12 small-centered medium-6 columns">
-                <div id="page-form" class="contact-form overlay">
-                <?php gravity_form( 31, false ); //23 for STAGING server, 31 for LIVE server ?>
+                <div class="copy"><br /><br /><br /><br />
+                    <h3>Success!</h3>
+                    <p>We've received your information and will be in touch soon. We look forward to discussing the possibilities of ClearPlex<sup>&reg;</sup> ProtectionPro by Madico.</p>
+                    <br /><br /><br /><br /><br /><br /><br /><br />
                 </div>
             </div>
         </div>
@@ -371,107 +233,10 @@
         <script>
             $(document).foundation();
         </script>
-
-        <!-- BEST METHOD SO FAR -->
-        <script>
-            $(function(){
-
-                sizing();
-                $(window).resize(function(){
-                    sizing();
-                })
-
-                var container = $("#slideshow");
-                var speed = 8000;
-                //var run = setInterval(fader, speed);
-                $("#slideshow > div:gt(0)").hide();
-                var run = setInterval(fader, speed);
-
-                container.mouseenter(function () {
-                    clearInterval(run);
-                }).mouseleave(function () {
-                    run = setInterval(fader, speed);
-                });
-
-                function fader() {
-                    $('#slideshow > div:first')
-                    .fadeOut(1000)
-                    .next()
-                    .fadeIn(1000)
-                    .end()
-                    .appendTo('#slideshow');
-                }
-
-                function sizing() {
-                    ch = $('.slide').height();
-                    $('.fadein').css({
-                        height : ch + 'px'
-                    })
-                }
-            });
-        </script>
-
-        <!-- Works well but complex, may be best way to add navigation buttons -->
-        <!--<script>
-            (function() {
-                function Slideshow( element ) {
-                    this.el = document.querySelector( element );
-                    this.init();
-                }
-                Slideshow.prototype = {
-                    init: function() {
-                        this.wrapper = this.el.querySelector( ".slideshow" );
-                        this.slides = this.el.querySelectorAll( ".slide" );
-                        this.previous = this.el.querySelector( ".slider-previous" );
-                        this.next = this.el.querySelector( ".slider-next" );
-                        this.index = 0;
-                        this.total = this.slides.length;
-                        this.timer = null;
-                        this.action();
-                        this.stopStart();   
-                    },
-                    _slideTo: function( slide ) {
-                        var currentSlide = this.slides[slide];
-                        currentSlide.style.opacity = 1;
-                        for( var i = 0; i < this.slides.length; i++ ) {
-                            var slide = this.slides[i];
-                            if( slide !== currentSlide ) {
-                                slide.style.opacity = 0;
-                            }
-                        }
-                    },
-                    action: function() {
-                        var self = this;
-                        self.timer = setInterval(function() {
-                            self.index++;
-                            if( self.index == self.slides.length ) {
-                                self.index = 0;
-                            }
-                            self._slideTo( self.index );
-                            
-                        }, 5000);
-                    },
-                    stopStart: function() {
-                        var self = this;
-                        self.el.addEventListener( "mouseover", function() {
-                            clearInterval( self.timer );
-                            self.timer = null;
-                        }, false);
-                        self.el.addEventListener( "mouseout", function() {
-                            self.action();
-                        }, false);
-                    }
-                };
-                document.addEventListener( "DOMContentLoaded", function() {
-                    var slider = new Slideshow( "#main-slider" );
-                });
-            })();
-        </script>-->
-
-
+        
         <?php //wp_footer(); ?>
 
-        <<script type="text/javascript"> 
+        <script type="text/javascript"> 
         adroll_adv_id = "L2B2VNCRHZDNPOKZWSZFWQ"; 
         adroll_pix_id = "JJLCAZAM25HUPALQ5DOR3G"; 
         (function () { 
