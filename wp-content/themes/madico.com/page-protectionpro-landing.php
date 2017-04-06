@@ -240,15 +240,15 @@
                 </div>
 
                 <div id="img-4" class="slide">
-                    <img class="auto" src="/img/prop-land-grfx-slide3.jpg"/>
+                    <img class="auto" src="/img/prop-land-grfx-slide4.jpg"/>
                     <div class="slide-copy">
                         <h2 class="title">Imagine freeing up retail space.</h2><br />
-                        <p><a href="#page-form"><button class="cta-button">Get Started</button></a></p>
+                        <p><a href="#page-form"><button class="cta-button black">Get Started</button></a></p>
                     </div>
                 </div>
 
                 <div id="img-5" class="slide">
-                    <img class="auto" src="/img/prop-land-grfx-slide3.jpg"/>
+                    <img class="auto" src="/img/prop-land-grfx-slide5.jpg"/>
                     <div class="slide-copy">
                         <h2 class="title">Imagine fewer inventory headaches.</h2><br />
                         <p><a href="#page-form"><button class="cta-button">Get Started</button></a></p>
