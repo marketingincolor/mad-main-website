@@ -15,7 +15,7 @@
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-KQ2BB3');</script>
         <!-- End Google Tag Manager -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
         <meta charset="utf-8">
         <title>Introducing ClearPlex&reg; by Madico</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,7 +47,7 @@
             .fadein { position:relative; /*height:396px;*/ overflow:hidden; }
             .fadein div { max-width:none; display:block; position:absolute; }
             .slide { font-family:'Oswald'; }
-
+            sup { font-size: 50%; top: -0.75em; vertical-align: middle; }
             /* CSS BELOW REQUIRED FOR COMPLEX SLIDER ONLY
             .slide { opacity: 0; transition: opacity 2s linear; }
             .slider-wrapper > .slide:first-child { opacity: 1; }*/
@@ -128,7 +128,7 @@
             
             .foot { background-color:#201c1d; }
             /* Small screens */
-            @media only screen {
+            @media screen {
                 .slide h2 { font-size:/* 18px */30px; line-height:1.25em; }
                 .slide .slide-copy { margin:0em 0em 0em 2em; width:calc(100vw - 4em); top:10%; }
                 .slide p { font-size:/* 16px */20px; line-height:1.25em; }
@@ -152,8 +152,9 @@
                 .quote { margin: 3em 3em; }
                 .quote-bar { background:#eeeef0 url(none) no-repeat center center ; }
                 .logo { margin: 0 auto; display:block; height:auto; width:350px; padding:1em 0em; }
-            /* Medium screens */
-            @media only screen and (min-width: 40.063em) {
+            }
+            /* Medium screens 40.063em 641px*/
+            @media screen and (min-width:641px) {
                 .slide h2 { font-size:/* 26px */40px; }
                 .slide .slide-copy { margin:0em 0em 0em 4.5em; width:calc(60vw - 2em); top:20%; }
                 .slide p { font-size:/* 18px */24px; }
@@ -177,8 +178,8 @@
                 .quote-bar { background:#eeeef0 url(none) no-repeat center center ; }
                 .logo { margin:0 auto; display:block; width:auto; padding:1em 0em; }
             }
-            /* Large screens */
-            @media only screen and (min-width: 64.063em) {
+            /* Large screens 64.063em 1025px*/
+            @media screen and (min-width:1025px) {
                 .slide h2 { font-size:42px; }
                 .slide .slide-copy { margin:0em 0em 0em 8em; width:calc(50% - 4em); top:25%; }
                 .slide p { font-size:24px; }
@@ -471,7 +472,7 @@
 
         <?php //wp_footer(); ?>
 
-        <<script type="text/javascript"> 
+        <script type="text/javascript"> 
         adroll_adv_id = "L2B2VNCRHZDNPOKZWSZFWQ"; 
         adroll_pix_id = "JJLCAZAM25HUPALQ5DOR3G"; 
         (function () { 

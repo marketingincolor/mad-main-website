@@ -15,7 +15,7 @@
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-KQ2BB3');</script>-->
         <!-- End Google Tag Manager -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
         <meta charset="utf-8">
         <title>Introducing ClearPlex&reg; by Madico</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,7 +47,7 @@
             .fadein { position:relative; /*height:396px;*/ overflow:hidden; }
             .fadein div { max-width:none; display:block; position:absolute; }
             .slide { font-family:'Oswald'; }
-
+            sup { font-size: 50%; top: -0.75em; vertical-align: middle; }
             /* CSS BELOW REQUIRED FOR COMPLEX SLIDER ONLY
             .slide { opacity: 0; transition: opacity 2s linear; }
             .slider-wrapper > .slide:first-child { opacity: 1; }*/
@@ -151,6 +151,7 @@
                 .quote { margin: 3em 3em; }
                 .quote-bar { background:#eeeef0 url(none) no-repeat center center ; }
                 .logo { margin: 0 auto; display:block; height:auto; width:350px; padding:1em 0em; }
+            }
             /* Medium screens */
             @media only screen and (min-width: 40.063em) {
                 .slide h2 { font-size:/* 26px */40px; }
