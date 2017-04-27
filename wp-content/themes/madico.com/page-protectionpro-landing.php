@@ -46,8 +46,9 @@
             /* #slideshow > div img { min-height:300px; min-width:722px !important; } */
             .fadein { position:relative; /*height:396px;*/ overflow:hidden; }
             .fadein div { max-width:none; display:block; position:absolute; }
-            .slide { font-family:'Oswald'; }
             sup { font-size: 50%; top: -0.75em; vertical-align: middle; }
+            .red { color:#AE241A; }
+            .slide { font-family:'Oswald'; }
             /* CSS BELOW REQUIRED FOR COMPLEX SLIDER ONLY
             .slide { opacity: 0; transition: opacity 2s linear; }
             .slider-wrapper > .slide:first-child { opacity: 1; }*/
@@ -59,13 +60,13 @@
             .slide p { display:block; font-weight:300; color:#fff; }
             .cta-button { color:#6D1611; font-weight:700; }
             .cta-button.black { color:#000; font-weight:700; }
-            #main-content { margin-bottom:3em; }
+            #main-content { margin:2em 0; }
             #main-slider + #main-content {  margin-top:15px; }
             .item { display:inline-block; }
             .item h2, .item h3 { line-height:1; }
             .item p { line-height:1.25; }
             .copy ul { margin-bottom:0em !important; }
-            .video-bar { margin-bottom:2.5em; }
+            .video-bar {  }
             /* .video-bar .video-headline { text-align:center; margin-bottom:5px;  } */
             /*.video-bar .inner-video { 
                 text-align:center;
@@ -148,8 +149,8 @@
                 .item .mark { vertical-align:super; font-size:8px;}
                 .outline iframe { /* width:320px; height:175px; */height:auto; width:100%; }
                 .copy p, .copy li { font-size:18px; }
-                .copy h3 { font-size:26px; margin: 0.5em 0; }
-                .copy h4 { font-size:18px; margin: 0.5em 0; }
+                .copy h3 { font-size:28px; margin: 0 0 0.5em 0; }
+                .copy h4 { font-size:22px; margin: 0.5em 0; }
                 /*.fadein { height:258px; }*/
                 .fadein div { left:0px; top: 0px; /*height: 192px;*/ }
                 .dm16_wrapper { max-width:100%; }
@@ -166,15 +167,15 @@
                 .slide p { font-size:/* 18px */24px; }
                 #slideshow > div img { min-height:400px; min-width:962px !important; }
                 .cta-button, .gform_button { padding:8px 15px; font-size:26px; }
-                .item { margin:0.5em 2em;}
+                .item { margin:0.5em 4em;}
                 .item h4 { font-size:25px; margin: 0.5em 0; }
                 .item h3 { font-family:'Oswald'; font-weight:normal; font-size:28px; margin: 0.5em 0; }
                 .item h2, .item p, .item li { font-size:18px; line-height:1.25em; }
                 .item .mark { vertical-align:super; font-size:8px;}
                 .outline iframe { width:440px; height:244px; }
                 .copy p, .copy li { font-size:18px; }
-                .copy h3 { font-size:38px; margin: 0.5em 0; }
-                .copy h4 { font-size:21px; margin: 0.5em 0; }
+                .copy h3 { font-size:38px; margin: 0 0 0.5em 0; }
+                .copy h4 { font-size:24px; margin: 0.5em 0; }
                 /*.fadein { height:396px; }*/
                 .fadein div { left:0; top:0; /*height:390px;*/}
                 .dm16 .gform_body { margin:0 1em;  }
@@ -196,7 +197,7 @@
                 .item .mark { vertical-align:super; font-size:9px;}
                 .outline iframe { width:560px; height:310px; }
                 .copy p, .copy li { font-size:18px; }
-                .copy h3 { font-size:40px; margin: 0.75em 0; }
+                .copy h3 { font-size:40px; margin: 0 0 0.75em 0; }
                 .copy h4 { font-size:24px; margin: 0.75em 0; }
                 /*.fadein { height:666px; }*/
                 .fadein div { left:0; top:0; }
@@ -212,12 +213,10 @@
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
         <div class="row">
-            <div class="header small-12 large-8 large-offset-1 columns">
+            <div class="header small-12 centered columns">
                 <img class="logo" src="/img/prop-land-grfx-logo.png">
             </div>
         </div>
-        
-
         
         <div class="row video-bar collapse">
             <div class="small-12 columns">
@@ -234,7 +233,7 @@
                     <p>Access our cloud-based library of more than 4000 design templates.</p>
                     <p>Installation is just as efficient. With proper training, screen protectors can be installed on a device in as little as five minutes.</p>
                     <p>It's that easy and fast — to make, to install, and to improve your bottom line.</p>
-                    <h4>Increase Sales with ProtectionPro:</h4>
+                    <h4 class="red">Increase Sales with ProtectionPro:</h4>
                     <ul>
                         <li>Sell to every customer - from those with older devices to those with the latest releases</li>
                         <li>Free up your retail shelf space</li>
@@ -392,7 +391,7 @@
         </script>
 
         <!-- BEST METHOD SO FAR -->
-        <script>
+        <script type="text/javascript">
             $(function(){
 
                 sizing();
@@ -420,7 +419,6 @@
                     .end()
                     .appendTo('#slideshow');
                 }
-
                 function sizing() {
                     ch = $('.slide').height();
                     $('.fadein').css({
