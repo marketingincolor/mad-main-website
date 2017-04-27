@@ -59,15 +59,15 @@
             .slide p { display:block; font-weight:300; color:#fff; }
             .cta-button { color:#6D1611; font-weight:700; }
             .cta-button.black { color:#000; font-weight:700; }
-            #main-content {  }
+            #main-content { margin-bottom:3em; }
             #main-slider + #main-content {  margin-top:15px; }
             .item { display:inline-block; }
             .item h2, .item h3 { line-height:1; }
             .item p { line-height:1.25; }
             .copy ul { margin-bottom:0em !important; }
-            .video-bar { margin-bottom:2.5em; margin-top:2.5em; }
+            .video-bar { margin-bottom:2.5em; }
             /* .video-bar .video-headline { text-align:center; margin-bottom:5px;  } */
-            .video-bar .inner-video { 
+            /*.video-bar .inner-video { 
                 text-align:center;
                 width:100%;
                 height:auto;
@@ -77,8 +77,15 @@
                 background-image: -o-linear-gradient(top, transparent 10%, #E1B445 10%, #E1B445 90%, transparent 10%);
                 background-image: -ms-linear-gradient(top, transparent 10%, #E1B445 10%, #E1B445 90%, transparent 10%);
                 background-image: linear-gradient(to bottom, transparent 10%, #E1B445 10%, #E1B445 90%, transparent 10%);
+            }*/
+            .video-bar .inner-video .outline { display:inline-flex; }
+            .video-bar .inner-video {
+                background:#999999 url(/img/prop-land-grfx-video-bgnd.jpg) no-repeat center center / cover; 
+                text-align:center;
+                width:100%;
+                height:auto;
+                display:block; 
             }
-            .video-bar .inner-video .outline { border:4px solid #E1B445; display:inline-flex;}
             .overlay { position:relative; display:inline-block; }
             .centered { text-align:center; }
             /* .quote-bar { background:#eeeef0 url(/img/information-logo.png) no-repeat center center ; min-height:180px; } */
@@ -148,7 +155,6 @@
                 .dm16_wrapper { max-width:100%; }
                 .dm16 .gform_body { margin:0 1em; }
                 .dm16 .gform_body li { width:95%; }
-                .video-bar .video-headline { text-align:center; margin:15px;  }
                 .quote { margin: 3em 3em; }
                 .quote-bar { background:#eeeef0 url(none) no-repeat center center ; }
                 .logo { margin: 0 auto; display:block; height:auto; width:350px; padding:1em 0em; }
@@ -173,7 +179,6 @@
                 .fadein div { left:0; top:0; /*height:390px;*/}
                 .dm16 .gform_body { margin:0 1em;  }
                 .dm16 .gform_body li { width: 95%; }
-                .video-bar .video-headline { text-align:center; margin:0px 0px 5px 0px;  }
                 .quote { margin: 3em 6em; }
                 .quote-bar { background:#eeeef0 url(none) no-repeat center center ; }
                 .logo { margin:0 auto; display:block; width:auto; padding:1em 0em; }
@@ -212,6 +217,35 @@
             </div>
         </div>
         
+
+        
+        <div class="row video-bar collapse">
+            <div class="small-12 columns">
+                <div class="inner-video"><span class="outline"><iframe src="https://www.youtube.com/embed/m1okRTjMxp8?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe></span></div>
+            </div>
+        </div>
+
+        <div id="main-content" class="row collapse">
+            <div class="small-10 small-centered columns">
+                <div class="copy">
+                    <h3>Capture every sale and maximize profits with ClearPlex<sup>&reg;</sup> ProtectionPro.</h3>
+                    <p>Give every customer what they need, every time, with ProtectionPro on-demand screen protectors.</p>
+                    <p>Utilizing the most advanced technology, ProtectionPro allows you to produce screen and full-body protectors instantly for any device.</p>
+                    <p>Access our cloud-based library of more than 4000 design templates.</p>
+                    <p>Installation is just as efficient. With proper training, screen protectors can be installed on a device in as little as five minutes.</p>
+                    <p>It's that easy and fast — to make, to install, and to improve your bottom line.</p>
+                    <h4>Increase Sales with ProtectionPro:</h4>
+                    <ul>
+                        <li>Sell to every customer - from those with older devices to those with the latest releases</li>
+                        <li>Free up your retail shelf space</li>
+                        <li>Reduce inventory and costs</li>
+                        <li>Reduce time to market - sell the day a product is released</li>
+                        <li>Available for all devices including mobile phones, smart watches, tablets, laptops, cameras, e-readers, and gaming devices</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
         <div id="main-slider" class="row">
             <div id="slideshow" class="fadein small-12">
                 <div id="img-1" class="slide">
@@ -266,47 +300,31 @@
                 </div>
             </div>
         </div>
-        
-        <div id="main-content" class="row collapse">
-            <div class="small-10 small-centered columns">
-                <div class="copy">
-                    <h3>Capture every sale and maximize profits with ClearPlex<sup>&reg;</sup> ProtectionPro.</h3>
-                    <p>Give every customer what they want, every time, with ProtectionPro custom-cut screen protectors.</p>
-                    <p>Utilizing the most advanced technology, ProtectionPro allows you to create screen and full-body protectors instantly, right on the spot.</p>
-                    <p>Access our cloud-based library of more than 3000 devices and choose one. Press the button and our industrial-grade cutter makes exactly what you want.</p>
-                    <p>Installation is just as efficient. With proper training, screen protectors can be installed on a device in as little as five minutes.</p>
-                    <p>It's that easy and fast - to make, install, and improve your bottom line.</p>
-                    <h4>Increase Sales with ProtectionPro:</h4>
-                    <ul>
-                        <li>Sell to every customer - those with older devices to those with the latest releases</li>
-                        <li>Free up your retail space</li>
-                        <li>Reduce inventory and costs</li>
-                        <li>Reduce time to market - sell the day a product is released</li>
-                        <li>Available for all devices including mobile phones, smart watches, tablets, laptops, cameras, e-readers, and gaming devices</li>
-                        <li>Relatively low investment to add to your portfolio</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="row video-bar collapse">
-            <div class="small-12 columns">
-                <div class="video-headline"><img src="/img/prop-land-grfx-vid-hdr.png" width="400px" /></div>
-                <div class="inner-video"><span class="outline"><iframe src="https://www.youtube.com/embed/m1okRTjMxp8?rel=0" frameborder="0" allowfullscreen></iframe></span></div>
-            </div>
-        </div>
 
         <div class="row quote-bar">
             <div class="small-12 large-6 columns">
                 <div class="quote">
-                    <h4>22.22% smoother than glass for less finger friction</h4>
+                    <h4>30% Increase in Sales</h4>
                 </div>
             </div>
             <div class="hide-for-small show-for-large large-6 columns">
                 <div class="quote">
-                    <h4>Increases your device breaking point by 22%</h4>
+                    <h4>200% Attachment Rate</h4>
                 </div>
             </div>
+        </div>
+
+        <div class="row collapse">
+            <div class="centered hide-for-large small-12 columns"><img src="/img/prop-land-grfx-hdware.jpg" /></div>
+            <div class="small-12 large-6 columns">
+                <div class="item">
+                    <h3>A Hardware Solution for Every Need</h3>
+                    <p>1. Elite for high volume use of greater than 40 units per week, covering the full range of screen sizes from laptops to wearables.s.</p>
+                    <p>2. Express for moderate use of 20 to 40 units per week, where larger laptop protection is not required.ay.</p>
+                    <p>3. Lite for low use of less than 20 units per week, only smaller devices – phones, cameras and wearables.</p>
+                </div>
+            </div>
+            <div class="centered show-for-large large-6 columns"><img src="/img/prop-land-grfx-hdware.jpg" /></div>
         </div>
 
         <div class="row collapse">
@@ -341,12 +359,12 @@
         <div class="row quote-bar">
             <div class="small-12 large-6 columns">
                 <div class="quote">
-                    <h4>270 times more resistant to repetitive rubbing and wear than ZAGG</h4>
+                    <h4>Under 5 minute Process</h4>
                 </div>
             </div>
             <div class="hide-for-small show-for-large large-6 columns">
                 <div class="quote">
-                    <h4>39% increase in break resistance when compared with bare glass screen</h4>
+                    <h4>Real-Time Reporting</h4>
                 </div>
             </div>
         </div>
