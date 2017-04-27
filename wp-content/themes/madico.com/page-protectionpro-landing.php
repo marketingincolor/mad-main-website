@@ -318,8 +318,8 @@
             <div class="small-12 large-6 columns">
                 <div class="item">
                     <h3>A Hardware Solution for Every Need</h3>
-                    <p>1. Elite for high volume use of greater than 40 units per week, covering the full range of screen sizes from laptops to wearables.s.</p>
-                    <p>2. Express for moderate use of 20 to 40 units per week, where larger laptop protection is not required.ay.</p>
+                    <p>1. Elite for high volume use of greater than 40 units per week, covering the full range of screen sizes from laptops to wearables.</p>
+                    <p>2. Express for moderate use of 20 to 40 units per week, where larger laptop protection is not required.</p>
                     <p>3. Lite for low use of less than 20 units per week, only smaller devices – phones, cameras and wearables.</p>
                 </div>
             </div>
