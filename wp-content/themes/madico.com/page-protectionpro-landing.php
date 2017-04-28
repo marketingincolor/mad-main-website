@@ -135,6 +135,7 @@
             }
             
             .foot { background-color:#201c1d; }
+            .vcenter { display: inline-block; float: none; vertical-align: middle; }
             /* Small screens */
             @media screen {
                 .slide h2 { font-size:/* 18px */30px; line-height:1.25em; }
@@ -170,7 +171,7 @@
                 .item { margin:0.5em 4em;}
                 .item h4 { font-size:25px; margin: 0.5em 0; }
                 .item h3 { font-family:'Oswald'; font-weight:normal; font-size:28px; margin: 0.5em 0; }
-                .item h2, .item p, .item li { font-size:18px; line-height:1.25em; }
+                .item h2, .item p, .item li { font-size:18px; }
                 .item .mark { vertical-align:super; font-size:8px;}
                 .outline iframe { width:440px; height:244px; }
                 .copy p, .copy li { font-size:18px; }
@@ -232,13 +233,13 @@
                     <p>Utilizing the most advanced technology, ProtectionPro allows you to produce screen and full-body protectors instantly for any device.</p>
                     <p>Access our cloud-based library of more than 4000 design templates.</p>
                     <p>Installation is just as efficient. With proper training, screen protectors can be installed on a device in as little as five minutes.</p>
-                    <p>It's that easy and fast — to make, to install, and to improve your bottom line.</p>
+                    <p>It's that easy and fast&mdash;to make, to install, and to improve your bottom line.</p>
                     <h4 class="red">Increase Sales with ProtectionPro:</h4>
                     <ul>
-                        <li>Sell to every customer - from those with older devices to those with the latest releases</li>
+                        <li>Sell to every customer&mdash;from those with older devices to those with the latest releases</li>
                         <li>Free up your retail shelf space</li>
                         <li>Reduce inventory and costs</li>
-                        <li>Reduce time to market - sell the day a product is released</li>
+                        <li>Reduce time to market&mdash;sell the day a product is released</li>
                         <li>Available for all devices including mobile phones, smart watches, tablets, laptops, cameras, e-readers, and gaming devices</li>
                     </ul>
                 </div>
@@ -315,12 +316,14 @@
 
         <div class="row collapse">
             <div class="centered hide-for-large small-12 columns"><img src="/img/prop-land-grfx-hdware.jpg" /></div>
-            <div class="small-12 large-6 columns">
+            <div class="small-12 large-6 vcenter columns">
                 <div class="item">
                     <h3>A Hardware Solution for Every Need</h3>
-                    <p>1. Elite for high volume use of greater than 40 units per week, covering the full range of screen sizes from laptops to wearables.</p>
-                    <p>2. Express for moderate use of 20 to 40 units per week, where larger laptop protection is not required.</p>
-                    <p>3. Lite for low use of less than 20 units per week, only smaller devices – phones, cameras and wearables.</p>
+                    <ol>
+                        <li>Elite for high volume use of greater than 40 units per week, covering the full range of screen sizes from laptops to wearables.</li>
+                        <li>Express for moderate use of 20 to 40 units per week, where larger laptop protection is not required.</li>
+                        <li>Lite for low use of less than 20 units per week, only smaller devices&mdash;phones, cameras and wearables.</li>
+                    </ol>
                 </div>
             </div>
             <div class="centered show-for-large large-6 columns"><img src="/img/prop-land-grfx-hdware.jpg" /></div>
@@ -334,10 +337,9 @@
                     <ul>
                         <li>Offers the highest degree of clarity, texture, and strength</li>
                         <li>Guaranteed to remain optically clear</li>
-                        <li>Far out-performed ZAGG and other competitors in light distortion testing</li>
+                        <li>Far out-performed other competitors in light distortion testing</li>
                         <li>Slickest and smoothest shield on the market</li>
                         <li>Invisible to the touch</li>
-                        <li>Acts as scratch-protecting barrier for devices</li>
                     </ul>
                 </div>
             </div>
@@ -349,7 +351,7 @@
                 <div class="item">
                     <h3>Brought to You by Madico, a World Leader in Cutting-Edge Protection Technology</h3>
                     <p>As an award-winning organization, we provide high performance, complex, multilayer films engineered to exceed customer expectations.</p>
-                    <p>As a Madico dealer, expect exceptional support and the highest level of customer service from us. We value all of our dealers and work dilligently to ensure your experience with us is rewarding. We will earn your business every day.</p>
+                    <p>As a Madico customer, you can expect exceptional support and the highest level of customer service. We value all of our customers and work diligently to ensure your experience with us is rewarding. We will earn your business every day.</p>
                 </div>
             </div>
             <div class="centered show-for-large large-6 columns"><img src="/img/prop-land-grfx-block-madico.jpg" /></div>
