@@ -64,7 +64,7 @@
             #main-slider + #main-content {  margin-top:15px; }
             .item { display:inline-block; }
             .item h2, .item h3 { line-height:1; }
-            .item p { line-height:1.25; }
+            .item p { line-height:1.6; }
             .copy ul { margin-bottom:0em !important; }
             .video-bar {  }
             /* .video-bar .video-headline { text-align:center; margin-bottom:5px;  } */
@@ -232,7 +232,7 @@
                     <p>Give every customer what they need, every time, with ProtectionPro on-demand screen protectors.</p>
                     <p>Utilizing the most advanced technology, ProtectionPro allows you to produce screen and full-body protectors instantly for any device.</p>
                     <p>Access our cloud-based library of more than 4000 design templates.</p>
-                    <p>Installation is just as efficient. With proper training, screen protectors can be installed on a device in as little as five minutes.</p>
+                    <p>Installation is just as efficient. Screen protectors and body wraps can be installed in as little as five minutes.</p>
                     <p>It's that easy and fast&mdash;to make, to install, and to improve your bottom line.</p>
                     <h4 class="red">Increase Sales with ProtectionPro:</h4>
                     <ul>
@@ -339,7 +339,8 @@
                         <li>Guaranteed to remain optically clear</li>
                         <li>Far out-performed other competitors in light distortion testing</li>
                         <li>Slickest and smoothest shield on the market</li>
-                        <li>Invisible to the touch</li>
+                        <li>Smooth to the touch</li>
+                        <li>Flexes around curved edges</li>
                     </ul>
                 </div>
             </div>
@@ -360,7 +361,7 @@
         <div class="row quote-bar">
             <div class="small-12 large-6 columns">
                 <div class="quote">
-                    <h4>Under 5 minute Process</h4>
+                    <h4>Process takes less than five minutes</h4>
                 </div>
             </div>
             <div class="hide-for-small show-for-large large-6 columns">
