@@ -37,7 +37,11 @@
 		<?php endif; ?>
 
 		<div class="utility">
+			<?php if ( is_front_page() || is_home()  ): ?>
+			<a href="http://dealerdirectory.madico.com/" class="sicon custom-button external-ga-link" style="color:#fff !important;">Find a Madico Window Films Dealer</a>
+			<?php endif; ?>
 			<?php global $section; if ( $section == 'window-film' ): ?>
+			<a href="http://dealerdirectory.madico.com/" class="sicon custom-button external-ga-link" style="color:#fff !important;">Find a Madico Window Films Dealer</a>
 			<a href="https://hub.hubcentrix.com/Madico" class="sicon brand-hub">Brand Hub</a>
 			<!--<a href="http://madico.know-where.com/madico/" class="sicon dealer-locator external-ga-link">Dealer Locator</a>-->
 			<a href="https://plus.google.com/109912744876993567602" rel="publisher" class="sicon google"><i class="ion-social-googleplus"></i></a>

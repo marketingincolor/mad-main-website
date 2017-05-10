@@ -1,20 +1,20 @@
 <?php 
 /**
- * Template Name: DM 16 Landing Page
+ * Template Name: DM ASID Landing Page
  *
- * Landing page template without a sidebar
+ * Landing page template without a sidebar (sunscape)
  */
 ?>
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head> 
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-KQ2BB3');</script>
-        <!-- End Google Tag Manager --> 
+        <!-- End Google Tag Manager -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta charset="utf-8">
         <title>Madico Window Films - Dealers</title>
@@ -28,7 +28,6 @@
         <script type='text/javascript' src='http://www.madico.com/wp-content/plugins/gravityforms/js/jquery.json.js?ver=1.9.16'></script>
         <script type='text/javascript' src='http://www.madico.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=1.9.16'></script>
         <script type='text/javascript' src='http://www.madico.com/wp-content/plugins/gravityforms/js/conditional_logic.min.js?ver=1.9.16'></script>
-
         <style>
             /* Foundation Overrides */
             .row {
@@ -46,7 +45,7 @@
             
             .slides img { width:100%; }
             .item { display:inline-block; }
-            .item h3 { line-height:1; color:#00467f; }
+            .item h2, .item h3 { line-height:1; color:#00467f; }
             .item p { line-height:1.25; }
             .item li { margin:2em; }
             .overlay { position:relative; display:inline-block; }
@@ -79,155 +78,110 @@
             
             /* Small screens */
             @media only screen {
-                .item { margin:2em 2em 1em 2em;}
-                .item h3, item h4 { font-size:21px; margin-bottom: 0.5em; }
-                .item p, .item li { font-size:16px; }
+                .item { margin:1em 2em 0em 2em;}
+                .item h3, item h4 { font-size:21px; margin: 0.5em 0; }
+                .item h2, .item p, .item li { font-size:16px; }
+                .item .mark { vertical-align:super; font-size:8px;}
                 .fadein { height:258px; }
                 .fadein img { left:-300px; top:-30px; }
                 .dm16_wrapper { max-width:100%; }
-                .dm16 .gform_heading { top:0px; }
                 .dm16 .gform_body { margin:0 1em; margin-top:0px; }
+                .dm16 .gform_heading { top:0px; }
                 .dm16 .gform_body li { width:95%; }
-            }
+                .quote { margin: 3em 3em; }
+                .logo { margin: 0 auto; display:block; height: auto; width: 175px; padding: .5em; }
+                .fadein img { left: -100px; top: 7px; height: 192px; }
             /* Medium screens */
             @media only screen and (min-width: 40.063em) {
-                .item { margin:1em 2em;}
-                .item h3, item h4 { font-size:21px; margin-bottom: 0.5em; }
-                .item p, .item li { font-size:16px; }
+                .item { margin:1em 2em 0em 2em;}
+                .item h3, item h4 { font-size:21px; margin: 0.5em 0; }
+                .item h2, .item p, .item li { font-size:16px; }
+                .item .mark { vertical-align:super; font-size:8px;}
                 .fadein { height:396px; }
-                .fadein img { left:0; top:0; }
+                .fadein img { left:-218px; top:0; height:390px;}
                 .dm16_wrapper { max-width:80%; }
-                .dm16 .gform_heading { top:-140px; }
                 .dm16 .gform_body { margin:0 1em; margin-top:-100px; }
-                .dm16 .gform_body li { width:46%; }
+                .dm16 .gform_heading { top:-140px; }
+                .dm16 .gform_body li { width: 95%; }
+                .quote { margin: 3em 6em; }
             }
             /* Large screens */
             @media only screen and (min-width: 64.063em) {
-                .item { margin:2em 4em; }
-                .item h3, item h4 { font-size:30px; margin-bottom: 0.75em; }
-                .item p, .item li { font-size:21px; }
+                .item { margin:2em 4em 0em 4em;}
+                .item h3, item h4 { font-size:30px; margin: 0.75em 0; }
+                .item h2, .item p, .item li { font-size:21px; }
+                .item .mark { vertical-align:super; font-size:9px;}
                 .fadein { height:396px; }
                 .fadein img { left:0; top:0; }
                 .dm16_wrapper { max-width:80%; }
+                .dm16 .gform_body li { width:46%; }
+                .logo { margin: initial; display:initial; }
+                .fadein img { left:0px top: 0px;  height: auto;}
             }
         </style>
-    <?php //wp_head(); ?>
     </head>
     <body>
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ2BB3"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
- 
         <div class="row">
-            <div class="header small-12 medium-8 medium-offset-1 columns">
-             <img src="/img/dm16-land-logo.png">
+            <div class="header small-12 large-8 large-offset-1 columns">
+             <img class="logo" src="/img/asid-land-logo.png">
             </div>
         </div>
         
         <div class="row">
             <div class="fadein small-12">
-                <img src="/img/dm16-land-slide-arch.jpg"/>
-                <img src="/img/dm16-land-slide-auto.jpg"/>
+                <img src="/img/asid-land-slide-bld.jpg"/>
+                <img src="/img/asid-land-slide-hom.jpg"/>
             </div>
         </div>
         
         <div class="row collapse">
             <div class="show-for-medium medium-6 columns">
                 <div class="item" style="margin-left:19%;">
-                    <h4 style="margin-top:1.5em;">With Madico, you always have a product and a partner you can trust.</h4>
+                    <h4 style="margin-top:1.5em;">Sunscape<sup style="font-size:50%;">&reg;</sup> window films celebrate everything you love about the sun while creating a safe environment in residences and commercial buildings.</h4>
                     <ul style="margin:0; padding:0;">
-                        <li style="margin-left:1em;">Best-in-class commercial and residential window films have made our name synonymous with durability for more than 40 years.</li>
-                        <li style="margin-left:1em;">Unmatched combination of quality, function, and style in automotive tinted films.</li>
-                        <li style="margin-left:1em;">Oustanding support and personal attention through a dedicated, knowledgeable team.</li>
+                        <li style="margin-left:1em;">Block 99% or more of UV rays</li>
+                        <li style="margin-left:1em;">Reject up to 80% of the sun's energy</li>
+                        <li style="margin-left:1em;">Reduce glare</li>
+                        <li style="margin-left:1em;">The choice of interior designers worldwide</li>
+                        <li style="margin-left:1em;">Available in a wide range of styles and shades</li>
                     </ul>
                 </div>
             </div>
             <div class="small-12 medium-6 columns">
                 <div class="contact-form overlay">
-                <?php gravity_form( 22, false ); ?>
+                <?php gravity_form( 30, false ); ?>
                 </div>
             </div>
             <div class="hide-for-medium small-12 columns">
                 <div class="item">
-                    <h4>With Madico, you always have a product and a partner you can trust.</h4>
+                    <h4>Sunscape<sup style="font-size:50%;">&reg;</sup> window films celebrate everything you love about the sun while creating a safe environment in residences and commercial buildings.</h4>
                     <ul>
-                        <li>Best-in-class commercial and residential window films have made our name synonymous with durability for more than 40 years.</li>
-                        <li>Unmatched combination of quality, function, and style in automotive tinted films.</li>
-                        <li>Oustanding support and personal attention through a dedicated, knowledgeable team.</li>
+                        <li>Block 99% or more of UV rays</li>
+                        <li>Reject up to 80% of the sun's energy</li>
+                        <li>Reduce glare</li>
+                        <li>The choice of interior designers worldwide</li>
+                        <li>Available in a wide range of styles and shades</li>
                     </ul>
                 </div>
             </div>
         </div>
-        
-        <div class="row quote-bar">
+        <div class="row not-quote-bar">
             <div class="small-12 medium-6 columns">
                 <div class="quote">
-                    <h4>"Superb product and customer support throughout 20 years."<br />- <i>Mike Amado, Tint Master</i></h4>
+                    <h4><br /></h4>
                 </div>
             </div>
             <div class="hide-for-small-only medium-6 columns">
                 <div class="quote">
-                    <h4>"Products and service second to none."<br />- <i>Leonard Aguanno, Cool World Solutions</i></h4>
+                    <h4><br /></h4>
                 </div>
             </div>
         </div>
-        
-        <div class="row collapse">
-            <div class="small-12 medium-6 columns"><img src="/img/dm16-land-grfx-car.jpg" /></div>
-            <div class="small-12 medium-6 columns">
-                <div class="item">
-                    <h3>When it comes to paint protection, we've left no stone unturned.</h3>
-                    <p>We've perfected our Invisi-Film Paint Protection to provide superior invisible protection, unrivaled durability, total ease of installation and an easy boost to your bottom line.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="row collapse">
-            <div class="hide-for-medium small-12 columns"><img src="/img/dm16-land-grfx-film.jpg" /></div>
-            <div class="small-12 medium-6 columns">
-                <div class="item">
-                    <h3>Roll out the best line of defense: Safety &amp; Security Window Films</h3>
-                    <p>In addition to holding shattered glass together, this line of films will also hold something else together: your customer's peace of mind.</p>
-                </div>
-            </div>
-            <div class="show-for-medium medium-6 columns"><img src="/img/dm16-land-grfx-film.jpg" /></div>
-        </div>
-        
-        <div class="row collapse">
-            <div class="small-12 medium-6 columns"><img src="/img/dm16-land-grfx-eetips.jpg" /></div>
-            <div class="small-12 medium-6 columns">
-                <div class="item">
-                    <h3>Driving new business to our valued dealers.</h3>
-                    <p>Our blog raises awareness about how window film can help stop climate change and drives traffic to our dealers.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="row collapse">
-            <div class="hide-for-medium small-12 columns"><img src="/img/dm16-land-grfx-cplex.jpg" /></div>
-            <div class="small-12 medium-6 columns">
-                <div class="item">
-                    <h3>Introducing ClearPlex by Madico.</h3>
-                    <p>The world's best performing windshield protection film; designed to absorb the impact of standard road hazards. Ready to make an impact on your bottom line.</p>
-                </div>
-            </div>
-            <div class="show-for-medium medium-6 columns"><img src="/img/dm16-land-grfx-cplex.jpg" /></div>
-        </div>
-        
-        <div class="row quote-bar">
-            <div class="small-12 medium-6 columns">
-                <div class="quote">
-                    <h4>"I am extremely satisfied with the product and services - our years with Madico are proof!"<br />- <i>Russell Dupuis, The Top Shop</i></h4>
-                </div>
-            </div>
-            <div class="hide-for-small-only medium-6 columns">
-                <div class="quote">
-                    <h4>"Switched to Madico because of the reliability and the great help I get from customer service."<br />- <i>Ray Caamano, Hudson Valley Window Film</i></h4>
-                </div>
-            </div>
-        </div>
-        
+
         <div class="row" style="text-align:center;">
             <div class="item" style="margin:0em;">
             <p style="margin-bottom:0em; font-size: .75em;"><a href="http://madico.com/" style="color: #0a0a0a;">Madico.com</a> | <a href="http://www.madico.com/window-film/privacy-policy/" style="color: #0a0a0a;">Privacy Policy</a></p>
@@ -238,9 +192,7 @@
         <script>
             $(document).foundation();
         </script>
-        
         <script>
-
             $(function(){
                 $('.fadein img:gt(0)').hide();
                 setInterval(function(){
@@ -250,7 +202,6 @@
                   5000);
             });
         </script>
-
         <?php //wp_footer(); ?>
 
         <script type="text/javascript"> 
@@ -270,6 +221,5 @@
            if(oldonload){oldonload()}}; 
         }()); 
         </script> 
-          
     </body>
 </html>
