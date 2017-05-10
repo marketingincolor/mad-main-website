@@ -57,7 +57,8 @@
 	<?php the_content(); ?>
 </div>
 <?php 
-$colTest = get_post_meta($postID, "footercol1-title", true);
+//$colTest = get_post_meta($postID, "footercol1-title", true);
+$colTest = '';
 if ( ! empty( $colTest ) && $GLOBALS['section'] !== 'specialty-film' ) {
 ?>
 <div id="columns">
