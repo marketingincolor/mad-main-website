@@ -148,7 +148,7 @@
                         <li style="margin-left:1em;">Patented hard-coated exterior film</li>
                         <li style="margin-left:1em;">Scratch-resistant</li>
                         <li style="margin-left:1em;">Protects against normal abrasion</li>
-                        <li style="margin-left:1em;">99% UB blocking</li>
+                        <li style="margin-left:1em;">99% UV blocking</li>
                         <li style="margin-left:1em;">Faster run-offs of rain and snow</li>
                     </ul>
                 </div>
@@ -168,7 +168,7 @@
                         <li>Patented hard-coated exterior film</li>
                         <li>Scratch-resistant</li>
                         <li>Protects against normal abrasion</li>
-                        <li>99% UB blocking</li>
+                        <li>99% UV blocking</li>
                         <li>Faster run-offs of rain and snow</li>
                     </ul>
                 </div>
