@@ -17,6 +17,9 @@
         <!-- End Google Tag Manager -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta charset="utf-8">
+        <meta property="og:title" content="ClearPlex by Madico" />
+        <meta property="og:description" content="ClearPlex by Madico windshield protection absorbs the impact of rocks and road debris, leaving windshields in pristine condition. Learn more here." />
+        <meta property="og:image" content="http://www.madico.com/wp-content/uploads/Introducing-ClearPlex-by-Madico.jpg" />
         <title>Introducing ClearPlex&reg; by Madico</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.css" />
@@ -177,7 +180,7 @@
         <div class="row quote-bar">
             <div class="small-12 medium-6 columns">
                 <div class="quote">
-                    <h4>"We estimate that we have saved $620,000 in windscreen replacement over the past year."<br />- <i>Geoff Bell, Reliability Officer Metro Trans</i></h4>
+                    <h4>"We estimate that we have saved $620,000 in windscreen replacement over the past year."<br />- <i>Geoff Bell, Reliability Officer, Metro Trains</i></h4>
                 </div>
             </div>
             <div class="hide-for-small-only medium-6 columns">
