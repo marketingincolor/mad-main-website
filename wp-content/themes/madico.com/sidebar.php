@@ -144,6 +144,17 @@ $cat = get_query_var('cat');
 	elseif ( is_page($sf_page_id) || ( isset($post->ancestors) && in_array($sf_page_id, $post->ancestors) ) ) { 
 		dynamic_sidebar('Specialty Film Pages');
 	}
+	elseif ( is_page('invisifilm') )  { ?>
+	<li class="more-information feature">
+		<h2>For More Information</h2>
+		<div class="textwidget">
+			<p><a href="/<?php echo $section; ?>/contact/" class="button contact">Contact Us</a></p>
+			<p>If US, call your local service center at <strong>888-887-2022</strong> or find an <a href="<?php echo get_page_link(669); ?>">international distributor</a>.</p>
+		</div>
+	</li>
+	<?php 
+		dynamic_sidebar('Window Film Pages');
+	} 
 	elseif ( is_page() )  {
 		dynamic_sidebar('General Page');
 	} 
