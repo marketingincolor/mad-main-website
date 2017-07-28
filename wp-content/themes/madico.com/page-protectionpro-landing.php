@@ -133,7 +133,7 @@
               border-bottom-color:#c89419;
               border-right-color:#c89419;
             }
-            
+            .cta-button-black { border-radius:10px; background-color:#000; color:#fff; font-family:'Oswald'; font-weight:bold; border:2px solid black;}
             .foot { background-color:#201c1d; }
             .vcenter { display: inline-block; float: none; vertical-align: middle; }
             /* Small screens */
@@ -358,6 +358,17 @@
             <div class="centered show-for-large large-6 columns"><img src="/img/prop-land-grfx-block-madico.jpg" /></div>
         </div>
         
+        <div class="row collapse">
+            <div class="centered small-12 large-6 columns"><img src="/img/prop-land-grfx-block-app.jpg" /></div>
+            <div class="small-12 large-6 columns">
+                <div class="item">
+                    <h3>Already a Dealer? Get the App and Get Started.</h3>
+                    <p>Ready to make money? Download the ProtectionPro 2.0 app to watch tutorials, set up and calibrate devices, connect to a printer, get live support, and more.</p>
+                    <p><a href="https://play.google.com/store/apps/details?id=com.clearplex.clearplex20&hl=en"><button class="cta-button-black gform_button">Download ProtectionPro 2.0</button></a></p>
+                </div>
+            </div>
+        </div>
+
         <div class="row quote-bar">
             <div class="small-12 large-6 columns">
                 <div class="quote">
