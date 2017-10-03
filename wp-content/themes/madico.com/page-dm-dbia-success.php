@@ -109,7 +109,6 @@
                       fjs.parentNode.insertBefore(js, fjs);
                     }(document, 'script', 'facebook-jssdk'));</script>
                        <div class="fb-like" data-href="https://www.facebook.com/MadicoWindowFilms/" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-                       
                    </div>
 
                    <div class="sm-meta" style="position:relative; display:inline-block; vertical-align:middle;" >
@@ -119,7 +118,7 @@
 
                    <div class="sm-meta" style="position:relative; display:inline-block; vertical-align:middle;" >
                     <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-<script type="IN/FollowCompany" data-id="5232794"></script>
+<script type="IN/FollowCompany" data-id="119045"></script>
                    </div>
 
                    <div class="sm-meta" style="position:relative; display:inline-block; vertical-align:middle;" >

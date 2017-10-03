@@ -109,13 +109,17 @@
                       fjs.parentNode.insertBefore(js, fjs);
                     }(document, 'script', 'facebook-jssdk'));</script>
                        <div class="fb-like" data-href="https://www.facebook.com/Sunscapefilms/" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-                       
                    </div>
 
                    <div class="sm-meta" style="position:relative; display:inline-block; vertical-align:middle;" >
                     <a href="https://twitter.com/SunscapeFilms?lang=en" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow </a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                    </div> 
+
+                   <div class="sm-meta" style="position:relative; display:inline-block; vertical-align:middle;" >
+                    <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+<script type="IN/FollowCompany" data-id="119045"></script>
+                   </div>
 
                 </div>
                 </div>
