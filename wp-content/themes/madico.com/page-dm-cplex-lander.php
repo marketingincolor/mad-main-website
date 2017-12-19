@@ -17,10 +17,14 @@
         <!-- End Google Tag Manager -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta charset="utf-8">
+        <meta property="og:title" content="ClearPlex by Madico" />
+        <meta property="og:description" content="ClearPlex by Madico windshield protection absorbs the impact of rocks and road debris, leaving windshields in pristine condition. Learn more here." />
+        <meta property="og:image" content="http://www.madico.com/wp-content/uploads/Introducing-ClearPlex-by-Madico.jpg" />
         <title>Introducing ClearPlex&reg; by Madico</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.css" />
-        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
         <link rel="shortcut icon" type="image/x-icon" href="http://www.madico.com/wp-content/themes/madico.com/images/favicon.ico">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script>jQueryWP = jQuery;</script>
@@ -36,7 +40,7 @@
                 width: 100%;
             }
             /* Page Components */
-            html, body, h1, h2, h3, h4, h5, h6 { font-family: 'Lato', sans-serif; }
+            html,body,h1,h2,h3,h4,h5,h6,p,li { font-family: 'Montserrat', sans-serif; }
             #slideshow { position:relative; height:396px; }
             #slideshow > div { position:absolute; }
             
@@ -46,16 +50,12 @@
             .slides img { width:100%; }
             .item { display:inline-block; }
             .item h2, .item h3 { line-height:1; color:#00467f; }
-            .item p { line-height:1.25; }
-            .item li { margin:2em; }
             .overlay { position:relative; display:inline-block; }
             .quote-bar { background:#eeeef0 url(/img/dm16-land-quote.png) no-repeat center center ; min-height:180px; }
             .quote { margin:3em 6em; }
             .quote h4 { font-size:19px; }
-            .contact-form { }
             
-            .dm16_wrapper { background-color:#00467f; display:inline-block; margin-top:-60px; }
-            .dm16 .gform_heading { text-align:center; color:#fff; padding:1em; background-color:#00467f; position:relative; display:inline-block; width:100%; }
+            .dm16 .gform_heading {display:none}
             .dm16 .gform_description h3 { padding:0.175em 0;}
             .dm16 .gform_body { display:inline-block; color:#fff; }
             .dm16 .gform_body ul { list-style:none; margin:0; width:100%; text-align:center; }
@@ -67,14 +67,109 @@
             
             .dm16 .gform_body li label { color:#fff; text-align:left; }
             .dm16 .gform_body li .ginput_container_text { }
-            .dm16 .gform_body li .ginput_container_select select { border-radius:10px; }
+            .dm16 .gform_body li .ginput_container_select select { border-radius: 3px; }
             .dm16 .gform_body li .ginput_container_checkbox { width:100%; }
             .dm16 .gform_body li .ginput_container_textarea { width:100%; }
-            .dm16 .gform_body li input[type="text"] { border-radius:10px; }
-            .dm16 .gform_body li textarea { border-radius:10px; height:140px !important; }
+            .dm16 .gform_body li input[type="text"] { border-radius: 3px; }
+            .dm16 .gform_body li textarea { border-radius: 3px; height:140px !important; }
             .dm16 .gform_footer:before { clear:both; }
             .dm16 .gform_footer { color:#fff; margin:1em 2em; background-color:#00467f; display:block; text-align:center; }
-            .dm16 .gform_footer .button { background-color:#f5971d; color:#00467f; font-weight:bold; }
+            .dm16 .gform_footer .button {
+              text-transform: uppercase;
+              color:#FFF;
+              background-color: #dc582a;
+              padding: 10px 35px;
+              border-radius: 20px;
+              font-size: 24px;
+              width: 100%;
+              transition: all 0.25s ease-in-out;
+            }
+            .dm16 .gform_footer .button:hover {
+              background-color: #FFF;
+              color: #dc582a;
+            }
+            #input_28_9{resize:none}
+
+            .hero img{}
+            .form-container{
+              margin-top:-719px;
+              max-width:80%;
+              padding:8% 0;
+              text-align:center;
+            }
+            .form-container h3,.form-container p{
+              padding: 0 30px;
+              color: #FFF;
+            }
+            .form-container h3{font-weight:300;font-size:30px}
+            .form-container p{margin-bottom:50px}
+            .form-container img{margin-bottom:50px}
+
+            .features h4{
+              color:#00467f;
+              font-size:36px;
+              font-weight:300;
+              margin-top:1.5em;
+              line-height: 48px;
+              margin-bottom: 50px;
+            }
+            .features p{color:#787878}
+
+            .icons{
+              background-color:#eeeef0;
+              padding:5% 0
+            }
+            .icons .icon-row{
+              display: flex;
+              align-items: center;
+              margin: 15px 0;
+            }
+            .icons p{color:#787878}
+
+            .images .row.collapse{
+              display: flex;
+              align-items: center;
+            }
+            .images .item{padding: 0 10%;margin: 0;}
+            .images .item h3{
+              margin-top:0;
+              font-weight:300;
+              font-size:40px;
+              line-height:40px;
+              margin-bottom: 20px;
+            }
+            .images .item p{margin-bottom:0;color:#787878}
+
+            .testimonials{
+              background-image: url(/img/optimize-bg.jpg);
+              background-position: center center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              padding: 8%;
+            }
+            .testimonials p,.testimonials .author,.testimonials .job{color: #787878;}
+            .testimonials .author{font-weight: 700}
+            .testimonials img{margin-bottom: 30px;}
+            .orbit-bullets{text-align:left}
+            .orbit-bullets button{
+              height: 15px;
+              width: 15px;
+              background-color: #fff;
+              border: 2px solid #d1d1d1;
+              cursor: pointer;
+            }
+            .orbit-bullets button.is-active{
+              background-color: #dc582a;
+              border: none;
+              position: relative;
+              top: 2px;
+            }
+
+            .footer{padding:8% 0}
+            .footer img{margin-bottom:30px}
+            .footer p{color:#787878}
+            .footer p,.footer a{font-size: 13px}
+            .footer p:first-of-type{margin-bottom: 0}
             
             /* Small screens */
             @media only screen {
@@ -85,22 +180,22 @@
                 .fadein { height:258px; }
                 .fadein img { left:-300px; top:-30px; }
                 .dm16_wrapper { max-width:100%; }
-                .dm16 .gform_body { margin:0 1em; margin-top:0px; }
-                .dm16 .gform_heading { top:0px; }
-                .dm16 .gform_body li { width:95%; }
-                .quote { margin: 3em 3em; }
-                .logo { margin: 0 auto; display:block; height: auto; width: 175px; padding: .5em; }
+                .dm16 .gform_body {margin:0}
+                .dm16 .gform_heading {top:0px}
+                .dm16 .gform_body li {width:95%}
+                .quote {margin:3em 3em}
+                .logo {margin:0 auto;display:block;height: auto;width:175px;padding:.5em}
                 .fadein img { left: -100px; top: 7px; height: 192px; }
             /* Medium screens */
             @media only screen and (min-width: 40.063em) {
                 .item { margin:1em 2em 0em 2em;}
                 .item h3, item h4 { font-size:21px; margin: 0.5em 0; }
-                .item h2, .item p, .item li { font-size:16px; }
+                .item h2 { font-size:16px; }
+                .item p{font-weight:300;font-size:18px;line-height:30px}
                 .item .mark { vertical-align:super; font-size:8px;}
-                .fadein { height:396px; }
+                .fadein {height:396px}
                 .fadein img { left:-218px; top:0; height:390px;}
-                .dm16_wrapper { max-width:80%; }
-                .dm16 .gform_body { margin:0 1em; margin-top:-100px; }
+                .dm16 .gform_body {margin:0 1em}
                 .dm16 .gform_heading { top:-140px; }
                 .dm16 .gform_body li { width: 95%; }
                 .quote { margin: 3em 6em; }
@@ -109,14 +204,77 @@
             @media only screen and (min-width: 64.063em) {
                 .item { margin:2em 4em 0em 4em;}
                 .item h3, item h4 { font-size:30px; margin: 0.75em 0; }
-                .item h2, .item p, .item li { font-size:21px; }
+                .item h2 { font-size:21px; }
                 .item .mark { vertical-align:super; font-size:9px;}
                 .fadein { height:396px; }
                 .fadein img { left:0; top:0; }
-                .dm16_wrapper { max-width:80%; }
                 .dm16 .gform_body li { width:46%; }
                 .logo { margin: initial; display:initial; }
                 .fadein img { left:0px top: 0px;  height: auto;}
+            }
+            @media(max-width:1024px){
+              .images .item h3{
+                font-size: 32px;
+                line-height: 36px;
+              }
+            }
+            @media(max-width:640px){
+              .hero{
+                background-image: url(/img/hero-image-mobile.jpg);
+                background-position:center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                height: 250px;
+              }
+              .hero h3{
+                color: #FFF;
+                font-size: 26px;
+                font-weight: 300;
+              }
+              .hero p{
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                color: #89b8ea;
+                font-size: 16px;
+              }
+              .form-container{
+                max-width:100%;
+                margin-top:0px;
+                padding:8% 30px;
+              }
+              .form-container h3,.form-container p{padding:0}
+              .overlay{display:block}
+
+              .features.item{margin-left:30px !important;margin-bottom:30px}
+              .features.item h4{font-size:24px;line-height:38px;margin-bottom:30px}
+              .features.item p{font-size:16px}
+
+              .dm16 .gform_footer .button{
+                padding: 10px 20px;
+                font-size: 14px;
+              }
+              .dm16 .gform_footer{
+                margin:1em 0.5em;
+              }
+              .images .row.collapse{
+                display: block;
+              }
+              .images .item{
+                padding: 7%;
+              }
+              .images .item h3{
+                font-size: 26px;
+                line-height: 34px;
+              }
+              .testimonials{
+                background-image: none;
+                padding: 8% 0;
+                background-color: #eaeef7;
+              }
+              .testimonials .columns{padding:0 30px}
             }
         </style>
     </head>
@@ -131,111 +289,194 @@
             </div>
         </div>
         
-        <div class="row">
-            <div class="fadein small-12">
-                <img class="auto" src="/img/cplex-land-slide-car.jpg"/>
+        <section class="hero">
+          <div class="row">
+            <div class="small-12">
+              <img class="auto hide-for-small-only" src="/img/hero-image.jpg"/>
+              <h3 class="show-for-small-only">A new way to drive more sales:</h3>
+              <p class="show-for-small-only">Windshield Protection</p>
             </div>
-        </div>
+          </div>
+        </section>
         
         <div class="row collapse">
-            <div class="show-for-medium medium-6 columns">
-                <div class="item" style="margin-left:19%;">
-                    <h4 style="margin-top:1.5em;">Introducing ClearPlex<sup>&reg;</sup> Windshield Protection Film by Madico.</h4>
-                    <p>ClearPlex film absorbs the impact of rocks and road debris, leaving windshields in pristine condition. Your customers will feel good about protecting their vehicles and their investments.</p>
-                    <p>Now, the world's most respected windshield protection brand is distributed by Madico, which means you can count on a quality product along with exceptional customer service.</p>
-                    <ul style="margin:0; padding:0;">
-                        <li style="margin-left:1em;">Optically clear</li>
-                        <li style="margin-left:1em;">Patented hard-coated exterior film</li>
-                        <li style="margin-left:1em;">Scratch-resistant</li>
-                        <li style="margin-left:1em;">Protects against normal abrasion</li>
-                        <li style="margin-left:1em;">99% UB blocking</li>
-                        <li style="margin-left:1em;">Faster run-offs of rain and snow</li>
-                    </ul>
-                </div>
+          <div class="medium-6 columns">
+            <div class="item features" style="margin-left:19%;">
+              <h4>Generate new revenue with ClearPlex<sup>®</sup> Windshield Protection Film by Madico<sup>®</sup>.</h4>
+              <p>ClearPlex Windshield Protection Film is not intended for use on conventional cars. Ideally, it is the best solution to the astronomical cost of windshield replacement for luxury, exotic, and classic cars, as well as fleets, and construction equipment.</p>
+              <p>It effectively absorbs the impact of rocks and debris, leaving windshields in pristine condition. And since the film is replaced annually, you can expect repeat business from these high-end vehicle owners and investors.</p>
             </div>
-            <div class="small-12 medium-6 columns">
-                <div class="contact-form overlay">
+          </div>
+          <div class="small-12 medium-6 columns">
+            <div class="contact-form overlay">
+              <div class="form-container" style="background-color:#00467F">
+                <img src="/img/form-icon.png" alt="">
+                <h3>Put yourself in the driver's seat and grow with us.</h3>
+                <p>Take your business to the next level with ClearPlex and other premium protection film products. Complete the form below to get started.</p>
                 <?php gravity_form( 28, false ); ?>
-                </div>
+              </div>
             </div>
-            <div class="hide-for-medium small-12 columns">
-                <div class="item">
-                    <h4>Introducing ClearPlex<sup>&reg;</sup> Windshield Protection Film by Madico.</h4>
-                    <p>ClearPlex film absorbs the impact of rocks and road debris, leaving windshields in pristine condition. Your customers will feel good about protecting their vehicles and their investments.</p>
-                    <p>Now, the world's most respected windshield protection brand is distributed by Madico, which means you can count on a quality product along with exceptional customer service.</p>
-                    <ul>
-                        <li>Optically clear</li>
-                        <li>Patented hard-coated exterior film</li>
-                        <li>Scratch-resistant</li>
-                        <li>Protects against normal abrasion</li>
-                        <li>99% UB blocking</li>
-                        <li>Faster run-offs of rain and snow</li>
-                    </ul>
-                </div>
-            </div>
+          </div>
         </div>
-        <div class="row quote-bar">
-            <div class="small-12 medium-6 columns">
-                <div class="quote">
-                    <h4>"We estimate that we have saved $620,000 in windscreen replacement over the past year."<br />- <i>Geoff Bell, Reliability Officer Metro Trans</i></h4>
+        
+        <section class="icons">
+          <div class="row">
+            <div class="medium-6 columns">
+              <div class="row icon-row">
+                <div class="small-4 large-3 columns text-center">
+                  <img src="/img/optically-icon.png" alt="Optically clear">
                 </div>
-            </div>
-            <div class="hide-for-small-only medium-6 columns">
-                <div class="quote">
-                    <h4>"... I've applied your product to my car's windshield. I'm very happy with the results and the protection."<br />- <i>Dave, Self-installer</i></h4>
+                <div class="small-8 columns">
+                  <p>Optically Clear</p>
                 </div>
+              </div>
             </div>
-        </div>
+            <div class="medium-6 columns">
+              <div class="row icon-row">
+                <div class="small-4 large-3 columns text-center">
+                  <img src="/img/protect-icon.png" alt="Protects against normal abrasion">
+                </div>
+                <div class="small-8 columns">
+                  <p>Protects against normal abrasion</p>
+                </div>
+              </div>
+            </div>
+            <div class="medium-6 columns">
+              <div class="row icon-row">
+                <div class="small-4 large-3 columns text-center">
+                  <img src="/img/hard-coatedicon.png" alt="Patented hard-coated film">
+                </div>
+                <div class="small-8 columns">
+                  <p>Patented hard-coated film</p>
+                </div>
+              </div>
+            </div>
+            <div class="medium-6 columns">
+              <div class="row icon-row">
+                <div class="small-4 large-3 columns text-center">
+                  <img src="/img/rain-snow-icon.png" alt="Faster run-offs of rain and snow">
+                </div>
+                <div class="small-8 columns">
+                  <p>Faster run-offs of rain and snow</p>
+                </div>
+              </div>
+            </div>
+            <div class="medium-6 columns">
+              <div class="row icon-row">
+                <div class="small-4 large-3 columns text-center">
+                  <img src="/img/uv-icon.png" alt="99% UV blocking">
+                </div>
+                <div class="small-8 columns">
+                  <p>99% UV blocking</p>
+                </div>
+              </div>
+            </div>
+            <div class="medium-6 columns">
+              <div class="row icon-row">
+                <div class="small-4 large-3 columns text-center">
+                  <img src="/img/support-icon.png" alt="Exceptional support from Madico">
+                </div>
+                <div class="small-8 columns">
+                  <p>Exceptional support from Madico</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-        <div class="row collapse">
-            <div class="small-12 medium-6 columns"><img src="/img/cplex-land-grfx-exotic.jpg" /></div>
-            <div class="small-12 medium-6 columns">
+        <section class="images">
+          <div class="row collapse">
+              <div class="small-12 medium-6 columns"><img src="/img/sports-car.jpg" /></div>
+              <div class="small-12 medium-6 columns">
                 <div class="item">
-                    <h3>It's more than a car. It's a prized possession.</h3>
-                    <p>High performance cars deserve the world's best performing windshield protection.</p>
+                  <h3>It's more than a car. It's a prized possession.</h3>
+                  <p>High performance cars deserve the world's best performing windshield protection.</p>
                 </div>
-            </div>
-        </div>
-
-        <div class="row collapse">
-            <div class="hide-for-medium small-12 columns"><img src="/img/cplex-land-grfx-equip.jpg" /></div>
-            <div class="small-12 medium-6 columns">
+              </div>
+          </div>
+          
+          <div class="row collapse">
+              <div class="hide-for-medium small-12 columns"><img src="/img/commercial-fleet.jpg" /></div>
+              <div class="small-12 medium-6 columns">
                 <div class="item">
-                    <h3>Keeps fleets on the road - and off the repair list.</h3>
-                    <p>With well-engineered ClearPlex, windshields and bottom lines are protected.</p>
+                  <h3>Keeps fleets on the road &mdash; and off the repair list.</h3>
+                  <p>With well-engineered ClearPlex, windshields and bottom lines are protected.</p>
                 </div>
-            </div>
-            <div class="show-for-medium medium-6 columns"><img src="/img/cplex-land-grfx-equip.jpg" /></div>
-        </div>
-
-        <div class="row collapse">
-            <div class="small-12 medium-6 columns"><img src="/img/cplex-land-grfx-fleet.jpg" /></div>
-            <div class="small-12 medium-6 columns">
-                <div class="item">
+              </div>
+              <div class="show-for-medium medium-6 columns"><img src="/img/commercial-fleet.jpg" /></div>
+          </div>
+          
+          <div class="row collapse">
+              <div class="small-12 medium-6 columns"><img src="/img/classic-car.jpg" /></div>
+              <div class="small-12 medium-6 columns">
+                  <div class="item">
                     <h3>Adds instant credibility.</h3>
                     <p>Dealerships that recommend ClearPlex know it's the world's most respected name in windshield protection, backed by the highest level of customer service.</p>
-                </div>
-            </div>
-        </div>
+                  </div>
+              </div>
+          </div>
+        </section>
         
-        <div class="row quote-bar">
-            <div class="small-12 medium-6 columns">
-                <div class="quote">
-                    <h4>"There were incidents of road debris hitting the windshields. ClearPlex film protected the windshield."<br />- <i>Roger Zimmerman, Hertz Rent-A-Car</i></h4>
-                </div>
+        <section class="testimonials">
+          <div class="row">
+            <div class="medium-12 columns end">
+              <img src="/img/quote-icon.png" alt="Testimonial Quote">
             </div>
-            <div class="hide-for-small-only medium-6 columns">
-                <div class="quote">
-                    <h4>"I'd like to thank you for making such a great product available for my customers."<br />- <i>Ryan Tounsley, President, Protective Film Solutions</i></h4>
+            <div class="medium-6 large-5 columns end">
+              <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                <div class="orbit-wrapper">
+                  <ul class="orbit-container">
+                    <li class="is-active orbit-slide">
+                      <p>We estimate that we have saved $620k in windscreen replacement over the past year. This does not include additional labour to remove and replace the windscreen and out of revenue service time."</p>
+                      <address class="gray-p">
+                        <span class="author">&mdash;Geoff Bell</span><br>
+                        <span class="job">Reliability Officer, Metro Trains Melbourne, Australia</span>
+                      </address>
+                    </li>
+                    <li class="orbit-slide">
+                      <p>. . . I've applied your product to my car's windshield. I'm very happy with the results and the protection."</p>
+                      <address class="gray-p">
+                        <span class="author">&mdash;Dave</span><br>
+                        <span class="job">Self-installer</span>
+                      </address>
+                    </li>
+                    <li class="orbit-slide">
+                      <p>There were incidents of road debris hitting the windshields. ClearPlex film protected the windshield."</p>
+                      <address class="gray-p">
+                        <span class="author">&mdash;Roger Zimmerman</span><br>
+                        <span class="job">Hertz Rent-A-Car</span>
+                      </address>
+                    </li>
+                    <li class="orbit-slide">
+                      <p>I'd like to thank you for making such a great product available for my customers."</p>
+                      <address class="gray-p">
+                        <span class="author">&mdash;Ryan Tounsley</span><br>
+                        <span class="job">President, Protective Film Solutions</span>
+                      </address>
+                    </li>
+                  </ul>
                 </div>
+                <nav class="orbit-bullets">
+                  <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                  <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                  <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                  <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+                </nav>
+              </div>
             </div>
-        </div>
+            <img src="/img/testimonial-car-mobile.jpg" alt="Clearplex testimonials" class="show-for-small-only">
+          </div>
+        </section>
 
-        <div class="row" style="text-align:center;">
-            <div class="item" style="margin:0em;">
-            <p style="margin-bottom:0em; font-size: .75em;"><a href="http://madico.com/" style="color: #0a0a0a;">Madico.com</a> | <a href="http://www.madico.com/window-film/privacy-policy/" style="color: #0a0a0a;">Privacy Policy</a></p>
+        <section class="footer">
+          <div class="row">
+            <div class="small-12 columns text-center">
+            <img src="/img/footer-logo.png" alt="ClearPlex Logo">
+            <p><a href="/">Madico.com</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href="/window-film/privacy-policy/">Privacy Policy</a></p>
+            <p>&copy; <?php echo date('Y'); ?> ClearPlex by Madico. All rights reserved.</p>
             </div>
-        </div>
+          </div>
+        </section>
         
         <script src="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.js"></script>
         <script>
@@ -259,7 +500,9 @@
            ((document.getElementsByTagName('head') || [null])[0] || 
             document.getElementsByTagName('script')[0].parentNode).appendChild(scr); 
            if(oldonload){oldonload()}}; 
-        }()); 
+        }());
+        var submitButton = document.getElementById('gform_submit_button_28');
+        submitButton.value = "I'M READY TO BOOST SALES!";
         </script> 
     </body>
 </html>

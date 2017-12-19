@@ -570,11 +570,10 @@ add_filter('excerpt_length', 'new_excerpt_length');
 
 /**
 * Constructs an ordered array from cf metadata
-
-		THIS FUNCTION REQUIRES A CFT SETUP LIKE SO:
-			[NAME_fieldset] is the fieldset
-			[NAME_field] 	for each field
-			call function using NAME
+* THIS FUNCTION REQUIRES A CFT SETUP LIKE SO:
+* [NAME_fieldset] is the fieldset
+* [NAME_field] 	for each field
+* call function using NAME
 */
 function get_cft_repeating_data( $like_item ){
 	global $post, $wpdb;
@@ -1137,18 +1136,18 @@ function madico_define_globals() {
 	// Specialty film page and category ID's
 	$sf_page = get_page_by_path('specialty-film');
 	$GLOBALS['sf_page_id'] = intval($sf_page->ID);
-	$sf_category = get_category_by_slug('pv-backsheets'); 
+	$sf_category = get_category_by_slug('specialty-film'); 
 	$GLOBALS['sf_category_id'] = intval($sf_category->term_id);
 
 	// Photovoltaic page and category ID's
-	$sf_page = get_page_by_path('pv-backsheets');
-	$GLOBALS['pv_page_id'] = intval($sf_page->ID);
+	//$pv_page = get_page_by_path('pv-backsheets');
+	//$GLOBALS['pv_page_id'] = intval($pv_page->ID);
 
 	// Contract Coating page and category ID's
 	$cc_page = get_page_by_path('contract-coating');
 	$GLOBALS['cc_page_id'] = intval($cc_page->ID);
 	
-	global $post, $sf_page_id, $sf_category_id, $wf_page_id, $wf_category_id, $pv_page_id, $cc_page_id;
+	global $post, $sf_page_id, $sf_category_id, $wf_page_id, $wf_category_id, /*$pv_page_id,*/ $cc_page_id;
 	
 	$ancestors = ( isset($post->ancestors) && is_array($post->ancestors) && !empty($post->ancestors) ) ? $post->ancestors : array();
 	
@@ -1174,12 +1173,12 @@ function madico_define_globals() {
 		}
 
 		// photovoltaic site section
-		else if (
+		/*else if (
 			is_page($pv_page_id) || 
 			in_array($pv_page_id, $ancestors)
 		) {
 			$GLOBALS['section'] = 'pv-backsheets';
-		}
+		}*/
 
 		// Contract coating site section
 		else if (

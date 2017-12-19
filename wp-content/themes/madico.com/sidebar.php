@@ -1,7 +1,7 @@
 ﻿<?php 
 global $post, $section, $sf_page_id, $wf_page_id, $sf_category_id, $wf_category_id, $language;
 $cat = get_query_var('cat');
-?>
+?><!-- <?php echo $section; ?> -->
 <ul>
 	<?php if ( is_category() ): ?>
 	<li id="rss-subscribe">
@@ -50,14 +50,23 @@ $cat = get_query_var('cat');
 	</li>
 	<?php endif; ?>
 
-	<?php if ( $section === 'pv-backsheets' && ! is_page('contact') ) : ?>
+	<?php if ( $section === 'contract-coating' && ! is_page('contact') ) : ?>
 	<li class="more-information feature">
 		<h2>For More Information</h2>
 		<div class="textwidget">
-			<p><a href="/<?php echo $section; ?>/contact/" class="button contact">Contact Us</a></p>
+			<p><a href="/specialty-film/contact/" class="button contact">Contact Us</a></p>
 		</div>
 	</li>
 	<?php endif; ?>
+
+	<?php //if ( $section === 'pv-backsheets' && ! is_page('contact') ) : ?>
+	<!--<li class="more-information feature">
+		<h2>For More Information</h2>
+		<div class="textwidget">
+			<p><a href="/<?php //echo $section; ?>/contact/" class="button contact">Contact Us</a></p>
+		</div>
+	</li>-->
+	<?php //endif; ?>
 
 	<?php if ( $section === 'specialty-film' && ! is_page('contact') ) : ?>
 	<li class="more-information feature">
@@ -68,32 +77,18 @@ $cat = get_query_var('cat');
 	</li>
 	<?php endif; ?>
 
-	<?php if ( $GLOBALS['section'] == 'contract-coating' && ! is_page('contact') ) : ?>
-	<li class="more-information feature">
-		<h2>For More Information</h2>
-		<div class="textwidget">
-			<p>
-				<strong>Steven Sorrentino</strong><br />
-				Director of Manufacturing Woburn<br />
-				+1 781-756-4155<br />
-				<a href="mailto:ssorrentino@madico.com">ssorrentino@madico.com</a>
-			</p>
-		</div>
-	</li>
-	<?php endif; ?>
-
 	<?php if ( is_page('anti-fog-film') || is_page('anti-fog-film-test-data') || is_page('anti-fog-faqs') ) : ?>
-	<li class="more-information feature">
-		<h2 style="display:inline-block;">For More Information or to place an order please call:</h2>
-		<div class="textwidget">
-			<p>
-				<strong>Steven Sorrentino</strong><br />
-				Director of Manufacturing Woburn<br />
-				+1 781-756-4155<br />
-				<a href="mailto:ssorrentino@madico.com">ssorrentino@madico.com</a>
-			</p>
-		</div>
-	</li>
+		<li class="more-information feature">
+			<h2 style="display:inline-block;">For More Information or to place an order please call:</h2>
+			<div class="textwidget">
+				<p>
+					<strong>Rob Comeau</strong><br />
+					Director of Business Development<br />
+					+1 781-756-4211<br />
+					<a href="mailto:rcomeau@madico.com">rcomeau@madico.com</a>
+				</p>
+			</div>
+		</li>
 	<?php endif; ?>
 
 	<?php 
@@ -144,6 +139,17 @@ $cat = get_query_var('cat');
 	elseif ( is_page($sf_page_id) || ( isset($post->ancestors) && in_array($sf_page_id, $post->ancestors) ) ) { 
 		dynamic_sidebar('Specialty Film Pages');
 	}
+	elseif ( is_page('invisifilm') )  { ?>
+	<li class="more-information feature">
+		<h2>For More Information</h2>
+		<div class="textwidget">
+			<p><a href="/<?php echo $section; ?>/contact/" class="button contact">Contact Us</a></p>
+			<p>If US, call your local service center at <strong>888-887-2022</strong> or find an <a href="<?php echo get_page_link(669); ?>">international distributor</a>.</p>
+		</div>
+	</li>
+	<?php 
+		dynamic_sidebar('Window Film Pages');
+	} 
 	elseif ( is_page() )  {
 		dynamic_sidebar('General Page');
 	} 

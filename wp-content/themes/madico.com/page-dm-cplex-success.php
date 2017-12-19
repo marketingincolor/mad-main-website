@@ -119,7 +119,23 @@
 
                    <div class="sm-meta" style="position:relative; display:inline-block; vertical-align:middle;" >
                     <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-<script type="IN/FollowCompany" data-id="5232794"></script>
+                    <script type="IN/FollowCompany" data-id="119045"></script>
+                   </div>
+
+                   <div class="sm-meta" style="position:relative; display:inline-block; vertical-align:middle;" >
+                    <script src="https://apis.google.com/js/platform.js"></script>
+
+                    <div class="g-ytsubscribe" data-channelid="UCu9s60dm8xsrjHsXtqT49Nw" data-layout="default" data-count="hidden"></div>
+                   </div>
+
+                   <div class="sm-meta" style="position:relative; display:inline-block; vertical-align:middle;" >
+                    <style>.ig-b- { display: inline; }
+                    .ig-b- img { visibility: hidden; }
+                    .ig-b-:hover { background-position: 0 -60px; } .ig-b-:active { background-position: 0 -120px; }
+                    .ig-b-16 { width: 16px; height: 16px; background: url(//badges.instagram.com/static/images/ig-badge-sprite-16.png) no-repeat 0 0; }
+                    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+                    .ig-b-16 { background-image: url(//badges.instagram.com/static/images/ig-badge-sprite-16@2x.png); background-size: 60px 178px; } }</style>
+                    <a href="https://www.instagram.com/clearplex/?ref=badge" class="ig-b- ig-b-16"><img src="//badges.instagram.com/static/images/ig-badge-16.png" alt="Instagram" /> <b>Follow on Instagram</b></a>
                    </div>
 
                    <div class="sm-meta" style="position:relative; display:inline-block; vertical-align:middle;" >
@@ -139,6 +155,23 @@
         <script>
             $(document).foundation();
         </script>
-        
+        <script type="text/javascript"> 
+adroll_adv_id = "L2B2VNCRHZDNPOKZWSZFWQ"; 
+adroll_pix_id = "JJLCAZAM25HUPALQ5DOR3G"; 
+(function () { 
+var oldonload = window.onload; 
+window.onload = function(){ 
+   __adroll_loaded=true; 
+   var scr = document.createElement("script"); 
+   var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com"); 
+   scr.setAttribute('async', 'true'); 
+   scr.type = "text/javascript"; 
+   scr.src = host + "/j/roundtrip.js"; 
+   ((document.getElementsByTagName('head') || [null])[0] || 
+    document.getElementsByTagName('script')[0].parentNode).appendChild(scr); 
+   if(oldonload){oldonload()}}; 
+}()); 
+</script> 
+
     </body>
 </html>

@@ -6,9 +6,9 @@
  */
 
 // AddThis Configuration
-var addthis_config = {
+/*var addthis_config = {
 	data_track_clickback: true
-};
+};*/
 
 (function ($) {
 

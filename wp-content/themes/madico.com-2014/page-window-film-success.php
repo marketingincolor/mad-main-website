@@ -157,8 +157,14 @@
                    </div>
 
                    <div class="sm-meta" style="position:relative; display:inline-block; vertical-align:middle;" >
-                    <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-<script type="IN/FollowCompany" data-id="5232794"></script>
+                    <script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+<script type="IN/FollowCompany" data-id="119045"></script>
+                   </div>
+
+                   <div class="sm-meta" style="position:relative; display:inline-block; vertical-align:middle;" >
+                    <script src="https://apis.google.com/js/platform.js"></script>
+
+                    <div class="g-ytsubscribe" data-channelid="UCu9s60dm8xsrjHsXtqT49Nw" data-layout="default" data-count="hidden"></div>
                    </div>
 
                    <div class="sm-meta" style="position:relative; display:inline-block; vertical-align:middle;" >
