@@ -50,7 +50,11 @@
             .slides img { width:100%; }
             .item { display:inline-block; }
             .item h2, .item h3 { line-height:1; color:#00467f; }
-            .overlay { position:relative; display:inline-block; }
+            .overlay {
+              position:absolute;
+              top:0;
+              display:inline-block
+            }
             .quote-bar { background:#eeeef0 url(/img/dm16-land-quote.png) no-repeat center center ; min-height:180px; }
             .quote { margin:3em 6em; }
             .quote h4 { font-size:19px; }
@@ -64,7 +68,8 @@
             .dm16 .gform_body li:nth-child(n+5) { clear:unset; float:unset; width:95%; }
             .dm16 .gform_body li .gfield_checkbox li { float:left; text-align:left; }
             .dm16 .gform_body li:nth-last-child .gfield_description { display:none; }
-            
+            .validation_error,.validation_message{color:red}
+            .validation_message{text-align:left}
             .dm16 .gform_body li label { color:#fff; text-align:left; }
             .dm16 .gform_body li .ginput_container_text { }
             .dm16 .gform_body li .ginput_container_select select { border-radius: 3px; }
@@ -90,18 +95,53 @@
             }
             #input_28_9{resize:none}
 
-            .hero img{}
+            .hero{
+              background-image:url(/img/hero-no-text.jpg);
+              background-repeat:no-repeat;;
+              background-position:center center;
+              background-size:cover;
+              height:600px;
+              display:flex;
+              align-items:flex-end;
+              padding-bottom: 65px;
+            }
+            .hero .item h3{
+              font-size: 48px;
+              line-height: 54px;
+              color:#FFF;
+              font-weight:300;
+              margin-bottom:20px;
+              width: 61%;
+            }
+            .hero .item p{
+              color:#89b8ea;
+              text-transform: uppercase;
+              font-size:24px;
+              font-weight:400;
+              letter-spacing:2px;
+            }
+            .hero img{
+              width:100%
+            }
+            .form-section{padding-bottom: 8%}
+
             .form-container{
-              margin-top:-719px;
               max-width:80%;
               padding:8% 0;
               text-align:center;
+              border-bottom-right-radius: 5px;
+              border-bottom-left-radius: 5px;
+              background-color:#00467F;
             }
             .form-container h3,.form-container p{
               padding: 0 30px;
               color: #FFF;
             }
-            .form-container h3{font-weight:300;font-size:30px}
+            .form-container h3{
+              font-weight:300;
+              font-size:30px;
+              line-height:1.2em;
+            }
             .form-container p{margin-bottom:50px}
             .form-container img{margin-bottom:50px}
 
@@ -139,6 +179,7 @@
               margin-bottom: 20px;
             }
             .images .item p{margin-bottom:0;color:#787878}
+            .images img{width: 100%}
 
             .testimonials{
               background-image: url(/img/optimize-bg.jpg);
@@ -150,6 +191,9 @@
             .testimonials p,.testimonials .author,.testimonials .job{color: #787878;}
             .testimonials .author{font-weight: 700}
             .testimonials img{margin-bottom: 30px;}
+            .orbit-container{
+              height: 166px !important;
+            }
             .orbit-bullets{text-align:left}
             .orbit-bullets button{
               height: 15px;
@@ -184,7 +228,7 @@
                 .dm16 .gform_heading {top:0px}
                 .dm16 .gform_body li {width:95%}
                 .quote {margin:3em 3em}
-                .logo {margin:0 auto;display:block;height: auto;width:175px;padding:.5em}
+                .logo {display:block;height: auto;width:175px;padding:.5em}
                 .fadein img { left: -100px; top: 7px; height: 192px; }
             /* Medium screens */
             @media only screen and (min-width: 40.063em) {
@@ -219,36 +263,35 @@
               }
             }
             @media(max-width:640px){
+              .logo{margin: 0 auto}
               .hero{
-                background-image: url(/img/hero-image-mobile.jpg);
-                background-position:center center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                display: flex;
                 align-items: center;
                 text-align: center;
                 height: 250px;
+                padding-bottom: 0;
               }
-              .hero h3{
-                color: #FFF;
+              .hero .item{margin: 0}
+              .hero .item h3{
                 font-size: 26px;
-                font-weight: 300;
+                width: 100%;
+                line-height: 32px;
+                margin-bottom: 10px;
               }
-              .hero p{
-                text-transform: uppercase;
-                letter-spacing: 2px;
-                color: #89b8ea;
+              .hero .item p{
                 font-size: 16px;
               }
+
+              .form-section{padding-bottom:0}
               .form-container{
                 max-width:100%;
                 margin-top:0px;
-                padding:8% 30px;
+                padding:8% 20px;
               }
               .form-container h3,.form-container p{padding:0}
-              .overlay{display:block}
+              .overlay{display:block;position:relative}
+              .no-pad-mobile{padding: 0}
 
-              .features.item{margin-left:30px !important;margin-bottom:30px}
+              .features.item{margin-left:15px !important;margin-bottom:15px}
               .features.item h4{font-size:24px;line-height:38px;margin-bottom:30px}
               .features.item p{font-size:16px}
 
@@ -283,7 +326,7 @@
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ2BB3"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
-        <div class="row">
+        <div class="row expanded">
             <div class="header small-12 large-8 large-offset-1 columns">
              <img class="logo" src="/img/cplex-land-logo.png">
             </div>
@@ -291,35 +334,38 @@
         
         <section class="hero">
           <div class="row">
-            <div class="small-12">
-              <img class="auto hide-for-small-only" src="/img/hero-image.jpg"/>
-              <h3 class="show-for-small-only">A new way to drive more sales:</h3>
-              <p class="show-for-small-only">Windshield Protection</p>
+            <div class="small-12 columns">
+              <div class="item">
+                <h3>A new way to drive more sales:</h3>
+                <p>Windshield Protection</p>
+              </div>
             </div>
           </div>
         </section>
         
-        <div class="row collapse">
-          <div class="medium-6 columns">
-            <div class="item features" style="margin-left:19%;">
-              <h4>Generate new revenue with ClearPlex<sup>®</sup> Windshield Protection Film by Madico<sup>®</sup>.</h4>
-              <p>ClearPlex Windshield Protection Film is not intended for use on conventional cars. Ideally, it is the best solution to the astronomical cost of windshield replacement for luxury, exotic, and classic cars, as well as fleets, and construction equipment.</p>
-              <p>It effectively absorbs the impact of rocks and debris, leaving windshields in pristine condition. And since the film is replaced annually, you can expect repeat business from these high-end vehicle owners and investors.</p>
+        <section class="form-section">
+          <div class="row">
+            <div class="medium-6 columns">
+              <div class="item features">
+                <h4>Generate new revenue with ClearPlex<sup>®</sup> Windshield Protection Film by Madico<sup>®</sup>.</h4>
+                <p>ClearPlex Windshield Protection Film is not intended for use on conventional cars. Ideally, it is the best solution to the astronomical cost of windshield replacement for luxury, exotic, and classic cars, as well as fleets, and construction equipment.</p>
+                <p>It effectively absorbs the impact of rocks and debris, leaving windshields in pristine condition. And since the film is replaced annually, you can expect repeat business from these high-end vehicle owners and investors.</p>
+              </div>
             </div>
-          </div>
-          <div class="small-12 medium-6 columns">
-            <div class="contact-form overlay">
-              <div class="form-container" style="background-color:#00467F">
-                <img src="/img/form-icon.png" alt="">
-                <h3>Put yourself in the driver's seat and grow with us.</h3>
-                <p>Take your business to the next level with ClearPlex and other premium protection film products. Complete the form below to get started.</p>
-                <?php gravity_form( 28, false ); ?>
+            <div class="small-12 medium-6 columns no-pad-mobile">
+              <div class="contact-form overlay">
+                <div class="form-container">
+                  <img src="/img/form-icon.png" alt="">
+                  <h3>Put yourself in the driver's seat and grow with us.</h3>
+                  <p>Take your business to the next level with ClearPlex and other premium protection film products. Complete the form below to get started.</p>
+                  <?php gravity_form( 28, false ); ?>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
         
-        <section class="icons">
+        <section class="icons clearfix">
           <div class="row">
             <div class="medium-6 columns">
               <div class="row icon-row">
@@ -385,7 +431,7 @@
         </section>
 
         <section class="images">
-          <div class="row collapse">
+          <div class="row expanded collapse">
               <div class="small-12 medium-6 columns"><img src="/img/sports-car.jpg" /></div>
               <div class="small-12 medium-6 columns">
                 <div class="item">
@@ -395,7 +441,7 @@
               </div>
           </div>
           
-          <div class="row collapse">
+          <div class="row expanded collapse">
               <div class="hide-for-medium small-12 columns"><img src="/img/commercial-fleet.jpg" /></div>
               <div class="small-12 medium-6 columns">
                 <div class="item">
@@ -406,7 +452,7 @@
               <div class="show-for-medium medium-6 columns"><img src="/img/commercial-fleet.jpg" /></div>
           </div>
           
-          <div class="row collapse">
+          <div class="row expanded collapse">
               <div class="small-12 medium-6 columns"><img src="/img/classic-car.jpg" /></div>
               <div class="small-12 medium-6 columns">
                   <div class="item">
@@ -417,8 +463,8 @@
           </div>
         </section>
         
-        <section class="testimonials">
-          <div class="row">
+        <div class="row expanded">
+          <section class="testimonials clearfix">
             <div class="medium-12 columns end">
               <img src="/img/quote-icon.png" alt="Testimonial Quote">
             </div>
@@ -465,11 +511,11 @@
               </div>
             </div>
             <img src="/img/testimonial-car-mobile.jpg" alt="Clearplex testimonials" class="show-for-small-only">
-          </div>
-        </section>
+          </section>
+        </div>
 
         <section class="footer">
-          <div class="row">
+          <div class="row expanded">
             <div class="small-12 columns text-center">
             <img src="/img/footer-logo.png" alt="ClearPlex Logo">
             <p><a href="/">Madico.com</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href="/window-film/privacy-policy/">Privacy Policy</a></p>
@@ -501,8 +547,9 @@
             document.getElementsByTagName('script')[0].parentNode).appendChild(scr); 
            if(oldonload){oldonload()}}; 
         }());
-        var submitButton = document.getElementById('gform_submit_button_28');
-        submitButton.value = "I'M READY TO BOOST SALES!";
+        $('.validation_message').each(function(){
+          $(this).prev('div').find('input').css({'border':'1px solid red'})
+        });
         </script> 
     </body>
 </html>

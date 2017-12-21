@@ -74,6 +74,10 @@
             	width: 100%;
             	transition: all 0.25s ease-in-out;
             }
+
+            .validation_error,.validation_message{color:red}
+            .validation_message{text-align:left}
+
             .dm16 .gform_footer .button:hover {
             	background-color: #FFF;
             	color: #dc582a;
@@ -130,6 +134,7 @@
             .hero h3 {
             	color:#FFF;
             	font-size: 48px;
+                margin-bottom: 0;
             }
             .hero h4 {
             	color:#89b8ea;
@@ -138,13 +143,18 @@
             	font-size: 24px;
             	margin-bottom: 20px;
             }
-            .hero p {color:#FFF;margin-bottom:50px;}
+            .hero p {
+                color:#FFF;
+                margin-bottom:50px;
+                font-size: 18px;
+            }
             .hero a{
             	text-transform: uppercase;
             	color:#FFF;
             	background-color: #dc582a;
-            	padding: 10px 35px;
-            	border-radius: 20px;
+            	padding: 15px 35px;
+            	border-radius: 30px;
+                font-size: 18px;
             	transition: all 0.25s ease-in-out;
             }
             .hero a:hover {
@@ -179,14 +189,12 @@
             	height: 15px;
             	width: 15px;
             	background-color: #fff;
-            	border: 2px solid #d1d1d1;
+            	border: 1px solid #d1d1d1;
             	cursor: pointer;
             }
             .orbit-bullets button.is-active{
             	background-color: #dc582a;
             	border: none;
-            	position: relative;
-            	top: 2px;
             }
 
             .car{
@@ -198,9 +206,10 @@
             }
             .car h3{
             	font-weight: 300;
-            	font-size: 3rem;
+            	font-size: 2.125rem;
             	color: #00467f;
             	margin: 0 0 30px;
+                line-height: 1.2em;
             }
             .car p{
             	color: #787878;
@@ -213,6 +222,7 @@
             .dealer-form img{margin-bottom: 30px;}
             .dealer-form h3{color:#FFF;font-size: 30px;padding:0 30px}
             .dealer-form p{color:#FFF;margin-bottom:50px}
+            .dealer-form #field_28_8 label{margin-bottom: 10px}
 
             .footer{padding:8% 0}
             .footer img{margin-bottom:30px}
@@ -346,7 +356,7 @@
         <section class="car">
         	<div class="row">
         		<div class="medium-5 medium-offset-7 columns">
-        			<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+        			<div class="orbit" data-auto-play="false" role="region" aria-label="Favorite Space Pictures" data-orbit>
         			  <div class="orbit-wrapper">
         			    <ul class="orbit-container">
         			      <li class="is-active orbit-slide">
@@ -378,7 +388,7 @@
         	<div class="row">
         	  <div class="medium-offset-2 medium-8 large-6 large-offset-3 columns text-center">
         	    <img src="/img/form-icon.png" alt="">
-        	    <h3>Put yourself in the driver's seat and grow with us.</h3>
+        	    <h3>Put yourself in the driver's seat and <br class="show-for-large">grow with us.</h3>
         	    <p>Take your business to the next level with ClearPlex and other premium protection film products. Complete the form below to get started.</p>
         	    <?php gravity_form(28, false); ?>
         	  </div>
@@ -387,11 +397,11 @@
 
         <section class="footer">
         	<div class="row">
-        	  <div class="small-12 columns text-center">
-						<img src="/img/footer-logo.png" alt="ClearPlex Logo">
-        	  <p><a href="/">Madico.com</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href="/window-film/privacy-policy/">Privacy Policy</a></p>
-        	  <p>&copy; <?php echo date('Y'); ?> ClearPlex by Madico. All rights reserved.</p>
-        	  </div>
+        	    <div class="small-12 columns text-center">
+    				<img src="/img/footer-logo.png" alt="ClearPlex Logo">
+            	    <p><a href="/">Madico.com</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href="/window-film/privacy-policy/">Privacy Policy</a></p>
+            	    <p>&copy; <?php echo date('Y'); ?> ClearPlex by Madico. All rights reserved.</p>
+        	    </div>
         	</div>
         </section>
         
@@ -418,8 +428,9 @@
         </script>
 
         <script>
-        	var submitButton = document.getElementById('gform_submit_button_28');
-        	submitButton.value = "I'M READY TO BOOST SALES!";
+            $('.validation_message').each(function(){
+              $(this).prev('div').find('input').css({'border':'1px solid red'})
+            });
         </script>
     </body>
 </html>
