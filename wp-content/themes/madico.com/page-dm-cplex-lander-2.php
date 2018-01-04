@@ -41,6 +41,11 @@
                 max-width: 100em; /*changes 62.5em (1000px) to 100mem (1600px)*/
                 width: 100%;
             }
+            .top-bar .row{
+                max-width: 75rem;
+                margin-left: auto;
+                margin-right: auto;
+            }
             /* Page Components */
             html,body,h1,h2,h3,h4,h5,h6,p {
             	font-family: 'Montserrat', sans-serif;
@@ -120,8 +125,48 @@
                 .fadein img { left:0px top: 0px;  height: auto;}
             }
             /*======= New Styles ======*/
+            .top-bar{
+                position: fixed;
+                top:-108px;
+                width:100%;
+                padding:30px 0;
+                background:#003967;
+                background:linear-gradient(#FFF,#eeeef0);
+                transition:top 0.2s ease-in-out;
+                z-index: 99;
+            }
+            .top-bar.slide-down{top:0;box-shadow:0px 3px 50px rgba(0,0,0,0.2)}
+            .top-bar .columns{
+                display:flex;
+                align-items:center;
+            }
+            .top-bar .top-bar-left{
+                width:100%;
+                text-align:left;
+                float:none;
+            }
+            .top-bar .top-bar-right{
+                width:100%;
+                text-align:right;
+                float:none;
+            }
+            .top-bar p{color:#00467f;font-size:20px}
+            .top-bar .button,.top-bar p{margin-bottom:0}
+            .top-bar .button{
+                background-color: transparent;
+                border:2px solid #dc582a;
+                color:#dc582a;
+                transition:all 0.25s ease-in-out;
+                padding:15px 30px;
+                border-radius:25px;
+                text-transform:uppercase;
+            }
+            .top-bar .button:hover{
+                color:#FFF;
+                background-color:#dc582a;
+            }
             .hero{
-            	background-image: url(/img/cp-hero.jpg);
+            	background-image:url(/img/cp-hero.jpg);
             	background-position: center center;
             	background-repeat: no-repeat;
             	background-size: cover;
@@ -231,7 +276,26 @@
             .footer p:first-of-type{margin-bottom: 0}
 
             /*====== MOBILE ======*/
+            @media(max-width: 1024px){
+                .top-bar{top: -124px}
+            }
             @media(max-width: 640px){
+                .top-bar{
+                    padding: 15px 0;
+                    top: -124px
+                }
+                .top-bar .columns{
+                    display:block;
+                }
+                .top-bar p{
+                    line-height:1.4;
+                    margin-bottom:15px;
+                    font-size: 16px;
+                }
+                .top-bar .button{padding: 10px 30px}
+                .top-bar .top-bar-left,.top-bar .top-bar-right{
+                    text-align:center;
+                }
             	.hero h3{font-size: 36px;line-height: 40px}
             	.hero h4{font-size: 18px}
 
@@ -262,6 +326,9 @@
             		font-size: 14px;
             	}
             }
+            @media(max-width: 425px){
+                .top-bar{top: -127px}
+            }
         </style>
     </head>
     <body>
@@ -269,6 +336,19 @@
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ2BB3"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
+
+        <div class="top-bar">
+          <div class="row">
+              <div class="small-12 columns">
+                  <div class="top-bar-left">
+                      <p>Put yourself in the driver's sear <br class="show-for-small-only">and grow with us!</p>
+                  </div>
+                  <div class="top-bar-right">
+                      <a href="#dealer-form" class="button">Become A Dealer</a>
+                  </div>
+              </div>
+          </div>
+        </div>
 
         <section class="hero">
         	<div class="row">
@@ -430,6 +510,22 @@
         <script>
             $('.validation_message').each(function(){
               $(this).prev('div').find('input').css({'border':'1px solid red'})
+            });
+            $(document).ready(function(){
+                var heroHeight = $('.hero').outerHeight();
+                if ($(window).scrollTop() > heroHeight){
+                    $('.top-bar').addClass('slide-down');
+                }else{
+                    $('.top-bar').removeClass('slide-down');
+                }
+            });
+            $(window).scroll(function(){
+                var heroHeight = $('.hero').outerHeight();
+                if ($(window).scrollTop() > heroHeight){
+                    $('.top-bar').addClass('slide-down');
+                }else{
+                    $('.top-bar').removeClass('slide-down');
+                }
             });
         </script>
     </body>
