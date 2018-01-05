@@ -43,7 +43,7 @@
                 max-width: 75rem;
                 margin-left: auto;
                 margin-right: auto;
-            }c
+            }
             /* Page Components */
             html,body,h1,h2,h3,h4,h5,h6,p,li { font-family: 'Montserrat', sans-serif; }
             #slideshow { position:relative; height:396px; }
@@ -135,6 +135,7 @@
                 padding:15px 30px;
                 border-radius:25px;
                 text-transform:uppercase;
+                font-weight:800;
             }
             .top-bar .button:hover{
                 color:#FFF;
@@ -160,9 +161,9 @@
               width: 61%;
             }
             .hero .item p{
-              color:#89b8ea;
+              color:#b4d8ff;
               text-transform: uppercase;
-              font-size:24px;
+              font-size:30px;
               font-weight:400;
               letter-spacing:2px;
             }
@@ -232,13 +233,13 @@
               background-position: center center;
               background-repeat: no-repeat;
               background-size: cover;
-              padding: 8%;
+              padding: 6%;
             }
             .testimonials p,.testimonials .author,.testimonials .job{color: #787878;}
             .testimonials .author{font-weight: 700}
             .testimonials img{margin-bottom: 30px;}
             .orbit-container{
-              height: 166px !important;
+              height: 222px !important;
             }
             .orbit-bullets{text-align:left}
             .orbit-bullets button{
@@ -422,7 +423,7 @@
           <div class="row">
               <div class="small-12 columns">
                   <div class="top-bar-left">
-                      <p>Put yourself in the driver's sear <br class="show-for-small-only">and grow with us!</p>
+                      <p>Put yourself in the driver's seat <br class="show-for-small-only">and grow with us!</p>
                   </div>
                   <div class="top-bar-right">
                       <a href="#dealer-form" class="button">Become A Dealer</a>
@@ -446,16 +447,20 @@
           <div class="row">
             <div class="large-6 columns">
               <div class="item features">
-                <h4>Generate new revenue with ClearPlex<sup>®</sup> Windshield Protection Film by Madico<sup>®</sup>.</h4>
+                <h4>Generate new revenue with ClearPlex<sup>®</sup> Windshield Protection Film by Madico<sup>®</sup></h4>
                 <p>ClearPlex Windshield Protection Film is not intended for use on conventional cars. Ideally, it is the best solution to the astronomical cost of windshield replacement for luxury, exotic, and classic cars, as well as fleets, and construction equipment.</p>
-                <p>It effectively absorbs the impact of rocks and debris, leaving windshields in pristine condition. And since the film is replaced annually, you can expect repeat business from these high-end vehicle owners and investors.</p>
+                <p>It effectively absorbs the impact of rocks and debris, leaving windshields in pristine condition. And since the film is replaced periodically, you can expect repeat business from these high-end vehicle owners and investors.</p>
+                <p class="show-for-medium-up">&nbsp;</p>
+                <p class="show-for-medium-up">&nbsp;</p>
+                <p class="show-for-medium-up">&nbsp;</p>
+                <p class="show-for-medium-up">&nbsp;</p>
               </div>
             </div>
             <div class="small-12 large-6 columns no-pad-mobile">
               <div class="contact-form overlay">
-                <div class="form-container">
+                <div class="form-container" id="dealer-form">
                   <img src="/img/form-icon.png" alt="">
-                  <h3>Put yourself in the driver's seat and grow with us.</h3>
+                  <h3>Put yourself in the driver's seat and grow with us today!</h3>
                   <p>Take your business to the next level with ClearPlex and other premium protection film products. Complete the form below to get started.</p>
                   <?php gravity_form( 28, false ); ?>
                 </div>
@@ -544,7 +549,7 @@
               <div class="hide-for-medium small-12 columns"><img src="/img/commercial-fleet.jpg" /></div>
               <div class="small-12 medium-6 columns">
                 <div class="item">
-                  <h3>Keeps fleets on the road &mdash; and off the repair list.</h3>
+                  <h3>Keeps fleets on the road&mdash;and off the repair list.</h3>
                   <p>With well-engineered ClearPlex, windshields and bottom lines are protected.</p>
                 </div>
               </div>
@@ -617,7 +622,7 @@
           <div class="row expanded">
             <div class="small-12 columns text-center">
             <img src="/img/footer-logo.png" alt="ClearPlex Logo">
-            <p><a href="/">Madico.com</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href="/window-film/privacy-policy/">Privacy Policy</a></p>
+            <p><a href="http://www.clearplex.com" target="_blank">ClearPlex.com</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href="/">Madico.com</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href="/window-film/privacy-policy/">Privacy Policy</a></p>
             <p>&copy; <?php echo date('Y'); ?> ClearPlex by Madico. All rights reserved.</p>
             </div>
           </div>

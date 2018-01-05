@@ -229,6 +229,7 @@
             .testimonials p,.testimonials .author,.testimonials .job{color: #787878;}
             .testimonials .author{font-weight: 700}
             .testimonials img{margin-bottom: 30px;}
+            .orbit-container{ height: 222px !important; }
             .orbit-bullets{text-align:left}
             .orbit-bullets button{
             	height: 15px;
@@ -341,10 +342,10 @@
           <div class="row">
               <div class="small-12 columns">
                   <div class="top-bar-left">
-                      <p>Put yourself in the driver's sear <br class="show-for-small-only">and grow with us!</p>
+                      <p>Put yourself in the driver's seat <br class="show-for-small-only">and grow with us!</p>
                   </div>
                   <div class="top-bar-right">
-                      <a href="#dealer-form" class="button">Become A Dealer</a>
+                      <a href="#dealer-form" id="dealer-button" class="button">Become A Dealer</a>
                   </div>
               </div>
           </div>
@@ -356,7 +357,7 @@
         	     <img class="logo" src="/img/clearplex-logo-white.png">
         	     <h3>A new way to drive sales:</h3>
         	     <h4>Windshield protection</h4>
-        	     <p>Enhance your portfolio and bottom line with ClearPlex<sup>®</sup> Windshield Protection Film by Madico<sup>®</sup>.</p>
+        	     <p>Enhance your portfolio and bottom line with ClearPlex<sup>®</sup> Windshield Protection Film by Madico<sup>®</sup></p>
         	     <a href="#dealer-form" class="button">Become A Dealer</a>
         	    </div>
         	</div>
@@ -368,7 +369,7 @@
       	    	<img src="/img/clearplex-fleet-mobile.jpg" alt="Clearplex Fleet" class="show-for-small-only">
       	      <div class="mobile-fleet">
     	  	      <p>ClearPlex Windshield Protection Film is not intended for use on conventional cars. Ideally, it is the best solution to the astronomical cost of windshield replacement for luxury, exotic, and classic cars, as well as fleets, and construction equipment.</p>
-    	  	      <p>It effectively absorbs the impact of rocks and debris, leaving windshields in pristine condition. As a ClearPlex dealer, you can expect repeat business</p>
+    	  	      <p>It effectively absorbs the impact of rocks and debris, leaving windshields in pristine condition. As a ClearPlex dealer, you can expect repeat business since the film should be re-applied periodically.</p>
     		        <ul class="features-list">
     		        	<li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;&nbsp;Optically clear</li>
     		        	<li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;&nbsp;Patented hard-coated film</li>
@@ -388,7 +389,7 @@
         			<img src="/img/quote-icon.png" alt="Testimonial Quote">
         		</div>
         		<div class="medium-6 large-5 columns end">
-        			<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+        			<div class="orbit" role="region" aria-label="Testimonial Slides" data-orbit>
         			  <div class="orbit-wrapper">
         			    <ul class="orbit-container">
         			      <li class="is-active orbit-slide">
@@ -444,7 +445,7 @@
         			        <p>High performance cars deserve the world's best performing windshield protection.</p>
         			      </li>
         			      <li class="orbit-slide">
-        			        <h3>Keeps fleets on the road - and off the repair list.</h3>
+        			        <h3>Keeps fleets on the road&mdash;and off the repair list.</h3>
         			        <p>With well-engineered ClearPlex, windshields and bottom lines are protected.</p>
         			      </li>
         			      <li class="orbit-slide">
@@ -464,7 +465,7 @@
         	</div>
         </section>
         
-        <div class="dealer-form">
+        <div class="dealer-form" id="dealer-form">
         	<div class="row">
         	  <div class="medium-offset-2 medium-8 large-6 large-offset-3 columns text-center">
         	    <img src="/img/form-icon.png" alt="">
