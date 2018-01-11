@@ -450,10 +450,6 @@
                 <h4>Generate new revenue with ClearPlex<sup>®</sup> Windshield Protection Film by Madico<sup>®</sup></h4>
                 <p>ClearPlex Windshield Protection Film is not intended for use on conventional cars. Ideally, it is the best solution to the astronomical cost of windshield replacement for luxury, exotic, and classic cars, as well as fleets, and construction equipment.</p>
                 <p>It effectively absorbs the impact of rocks and debris, leaving windshields in pristine condition. And since the film is replaced periodically, you can expect repeat business from these high-end vehicle owners and investors.</p>
-                <p class="show-for-medium-up">&nbsp;</p>
-                <p class="show-for-medium-up">&nbsp;</p>
-                <p class="show-for-medium-up">&nbsp;</p>
-                <p class="show-for-medium-up">&nbsp;</p>
               </div>
             </div>
             <div class="small-12 large-6 columns no-pad-mobile">

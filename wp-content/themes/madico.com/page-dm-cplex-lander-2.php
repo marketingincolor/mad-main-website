@@ -182,10 +182,10 @@
                 margin-bottom: 0;
             }
             .hero h4 {
-            	color:#89b8ea;
+            	color:#b4d8ff;
             	text-transform: uppercase;
             	letter-spacing: 2px;
-            	font-size: 24px;
+            	font-size: 30px;
             	margin-bottom: 20px;
             }
             .hero p {
@@ -353,7 +353,7 @@
 
         <section class="hero">
         	<div class="row">
-        	    <div class="header small-12 medium-8 medium-offset-2 large-6 large-offset-3 columns">
+        	    <div class="header small-12 medium-8 medium-offset-2 zlarge-6 zlarge-offset-3 columns">
         	     <img class="logo" src="/img/clearplex-logo-white.png">
         	     <h3>A new way to drive sales:</h3>
         	     <h4>Windshield protection</h4>
@@ -471,7 +471,7 @@
         	    <img src="/img/form-icon.png" alt="">
         	    <h3>Put yourself in the driver's seat and <br class="show-for-large">grow with us.</h3>
         	    <p>Take your business to the next level with ClearPlex and other premium protection film products. Complete the form below to get started.</p>
-        	    <?php gravity_form(28, false); ?>
+        	    <?php gravity_form(32, false); ?>
         	  </div>
         	</div>
         </div>
@@ -480,7 +480,7 @@
         	<div class="row">
         	    <div class="small-12 columns text-center">
     				<img src="/img/footer-logo.png" alt="ClearPlex Logo">
-            	    <p><a href="/">Madico.com</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href="/window-film/privacy-policy/">Privacy Policy</a></p>
+            	    <p><a href="http://www.clearplex.com" target="_blank">ClearPlex.com</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href="/">Madico.com</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href="/window-film/privacy-policy/">Privacy Policy</a></p>
             	    <p>&copy; <?php echo date('Y'); ?> ClearPlex by Madico. All rights reserved.</p>
         	    </div>
         	</div>
