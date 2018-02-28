@@ -15,6 +15,13 @@ if ( $section == 'window-film' ) {
 ?>
 	<div id="footer">
 		<div class="container">
+			<div class="social clearfix" style="text-align:center; padding:25px 0px;">
+				<a href="https://www.facebook.com/MadicoWindowFilms/" rel="publisher" class="icon facebook"><i class="ion-social-facebook""></i></a>
+				<a href="https://twitter.com/MadicoInc" rel="publisher" class="icon twitter"><i class="ion-social-twitter"></i></a>
+				<a href="https://plus.google.com/109912744876993567602" rel="publisher" class="icon google"><i class="ion-social-googleplus"></i></a>
+				<a href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQH4pQC6awX9PQAAAWG5Fk0woEqotcyFy4It5KvovCWpSRchvMWQ8Pb39F9DmylOVSA-FCL-nkOfMdmyUTXfzCEa4n0Cx9fIWadav0bXm0dWw3h1c0Rmk8C1lF6o2r5klqasTWA=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fmadicoinc" class="icon linkedin"><i class="ion-social-linkedin"></i></a>
+				<a href="https://www.youtube.com/user/MadicoFilms" rel="publisher" class="icon youtube"><i class="ion-social-youtube"></i></a>
+			</div>
 			<div class="links clearfix">
 				<?php wp_nav_menu(array("depth" => 1, 'menu_class' => 'menu clearfix')); ?>
 				<p class="copyright">

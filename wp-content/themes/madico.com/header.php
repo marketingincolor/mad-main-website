@@ -44,9 +44,8 @@
 			<a href="http://dealerdirectory.madico.com/" class="sicon custom-button external-ga-link" style="color:#fff !important;">Find a Madico Window Films Dealer</a>
 			<a href="https://hub.hubcentrix.com/Madico" class="sicon brand-hub">Brand Hub</a>
 			<!--<a href="http://madico.know-where.com/madico/" class="sicon dealer-locator external-ga-link">Dealer Locator</a>-->
-			<a href="https://plus.google.com/109912744876993567602" rel="publisher" class="sicon google"><i class="ion-social-googleplus"></i></a>
 			<?php endif; ?>
-			<!--<a href="http://www.linkedin.com/company/madico?trk=hb_tab_compy_id_119045" class="sicon linkedin"><i class="ion-social-linkedin"></i></a>-->
+
 			<?php
 			/* Disabled until translation is updated
 			if ( class_exists('SitePress') && ( is_page('pv-backsheets') || is_child('pv-backsheets') || $language == 'chinese' ) )

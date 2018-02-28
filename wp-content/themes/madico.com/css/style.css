@@ -6,7 +6,7 @@ html, body { height: 100%; }
 .inner { margin: 0px auto; position: relative; width: 960px; }
 #header { margin-bottom: 30px; }
 #content { margin-bottom: 30px; }
-#footer { height: 100px; }
+#footer { height: /*100px*/ auto; }
 #branding { padding: 1.6em 0px; }
 #branding #searchbox { display: inline; float: left; }
 #branding #signup li { display: inline; margin: 0px 5px 0px 0px; }
@@ -1047,7 +1047,7 @@ a:hover {
      background-position: 0px -17px;
      color: #000000;
 }
-
+.icon i { color:inherit; font-size:2em; margin:0 20px; }
 .sicon i {
      color: #ffffff;
      /*color: #2b4e6b;*/

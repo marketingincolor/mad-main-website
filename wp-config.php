@@ -1,7 +1,7 @@
 <?php
 # Database Configuration
 
-define( 'DB_HOST', 'myserver.dev' );
+define( 'DB_HOST', 'localhost' );
 define( 'DB_NAME', 'madico_real' );
 define( 'DB_USER', 'root' );
 define( 'DB_PASSWORD', 'shiva69' );
@@ -15,14 +15,14 @@ define( 'DB_COLLATE', 'utf8_unicode_ci' );
 $table_prefix = 'wp_';
 
 # Security Salts, Keys, Etc
-define( 'AUTH_KEY', ')_;K%Q!/Piyk8D~}0a%a)-72SieR2~6?|0{(H|vi[M,x^nec;`L/P.9nlahL}nd@' );
-define( 'SECURE_AUTH_KEY', 'iapF>o_%pfG#6vq@:1+9tKAO,NTqV9/N]SX a.l{:C88?^1euW<y@$)72%8qIbc5' );
-define( 'LOGGED_IN_KEY', ';#o{nkewSv|G=8V!9g)).zkB+l>x$]X3i!XQz7:&)>2u4R>_e;UhWh?fqp:k-n`:' );
-define( 'NONCE_KEY', 'EJ|-wszLihpUk@ta:;t350Vwpf2K{8Xv%Lp(:PR:Cl6[Vu]7VE+.D@A|C,P4A9|(' );
-define( 'AUTH_SALT', '3)!"a58Gf[fkA`8>O+;KhTRr8/z^2[6sukjMxfQLl-yF_hd9V)}^J4,s<X)"(]Gf' );
-define( 'SECURE_AUTH_SALT', 'E$mG!tq*n3ucXo`7Yo8b!VrBXW!,`thSgQ`5.AL4uDB$:k3d @LBH*!Hy5?Z9{tK' );
-define( 'LOGGED_IN_SALT', 'D+BviUbnp?+/$}g"ETU}1RHmpU@MW0`j|xMF_Rem|R7+?P]P*c_v8MY~QQ,sw{ba' );
-define( 'NONCE_SALT', '8n,sv"WD.%>sLSQOwBY:-+S%d-za3jiv*a5={XY(:]ScKyn}po /6;~:_G{BFI<%' );
+#define( 'AUTH_KEY', ')_;K%Q!/Piyk8D~}0a%a)-72SieR2~6?|0{(H|vi[M,x^nec;`L/P.9nlahL}nd@' );
+#define( 'SECURE_AUTH_KEY', 'iapF>o_%pfG#6vq@:1+9tKAO,NTqV9/N]SX a.l{:C88?^1euW<y@$)72%8qIbc5' );
+#define( 'LOGGED_IN_KEY', ';#o{nkewSv|G=8V!9g)).zkB+l>x$]X3i!XQz7:&)>2u4R>_e;UhWh?fqp:k-n`:' );
+#define( 'NONCE_KEY', 'EJ|-wszLihpUk@ta:;t350Vwpf2K{8Xv%Lp(:PR:Cl6[Vu]7VE+.D@A|C,P4A9|(' );
+#define( 'AUTH_SALT', '3)!"a58Gf[fkA`8>O+;KhTRr8/z^2[6sukjMxfQLl-yF_hd9V)}^J4,s<X)"(]Gf' );
+#define( 'SECURE_AUTH_SALT', 'E$mG!tq*n3ucXo`7Yo8b!VrBXW!,`thSgQ`5.AL4uDB$:k3d @LBH*!Hy5?Z9{tK' );
+#define( 'LOGGED_IN_SALT', 'D+BviUbnp?+/$}g"ETU}1RHmpU@MW0`j|xMF_Rem|R7+?P]P*c_v8MY~QQ,sw{ba' );
+#define( 'NONCE_SALT', '8n,sv"WD.%>sLSQOwBY:-+S%d-za3jiv*a5={XY(:]ScKyn}po /6;~:_G{BFI<%' );
 
 
 # Localized Language Stuff
@@ -153,8 +153,10 @@ define( 'NONCE_SALT', '8n,sv"WD.%>sLSQOwBY:-+S%d-za3jiv*a5={XY(:]ScKyn}po /6;~:_
 
 define( 'MULTISITE', true );
 define( 'SUBDOMAIN_INSTALL', false );
+# define('WP_HOME','http://localhost/madico');
+# define('WP_SITEURL','http://localhost/madico');
 # define( 'DOMAIN_CURRENT_SITE', 'www.madico.com' );
-define( 'DOMAIN_CURRENT_SITE', 'myserver.dev/madico' );
+define( 'DOMAIN_CURRENT_SITE', 'localhost/madico' );
 define( 'PATH_CURRENT_SITE', '/' );
 define( 'SITE_ID_CURRENT_SITE', 1 );
 define( 'BLOG_ID_CURRENT_SITE', 1 );
