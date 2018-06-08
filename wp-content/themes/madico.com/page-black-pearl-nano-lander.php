@@ -285,16 +285,23 @@
             .blackpearl-form p{ color:#FFF; margin-bottom:10px; font-size:0.875em; }
             .blackpearl-form .fdesc { padding:1em 2em; }
             .blackpearl-form #field_28_8 label{ margin-bottom:10px; }
+            .blackpearl-form .questions { margin-top:1.75em !important; }
 
             .footer{padding:5% 0; }
-            .footer img{margin-bottom:30px; }
-            .footer p{color:#787878; }
-            .footer p,.footer a{font-size: 13px; }
-            .footer p:first-of-type{margin-bottom: 0; }
+            .footer img{ margin-bottom:30px; }
+            .footer p{ color:#787878; font-size:13px; }
+            .footer a{ font-size: 13px; color:#787878; }
+            .footer a:hover{ color:#d1d1d1; }
+            .footer p:first-of-type{ margin-bottom: 0; }
 
             /*====== MOBILE ======*/
             @media(max-width: 1024px){
                 .top-bar{top: -124px;}
+                .dm16 .gform_footer .button{
+                    padding: 10px 20px;
+                    font-size: 17px;
+                }
+                .testimonials {padding: 8% 0;}
             }
             @media(max-width: 640px){
                 .top-bar{
@@ -318,14 +325,14 @@
                 .hero .columns {padding:0 30px}
             	.features{
             		background-image:none;
-            		padding:0;
+            		padding: 0;
             	}
             	.features .columns {padding:0 30px}
-            	.features .mobile-fleet {padding: 8%}
+            	.features .mobile-features, .car .mobile-car {padding-top:8%; }
 
             	.testimonials{
             		background-image: none;
-            		padding: 8% 0;
+            		padding: 0;
             		background-color: #eaeef7;
             	}
             	.testimonials .columns {padding:0 30px}
@@ -438,7 +445,7 @@
                                 </address>
                           </li>
                           <li class="orbit-slide">
-                            <p>I have found that more and more people are coming in and asking for ceramic films and I’m happy to be able to provide my customers with a quality product that is easy to install and shrinks easily."</p>
+                            <p>I've found more and more people are coming in and asking for ceramic films and I'm happy to be able to provide my customers with a quality product that is easy to install and shrinks easily"</p>
                             <address class="gray-p">
                                   <span class="author">&mdash;David Lopez</span><br>
                                   <span class="job">Dwight's Auto Glass & Tint in Tucson, Arizona</span>

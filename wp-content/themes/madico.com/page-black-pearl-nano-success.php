@@ -191,6 +191,8 @@
             .footer img{margin-bottom:30px}
             .footer p{color:#787878}
             .footer p,.footer a{font-size: 13px}
+            .footer a{ color:#787878; }
+            .footer a:hover{ color:#d1d1d1; }
             .footer p:first-of-type{margin-bottom: 0}
 
             /*====== MOBILE ======*/
@@ -256,38 +258,38 @@
         <!-- End Google Tag Manager (noscript) -->
         <div class="row">
             <div class="header small-12 columns">
-             <img src="/img/blackpearl-logo-dark.png" width="426">
+             <img src="/img/blackpearl-logo-dark.png" width="360">
             </div>
         </div>
         
         <section class="hero">
             <div class="row">
-                <div class="header small-12 columns">
-                    <img src="/img/bpnc-success-icon.png" alt="Check!" />
+                <div class="header small-12 medium-8 medium-offset-2 columns">
+                    <img src="/img/bpnc-success-icon.png" width="136" alt="Check!" />
                     <h3>Well Done!</h3>
-                    <p>Thank you! We’ve received your information and will be in touch with you very shortly.<br>We appreciate your interest and look forward to helping you grow your business.</p>
+                    <p>Thank you! We’ve received your information and will be in touch with you very shortly. We appreciate your interest and look forward to helping you grow your business.</p>
                  
                     <div class="small-12 small-centered">
                         <div class="q-item" style="text-align:center;">
                         <div style="position:relative; margin-bottom:20px;">
                             <div class="sm-meta" style="position:relative; display:inline-block; vertical-align:middle; padding:10px;" >
-                                <a href="https://www.facebook.com/MadicoInc" target="_blank" class="sm-ico"><img src="/img/bpnc-ico-fb.png" alt="Facebook" /></a>
+                                <a href="https://www.facebook.com/MadicoInc" target="_blank" class="sm-ico"><img src="/img/bpnc-ico-fb.png" alt="Facebook" width="54" /></a>
                             </div>
 
                             <div class="sm-meta" style="position:relative; display:inline-block; vertical-align:middle; padding:10px;" >
-                                <a href="https://twitter.com/MadicoInc" target="_blank" class="sm-ico"><img src="/img/bpnc-ico-tw.png" alt="Twitter" /></a>
+                                <a href="https://twitter.com/MadicoInc" target="_blank" class="sm-ico"><img src="/img/bpnc-ico-tw.png" alt="Twitter" width="54" /></a>
                             </div> 
 
                             <div class="sm-meta" style="position:relative; display:inline-block; vertical-align:middle; padding:10px;" >
-                                <a href="https://www.linkedin.com/company/madicoinc/" target="_blank" class="sm-ico"><img src="/img/bpnc-ico-li.png" alt="LinkedIn" /></a>
+                                <a href="https://www.linkedin.com/company/madicoinc/" target="_blank" class="sm-ico"><img src="/img/bpnc-ico-li.png" alt="LinkedIn" width="54" /></a>
                             </div>
 
                             <div class="sm-meta" style="position:relative; display:inline-block; vertical-align:middle; padding:10px;" >
-                                <a href="https://plus.google.com/+MadicoInc" target="_blank" class="sm-ico"><img src="/img/bpnc-ico-gp.png" alt="Google+" /></a>
+                                <a href="https://plus.google.com/+MadicoInc" target="_blank" class="sm-ico"><img src="/img/bpnc-ico-gp.png" alt="Google+" width="54" /></a>
                             </div>
 
                             <div class="sm-meta" style="position:relative; display:inline-block; vertical-align:middle; padding:10px;" >
-                                <a href="https://youtube.com/c/MadicoInc" target="_blank" class="sm-ico"><img src="/img/bpnc-ico-yt.png" alt="YouTube" /></a>
+                                <a href="https://youtube.com/c/MadicoInc" target="_blank" class="sm-ico"><img src="/img/bpnc-ico-yt.png" alt="YouTube" width="54" /></a>
                             </div>
                         </div>
                         </div>
