@@ -139,7 +139,7 @@ $cat = get_query_var('cat');
 	elseif ( is_page($sf_page_id) || ( isset($post->ancestors) && in_array($sf_page_id, $post->ancestors) ) ) { 
 		dynamic_sidebar('Specialty Film Pages');
 	}
-	elseif ( is_page('invisifilm') )  { ?>
+	elseif ( is_page('invisifilm') || is_page('nano-ceramic') )  { ?>
 	<li class="more-information feature">
 		<h2>For More Information</h2>
 		<div class="textwidget">
