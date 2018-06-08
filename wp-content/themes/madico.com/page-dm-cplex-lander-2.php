@@ -357,7 +357,7 @@
         	     <img class="logo" src="/img/clearplex-logo-white.png">
         	     <h3>A new way to drive sales:</h3>
         	     <h4>Windshield protection</h4>
-        	     <p>Enhance your portfolio and bottom line with ClearPlex<sup>®</sup> Windshield Protection Film by Madico<sup>®</sup></p>
+        	     <p>Enhance your portfolio and bottom line with ClearPlex<sup>®</sup>, The Best Protection You’ll Never See<sup>™</sup></p>
         	     <a href="#dealer-form" class="button">Become A Dealer</a>
         	    </div>
         	</div>
