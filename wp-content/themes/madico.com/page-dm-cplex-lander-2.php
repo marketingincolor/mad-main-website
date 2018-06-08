@@ -480,8 +480,8 @@
         	<div class="row">
         	    <div class="small-12 columns text-center">
     				<img src="/img/footer-logo.png" alt="ClearPlex Logo">
-            	    <p><a href="http://www.clearplex.com" target="_blank">ClearPlex.com</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href="/">Madico.com</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href="/window-film/privacy-policy/">Privacy Policy</a></p>
-            	    <p>&copy; <?php echo date('Y'); ?> ClearPlex by Madico. All rights reserved.</p>
+            	    <p><a href="http://www.clearplex.com" target="_blank">clearplex.com</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href="/">madico.com</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href="/window-film/privacy-policy/">Privacy Policy</a></p>
+            	    <p>&copy; <?php echo date('Y'); ?> ClearPlex<sup>&reg;</sup> by Madico<sup>&trade;</sup>. All rights reserved.</p>
         	    </div>
         	</div>
         </section>
