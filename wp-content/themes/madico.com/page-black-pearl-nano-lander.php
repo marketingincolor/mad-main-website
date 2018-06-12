@@ -75,7 +75,7 @@
             .dm16 .gform_footer { margin:1em 2em 0em 2em; }
             .dm16 .gform_footer .button {
             	text-transform: uppercase;
-            	color:#FFF;
+            	color:#000;
             	background-color: #e09e10;
             	padding: 10px 35px;
             	border-radius: 20px;
@@ -160,7 +160,7 @@
                 float:none;
             }
             .top-bar p{color:#000;font-size:20px}
-            .top-bar .button,.top-bar p{margin-bottom:0}
+            .top-bar .button,.top-bar p{ margin-bottom:0 }
             .top-bar .button{
                 background-color: transparent;
                 border:2px solid #e09e10;
@@ -169,9 +169,10 @@
                 padding:15px 30px;
                 border-radius:25px;
                 text-transform:uppercase;
+                font-weight:600;
             }
             .top-bar .button:hover{
-                color:#FFF;
+                color:#000;
                 background-color:#e09e10;
             }
             .hero{
@@ -206,7 +207,7 @@
             }
             .hero a{
             	text-transform: uppercase;
-            	color:#FFF;
+            	color:#000;
             	background-color: #e09e10;
             	padding: 15px 35px;
             	border-radius: 30px;
@@ -274,7 +275,6 @@
                 background-color: #000;
                 border: none;
             }
-
             .blackpearl-form{
             	/*background-color: #00447c;*/
                 background-color: #252525;
@@ -320,8 +320,8 @@
                 .top-bar .top-bar-left,.top-bar .top-bar-right{
                     text-align:center;
                 }
-            	.hero h3{font-size: 36px;line-height: 40px}
-            	.hero h4{font-size: 18px}
+            	.hero h3{font-size: 36px;line-height: 40px; font-weight:400;}
+            	.hero h4{font-size: 18px; font-weight:400;}
                 .hero .columns {padding:0 30px}
             	.features{
             		background-image:none;
@@ -434,7 +434,7 @@
                     <img src="/img/bpnc-quote-icon.png" alt="Testimonial Quote">
                 </div>
                 <div class="medium-5 medium-offset-7 columns end">
-                    <div class="orbit" role="region" aria-label="Testimonial Slides" data-orbit>
+                    <div class="orbit" role="region" aria-label="Testimonial Slides" data-orbit data-timer-delay="9000">
                       <div class="orbit-wrapper">
                         <ul class="orbit-container">
                           <li class="is-active orbit-slide">
