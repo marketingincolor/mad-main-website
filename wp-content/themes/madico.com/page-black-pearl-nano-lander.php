@@ -380,7 +380,7 @@
         	     <img class="logo" src="/img/blackpearl-logo-white.png">
         	     <h3>Drive sales and 50% savings</h3>
         	     <h4>on your first order</h4>
-        	     <p>Madico took one of its popular automotive films and re-engineered it to have more brains and beauty. The exciting result is Black Pearl<sup>®</sup> Nano-Ceramic, with advanced heat rejection technology that provides stylish looks and superior heat protection and cooling—for a more comfortable driving experience.</p>
+        	     <p>Madico<sup>®</sup> took one of its popular automotive films and re-engineered it to have more brains and beauty. The exciting result is Black Pearl<sup>®</sup> Nano-Ceramic, with advanced ceramic technology that provides stylish looks and superior heat rejection&mdash;for a cooler and more comfortable driving experience.</p>
         	     <a href="#blackpearl-form" class="button">Start driving profits now</a>
         	    </div>
         	</div>
@@ -392,12 +392,12 @@
                 <div class="small-12 medium-5 medium-offset-6 large-4 large-offset-7 columns end">
                     <div class="mobile-features">
                         <h3>So Advanced, You Can Bank On It: Get 50% Off Now!</h3>
-                        <p>Black Pearl NC's advanced ceramic technology offers significant heat reduction by rejecting up to 87% of infrared rays. It blocks more than 99% of UV rays, protecting passengers and interiors from overexposure, and helps minimize annoying glare.</p>
-                        <p>We're confident you'll love how Black Pearl NC looks, performs, and shrinks that we're offering 50% off your first order.</p>
+                        <p>Black Pearl NC's advanced ceramic technology offers significant heat reduction by rejecting up to 87% of infrared rays. It blocks more than 99% of UV rays, protecting passengers and interiors from overexposure. The multiple shades available help to minimize annoying glare.</p>
+                        <p>We're so confident you'll love how Black Pearl NC looks, performs, and shrinks that we're offering 50% off your first order.</p>
                         <p>To qualify:</p>
                         <ul class="features-list">
                         	<li><i class="fa fa-check" aria-hidden="true"></i><p>Purchase a minimum of three rolls of Black Pearl NC film in a single order</p></li>
-                        	<li><i class="fa fa-check" aria-hidden="true"></i><p>Discount limited to first-time Black Pearl Nano-Ceramic orders of $2,500 or less</p></li>
+                        	<li><i class="fa fa-check" aria-hidden="true"></i><p>Discount limited to first-time Black Pearl NC orders of $2,500 or less</p></li>
                         	<li><i class="fa fa-check" aria-hidden="true"></i><p>Offer good while supplies last</p></li>
                         </ul>
                     </div>
@@ -468,8 +468,8 @@
         	<div class="row">
         	  <div class="medium-offset-2 medium-8 large-6 large-offset-3 columns text-center">
         	    <img src="/img/blackpearl-form-icon.png" alt="">
-        	    <h3>Rev up sales and profits and get <br class="show-for-large">50% of your first order.</h3>
-        	    <p class="fdesc">Add Black Pearl NC to your portfolio and watch your business grow. Complete the form below to get started.</p>
+        	    <h3>Rev up sales and profits and get <br class="show-for-large">50% OFF your first order.</h3>
+        	    <p class="fdesc">Add Black Pearl NC and watch your business grow. Complete the form below to get started.</p>
                 <?php gravity_form(33, false); /* staging */ ?>
         	    <?php //gravity_form(32, false); /* live */ ?>
         	  </div>
