@@ -1391,3 +1391,10 @@ function language_selector_flags(){
 		}
 	}
 }
+
+function custom_search_filter( $query ) {
+  if ( ! $query->is_admin && $query->is_search && $query->is_main_query() ) {
+    $query->set( 'post__not_in', array( 10287,10452,10450 ) );
+  }
+}
+add_action( 'pre_get_posts', 'custom_search_filter' );
