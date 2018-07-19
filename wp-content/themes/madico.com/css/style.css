@@ -969,6 +969,7 @@ a:hover {
      position: relative;
 }
 
+#content div.builder div.container,
 #content div.background div.container {
      border-radius: 3px;
      margin: 0px auto;

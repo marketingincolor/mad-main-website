@@ -60,7 +60,8 @@
 	        left: 50%;
 	        transform: translate(-50%, -50%);
 	        background-color: #000;
-	        padding: 1rem 1.5rem;
+	        text-align:center;
+	        /*padding: 1rem 1.5rem;*/
 	        width: 80%;
 	        height: 85%;
 			color: #fff;
@@ -80,7 +81,7 @@
 	        cursor: pointer;
 	        font-size:2em;
 	        font-weight:800;
-
+			padding:15px 15px 0px 0px;
 	        z-index:101;
 	    }
 	    .close-button:hover {
@@ -97,18 +98,22 @@
 	    	/*width:50%;*/
 	    }
 	    .modal-left {
-	    	float:left;
-	    	background: black url(<?php bloginfo('stylesheet_directory');?>/images/MadX-Takeover-Teaser-001_03.jpg);
+	    	/*float:left;*/
+	    	/*background: black url(<?php bloginfo('stylesheet_directory');?>/images/MadX-Takeover-Teaser-001_03.jpg);*/
+	    	background: none;
 	    	background-repeat:no-repeat;
 	    	background-position:center center;
 	    	background-size:cover;
-	    	height:100%;
+	    	/*height:100%;*/
 	    }
 	    .modal-left img { width:100%; }
 	    .modal-right { float:right; text-align:center; min-width:400px; }
-	    .modal-right h1 { font-size:60px; font-weight:600; margin-top:2.125em; color:#fff; }
+	    .modal-right h1 { font-size:50px; font-weight:600; /*margin-top:2.125em;*/ color:#fff; }
 	    .modal-right h3 { font-size:24px; font-weight:300; margin:.25em 0em; color:#fff; }
 	    .modal, .modal p { font-size:18px; font-weight:300; }
+		.clue-inner{ text-align: left; width: 300px; margin: 0 auto; display:flex; align-items:center; }
+		.clue-inner-child{ flex-grow:1; }
+		form { margin-bottom:auto; }
 	    form input[type="email"] {
 	    	border:none;
 	    	font-size:16px;
@@ -141,18 +146,54 @@
 		}
 
 		@media only screen { 
-			.modal-left { width:100%; height:95%; }
-			.modal-right { width:100%; position:absolute; margin-top: 15vh; }
+			.modal-left { 
+				width:100%; 
+				/*background: black url(<?php bloginfo('stylesheet_directory');?>/images/takeover-t2-bg-mobile.png) no-repeat top center / contain;*/
+			}
+			.modal-right { width:auto; position:absolute; margin:0 2em; /*margin-top: 15vh;*/ }
+			.modal-right h1 { font-size:40px; }
+			.modal-right h3 { font-size:32px; }
+	    	.modal, .modal p { font-size:24px; }
+			.modal-content { background: black; }
+			.modal-image-mobile { display:inline-block; }
+			.modal-image-tablet { display:none; }
+			.modal-top-logo { display:none; margin:0; }
+			.modal-mob-logo { display:inline; position:relative; top:40px;}
+			.clue-inner{ width:400px; }
 		} /* Define mobile styles */
 
 		@media only screen and (min-width: 40.063em) {
-			.modal-left { width:100%; height:95%; }
-			.modal-right { width:100%; position:absolute; margin-top: 15vh; }
+			.modal-left { 
+				width:100%; 
+				/*background: black url(<?php bloginfo('stylesheet_directory');?>/images/takeover-t2-bg-tablet.png) no-repeat top center / contain;*/
+				position:relative;
+				top:-10px;
+				z-index:-1;
+			}
+			.modal-right { width:auto; position:absolute; /*margin-top: 15vh;*/ }
+			.modal-right h1 { font-size:50px; }
+			.modal-right h3 { font-size:32px; }
+	    	.modal, .modal p { font-size:24px; }
+			.modal-content { background: black; }
+			.modal-image-mobile { display:none; }
+			.modal-image-tablet { display:inline-block; }
+			.modal-top-logo { display:none; margin:0; }
+			.modal-mob-logo { display:inline; position:relative; top:75px; left:20px;} 
+			.clue-inner{ width:400px; }
 		} /* min-width 641px, medium screens */
 
 		@media only screen and (min-width: 64.063em) {
-			.modal-left { width:50%; }
+			.modal-left { width:50%; background: none;}
 			.modal-right { width:50%; position:relative; margin-top: 0; }
+			.modal-right h1 { font-size:50px; }
+			.modal-right h3 { font-size:24px; }
+	    	.modal, .modal p { font-size:18px; }
+			.modal-content { background: black url(<?php bloginfo('stylesheet_directory');?>/images/takeover-t2-bg-desk.png) no-repeat top left / 80% auto; }
+			.modal-image-mobile { display:none; }
+			.modal-image-tablet { display:none; }
+			.modal-top-logo { display:inline; margin: 5.5em 0em 2em 0em; }
+			.modal-mob-logo { display:none; }
+			.clue-inner{ width:300px; }
 		} /* min-width 1025px, large screens */
 
 		@media only screen and (min-width: 90.063em) { 
@@ -183,16 +224,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="modal">
     <div class="modal-content">
         <span class="close-button takeover1-close">&times;</span>
+        <img src="<?php bloginfo('stylesheet_directory');?>/images/mad-bw-logo-sm.png" class="modal-mob-logo" style="margin:0 auto;">
         <div class="modal-left"> &nbsp;
         	<!--<img src="<?php bloginfo('stylesheet_directory');?>/images/MadX-Takeover-Teaser-001_03.jpg">-->
+        	<img src="<?php bloginfo('stylesheet_directory');?>/images/takeover-t2-bg-mobile.png" class="modal-image-mobile">
+        	<img src="<?php bloginfo('stylesheet_directory');?>/images/takeover-t2-bg-tablet.png" class="modal-image-tablet">
         </div>
         <div class="modal-right">
-        	<h1>Knock. Knock.</h1>
-        	<h3>Something big is coming in 2018.</h3>
+        	<img src="<?php bloginfo('stylesheet_directory');?>/images/mad-bw-logo-sm.png" class="modal-top-logo">
+        	<h1>It's all about you!</h1>
+        	<h3>Thrilling changes are on the horizon and they're all centered on you&#8212;and your continued success!</h3>
         	<br>
         	<br>
-        	<br>
-        	<p>Be one of the first to know about it!</p>
+        	<p>Get the scoop first!</p>
         	<!-- INSERT MICROFORM HERE -->
         	<!-- Begin MailChimp Signup Form -->
 			<div id="mc_embed_signup">
@@ -217,6 +261,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div id="result"></div>
 			</form>
 			</div>
+        	<br>
+        	<br>
+			<div class="clue-inner" style="text-align:left; display:flex; margin: 0 auto;">
+				<div class="clue-inner-child">
+					<a href="https://www.facebook.com/MadicoInc/" target="_blank"><img src="http://madico.staging.wpengine.com/wp-content/themes/madico.com/images/fb-clue-icon.png" style="float:left; margin-right:10px; margin-top:-10px;"></a>
+				</div>
+				<div class="clue-inner-child">
+					<span style="font-weight:bold;"><a href="https://www.facebook.com/MadicoInc/" target="_blank" style="color:#fff; text-decoration:none;">Want more clues</a></span><br>
+					<p class="clue-callout" style="font-size:.8em; line-height:1.8em"><a href="https://www.facebook.com/MadicoInc/" target="_blank" style="color:#fff; text-decoration:none;">Check out our Facebook Page!</a></p>
+				</div>
+			</div>
 
 			<!--End mc_embed_signup-->
         	<!-- END MICROFORM -->
@@ -230,8 +285,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     var closeButton = document.querySelector(".close-button");
 
 	function setTakeoverCookie() {
-	  if (document.cookie.replace(/(?:(?:^|.*;\s*)takeover1\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
+	  /*if (document.cookie.replace(/(?:(?:^|.*;\s*)takeover1\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
 	    document.cookie = "takeover1=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+	  }*/
+	  if (document.cookie.replace(/(?:(?:^|.*;\s*)takeover2\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
+	    document.cookie = "takeover2=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
 	  }
 	}
 
@@ -250,20 +308,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     closeButton.addEventListener("click", toggleModal);
     window.addEventListener("click", windowOnClick);
 	window.onload = function() {
-		if ( document.cookie.indexOf('takeover1=') == -1 ) {
+		if ( document.cookie.indexOf('takeover2=') == -1 ) {
             dataLayer.push({
-              'event': 'takeoverFormOneShownHidden',
-              'takeover_form_one_form_name': 'Takeover Form 1',
-              'takeover_form_one_form_displayed': 'Shown'
+              'event': 'takeoverFormTwoShownHidden',
+              'takeover_form_two_form_name': 'Takeover Form 2',
+              'takeover_form_two_form_displayed': 'Shown'
             });
 			toggleModal();
 		}
 
         else {
             dataLayer.push({
-              'event': 'takeoverFormOneShownHidden',
-              'takeover_form_one_form_name': 'Takeover Form 1',
-              'takeover_form_one_form_displayed': 'Hidden'
+              'event': 'takeoverFormTwoShownHidden',
+              'takeover_form_two_form_name': 'Takeover Form 2',
+              'takeover_form_two_form_displayed': 'Hidden'
             });
         }
 
@@ -277,7 +335,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	    this._input = this._form.querySelector("input.email").value;
 	    document.MC_callback = function(response) {
 	        if(response.result == "success") {
-                dataLayer.push({'event': 'takeoverFormOneSubmit'});
+                dataLayer.push({'event': 'takeoverFormTwoSubmit'});
                 document.getElementById("result").innerHTML ="Thank you! Stay tuned for more info!";
 
 	        } else {
