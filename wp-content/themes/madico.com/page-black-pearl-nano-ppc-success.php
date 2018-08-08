@@ -1,6 +1,6 @@
 <?php 
 /**
- * Template Name: Black Pearl NC Landing Success Page
+ * Template Name: Black Pearl NC PPC Landing Success Page
  *
  * Landing page template without a sidebar
  */
@@ -267,7 +267,7 @@
                 <div class="header small-12 medium-8 medium-offset-2 columns">
                     <img src="/img/bpnc-success-icon.png" width="136" alt="Check!" />
                     <h3>Well Done!</h3>
-                    <p>Thank you! We’ve received your information and will be in touch with you very shortly. We appreciate your interest and look forward to helping you grow your business.</p>
+                    <p>Thank you! We've received your information and appreciate your interest. Someone will be in touch with you very shortly regarding your request about Black Pearl® NC.</p>
                  
                     <div class="small-12 small-centered">
                         <div class="q-item" style="text-align:center;">

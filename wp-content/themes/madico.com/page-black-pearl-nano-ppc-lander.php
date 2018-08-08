@@ -1,6 +1,6 @@
 <?php 
 /**
- * Template Name: Black Pearl NC Landing Page
+ * Template Name: Black Pearl NC PPC Landing Page
  *
  * Landing page template without a sidebar
  */
@@ -63,7 +63,7 @@
             .dm16 .gform_body ul { list-style:none; margin:0; width:100%; text-align:center; }
             
             .dm16 .gform_body li { display:inline-table; margin:0 0.5em; }
-            .dm16 .gform_body li:nth-child(n+5) { clear:unset; float:unset; width:95%; }
+            .dm16 .gform_body li:nth-child(n+9) { clear:unset; float:unset; width:95%; }
             .dm16 .gform_body li .gfield_checkbox li { float:left; text-align:left; }
             .dm16 .gform_body li:nth-last-child .gfield_description { display:none; }
             
@@ -365,10 +365,10 @@
           <div class="row">
               <div class="small-12 columns">
                   <div class="top-bar-left">
-                      <p>Rev up sales and profits and get 50% <br class="show-for-small-only">off your first order.</p>
+                      <p>Enjoy a cooler, more comfortable driving experience</p>
                   </div>
                   <div class="top-bar-right">
-                      <a href="#blackpearl-form" id="dealer-button" class="button">Start driving profits now</a>
+                      <a href="#blackpearl-form" id="dealer-button" class="button">I want a cooler ride!</a>
                   </div>
               </div>
           </div>
@@ -378,32 +378,12 @@
         	<div class="row">
         	    <div class="header small-12 medium-8 medium-offset-2 columns">
         	     <img class="logo" src="/img/blackpearl-logo-white.png">
-        	     <h3>Drive sales and 50% savings</h3>
-        	     <h4>on your first order</h4>
+        	     <h3>More Comfort and a Cooler Ride!</h3>
+        	     <!--<h4>on your first order</h4>-->
         	     <p>Madico<sup>®</sup> took one of its popular automotive films and re-engineered it to have more brains and beauty. The exciting result is Black Pearl<sup>®</sup> Nano-Ceramic, with advanced ceramic technology that provides stylish looks and superior heat rejection&mdash;for a cooler and more comfortable driving experience.</p>
-        	     <a href="#blackpearl-form" class="button">Start driving profits now</a>
+        	     <a href="#blackpearl-form" class="button">Find out more</a>
         	    </div>
         	</div>
-        </section>
-        
-        <section class="features">
-            <div class="row">
-                <img src="/img/bpnc-features-mobile.jpg" alt="Black Pearl Nano-Ceramic Features" class="show-for-small-only">
-                <div class="small-12 medium-5 medium-offset-6 large-4 large-offset-7 columns end">
-                    <div class="mobile-features">
-                        <h3>So Advanced, You Can Bank On It: Get 50% Off Now!</h3>
-                        <p>Black Pearl NC's advanced ceramic technology offers significant heat reduction by rejecting up to 87% of infrared rays. It blocks more than 99% of UV rays, protecting passengers and interiors from overexposure. The multiple shades available help to minimize annoying glare.</p>
-                        <p>We're so confident you'll love how Black Pearl NC looks, performs, and shrinks that we're offering 50% off your first order.</p>
-                        <p>To qualify:</p>
-                        <ul class="features-list">
-                        	<li><i class="fa fa-check" aria-hidden="true"></i><p>Purchase a minimum of three rolls of Black Pearl NC film in a single order</p></li>
-                        	<li><i class="fa fa-check" aria-hidden="true"></i><p>Discount limited to first-time Black Pearl NC orders of $2,500 or less</p></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i><p>Offer good for North American dealers only</p></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i><p>Offer good while supplies last</p></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
         </section>
 
         <section class="car">
@@ -411,11 +391,10 @@
                 <img src="/img/bpnc-car-mobile.jpg" alt="black pearl nano-ceramic car" class="show-for-small-only">
                 <div class="small-12 medium-5 medium-offset-1 columns end">
                     <div class="mobile-car">
-                        <h3>More Comfort For Them.<br>More Revenue For You.</h3>
-                        <p>Black Pearl® NC Features:</p>
+                        <h3>Madico's Black Pearl<sup>®</sup> NC Offers Cool Comfort and Cool Looks</h3>
+                        <p>Black Pearl<sup>®</sup> NC Features:</p>
                         <ul class="features-list">
                             <li><i class="fa fa-check" aria-hidden="true"></i><p>High infrared heat rejection, nano-ceramic technology</p></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i><p>Excellent conformability for easy installation</p></li>
                             <li><i class="fa fa-check" aria-hidden="true"></i><p>Rich, black color</p></li>
                             <li><i class="fa fa-check" aria-hidden="true"></i><p>Metal-free construction won't interfere with wireless or satellite connections</p></li>
                             <li><i class="fa fa-check" aria-hidden="true"></i><p>Available in a wide range of shades to accommodate any driver's preference</p></li>
@@ -439,22 +418,15 @@
                       <div class="orbit-wrapper">
                         <ul class="orbit-container">
                           <li class="is-active orbit-slide">
-                            <p>We absolutely love the Black Pearl® Nano-Ceramic film. Our technicians love to install it and our customers are always pleased with the result."</p>
+                            <p>My drive has become so much more comfortable having Black Pearl<sup>®</sup> Nano-Ceramic installed on my car. Black Pearl Nano-Ceramic keeps my car's interior cooler even when it's parked for many hours in the sun."</p>
                             <address class="gray-p">
-                                  <span class="author">&mdash;Leslie Ewing</span><br>
-                                  <span class="job">Made in the Shade, Mesa, Arizona</span>
-                                </address>
-                          </li>
-                          <li class="orbit-slide">
-                            <p>I've found more and more people are coming in and asking for ceramic films and I'm happy to be able to provide my customers with a quality product that is easy to install and shrinks easily"</p>
-                            <address class="gray-p">
-                                  <span class="author">&mdash;David Lopez</span><br>
-                                  <span class="job">Dwight's Auto Glass & Tint in Tucson, Arizona</span>
+                                  <span class="author">&mdash;Ian Graham</span><br>
+                                  <span class="job">West Palm Beach, Florida</span>
                                 </address>
                           </li>
                         </ul>
                       </div>
-                      <nav class="orbit-bullets">
+                      <nav class="orbit-bullets" style="display:none;">
                         <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
                         <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
                       </nav>
@@ -468,10 +440,10 @@
         <div class="blackpearl-form" id="blackpearl-form">
         	<div class="row">
         	  <div class="medium-offset-2 medium-8 large-6 large-offset-3 columns text-center">
-        	    <img src="/img/blackpearl-form-icon.png" alt="">
-        	    <h3>Rev up sales and profits and get <br class="show-for-large">50% OFF your first order.</h3>
-        	    <p class="fdesc">Add Black Pearl NC and watch your business grow. Complete the form below to get started.</p>
-                <?php gravity_form(33, false); /* staging */ ?>
+        	    <img src="/img/blackpearl-form-icon-alt.png" alt="">
+        	    <h3>Enjoy a cooler, more comfortable driving experience</h3>
+        	    <p class="fdesc">Get started by completing the form below.</p>
+                <?php gravity_form(34, false); /* staging */ ?>
         	    <?php //gravity_form(32, false); /* live */ ?>
         	  </div>
         	</div>
@@ -481,7 +453,7 @@
         	<div class="row">
                 <div class="small-12 columns text-center">
                     <img src="/img/bpnc-footer-logo.png" alt="Black Pearl Nano-Ceramic Logo" width="330">
-            	    <p><a href="/nano-ceramic/">madico.com</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href="/window-film/privacy-policy/">Privacy Policy</a></p>
+            	    <p><a href="/nano-ceramic/">madico.com</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href="/privacy-policy/">Privacy Policy</a></p>
             	    <p>&copy; <?php echo date('Y'); ?> Madico<sup>&reg;</sup>, Inc. All rights reserved.</p>
         	    </div>
         	</div>

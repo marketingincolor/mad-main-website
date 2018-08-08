@@ -1,10 +1,10 @@
 <?php
 # Database Configuration
-
+define( 'WP_MEMORY_LIMIT', '768M' );
 define( 'DB_HOST', 'localhost' );
 define( 'DB_NAME', 'madico_real' );
 define( 'DB_USER', 'root' );
-define( 'DB_PASSWORD', 'shiva69' );
+define( 'DB_PASSWORD', 'root' );
 //define( 'DB_NAME', 'wp_madico' );
 //define( 'DB_USER', 'madico' );
 //define( 'DB_PASSWORD', '3O6gvcfJ3jPER9t5' );
@@ -150,7 +150,7 @@ $table_prefix = 'wp_';
 /*SSLEND*/
 
 # Custom Settings
-
+#define( 'WP_DEBUG', true ); define( 'WP_DEBUG_LOG', true );
 define( 'MULTISITE', true );
 define( 'SUBDOMAIN_INSTALL', false );
 # define('WP_HOME','http://localhost/madico');
