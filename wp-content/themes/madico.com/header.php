@@ -153,16 +153,16 @@
 				width:100%; 
 				/*background: black url(<?php bloginfo('stylesheet_directory');?>/images/takeover-t2-bg-mobile.png) no-repeat top center / contain;*/
 			}
-			.modal-right { width:auto; position:absolute; margin:0 2em; margin-top: 75px; }
+			.modal-right { width:auto; position:absolute; margin:0 2em; height:auto; margin-top: 50px; }
 			.modal-right h1 { font-size:42px; line-height:1.1; }
-			.modal-right h3 { font-size:24px; line-height:1.2; }
+			.modal-right h3 { font-size:24px; line-height:1.4; }
 	    	.modal, .modal p { font-size:14px; }
 			.modal-content { background: black; }
 			.modal-image-mobile { display:inline-block; }
 			.modal-image-tablet { display:none; }
 			.modal-top-logo { display:none; margin:0; }
 			.modal-mob-logo { z-index:101; display:inline; position:absolute; left:calc(50% - 76px); top:30px;}
-			.clue-inner{ width:400px; }
+			.clue-inner{ width:auto; }
 		} /* Define mobile styles */
 
 		@media only screen and (min-width: 40.063em) {
@@ -173,23 +173,23 @@
 				top:-10px;
 				z-index:-1;
 			}
-			.modal-right { width:auto; position:absolute; margin-top: 50px; }
+			.modal-right { width:auto; position:absolute; height:auto; margin-top: 50px; }
 			.modal-right h1 { font-size:42px; line-height:1.1; }
-			.modal-right h3 { font-size:20px; line-height:1.2; }
+			.modal-right h3 { font-size:20px; line-height:1.5; }
 	    	.modal, .modal p { font-size:14px; }
 			.modal-content { background: black; }
 			.modal-image-mobile { display:none; }
 			.modal-image-tablet { display:inline-block; }
 			.modal-top-logo { display:none; margin:0; }
 			.modal-mob-logo { /*z-index:101; display:inline; position:absolute; top:75px; left:20px;*/} 
-			.clue-inner{ width:400px; }
+			.clue-inner{ width:auto; }
 		} /* min-width 641px, medium screens */
 
 		@media only screen and (min-width: 64.063em) {
 			.modal-left { width:50%; background: none;}
-			.modal-right { width:50%; position:relative; /*margin-top: 0;*/ }
+			.modal-right { width:50%; position:relative; height:auto; margin-top: 0; }
 			.modal-right h1 { font-size:42px; line-height:1.1; }
-			.modal-right h3 { font-size:20px; line-height:1.2; }
+			.modal-right h3 { font-size:20px; line-height:1.5; }
 	    	.modal, .modal p { font-size:14px; }
 			.modal-content { 
 				background: black url(<?php bloginfo('stylesheet_directory');?>/images/takeover-t3-bg-desk.png); 
@@ -201,11 +201,11 @@
 			.modal-image-tablet { display:none; }
 			.modal-top-logo { display:inline; margin: 2em 0em; }
 			.modal-mob-logo { display:none; }
-			.clue-inner{ width:300px; }
+			.clue-inner{ width:auto; }
 		} /* min-width 1025px, large screens */
 
 		@media only screen and (min-width: 90.063em) { 
-
+			.modal-right { height:100%; }
 		} /* min-width 1441px, xlarge screens */
 
 
@@ -237,7 +237,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         	<img src="<?php bloginfo('stylesheet_directory');?>/images/takeover-t3-bg-mobile.png" class="modal-image-mobile">
         	<img src="<?php bloginfo('stylesheet_directory');?>/images/takeover-t3-bg-tablet.png" class="modal-image-tablet">
         </div>
-        <div class="modal-right">
+        <div class="modal-right"style="display:flex; flex-direction:column; justify-content:center; align-items:center;">
         	<img src="<?php bloginfo('stylesheet_directory');?>/images/mad-bw-logo-sm.png" class="modal-top-logo">
         	<h1>The choice will be clear!</h1>
         	<h3>Get ready for an industry-changing customer experience that sets us apart from our competitors&#8212;and makes Madico the clear choice!</h3>
@@ -271,7 +271,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         	<br>
         	<br>
 			<div class="clue-inner" style="text-align:left; display:flex; margin: 0 auto;">
-				<div class="clue-inner-child">
+				<div class="clue-inner-child" style="flex-grow:0;">
 					<a href="https://www.facebook.com/MadicoInc/" target="_blank"><img src="http://madico.staging.wpengine.com/wp-content/themes/madico.com/images/fb-clue-icon.png" style="float:left; margin-right:10px; margin-top:-10px;"></a>
 				</div>
 				<div class="clue-inner-child">
