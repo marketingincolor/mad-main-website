@@ -66,9 +66,9 @@
 	        height: 85%;
 			color: #fff;
 	        z-index:100;
-	        -moz-box-shadow:-10px 10px 30px rgba(0,0,0,0.6);
-	        -webkit-box-shadow:-10px 10px 30px rgba(0,0,0,0.6);
-	        box-shadow:-10px 10px 30px rgba(0,0,0,0.6);
+	        -moz-box-shadow:5px 10px 30px rgba(0,0,0,0.6);
+	        -webkit-box-shadow:5px 10px 30px rgba(0,0,0,0.6);
+	        box-shadow:5px 10px 30px rgba(0,0,0,0.6);
 	        /*background: black url(<?php bloginfo('stylesheet_directory');?>/images/MadX-Takeover-Teaser-001_03.jpg);
 	    	background-repeat:no-repeat;
 	    	background-size:200px 200px;*/
@@ -154,15 +154,19 @@
 				/*background: black url(<?php bloginfo('stylesheet_directory');?>/images/takeover-t2-bg-mobile.png) no-repeat top center / contain;*/
 			}
 			.modal-right { width:auto; position:absolute; margin:0 2em; height:auto; margin-top: 50px; }
-			.modal-right h1 { font-size:42px; line-height:1.1; }
-			.modal-right h3 { font-size:24px; line-height:1.4; }
-	    	.modal, .modal p { font-size:14px; }
-			.modal-content { background: black; }
+			.modal-right h1 { font-size:36px; line-height:1.1; }
+			.modal-right h3 { font-size:20px; line-height:1.4; font-weight:400;  }
+	    	.modal, .modal p { font-size:16px; font-weight:400; }
+			.modal-content { background: #031727; }
 			.modal-image-mobile { display:inline-block; }
 			.modal-image-tablet { display:none; }
 			.modal-top-logo { display:none; margin:0; }
-			.modal-mob-logo { z-index:101; display:inline; position:absolute; left:calc(50% - 76px); top:30px;}
+			.modal-mob-logo { z-index:101; display:inline; position:absolute; left:calc(50% - 106px); top:30px;}
 			.clue-inner{ width:auto; }
+			.clue-inner-child span { font-weight:bold; font-size:18px; }
+			.clue-inner-child .clue-callout { font-size:14px; line-height:1.8em; font-weight:bold; }
+			form input[type="email"] { font-size:18px; }
+			form input[type="submit"] { font-size:16px; }
 		} /* Define mobile styles */
 
 		@media only screen and (min-width: 40.063em) {
@@ -174,25 +178,29 @@
 				z-index:-1;
 			}
 			.modal-right { width:auto; position:absolute; height:auto; margin-top: 50px; }
-			.modal-right h1 { font-size:42px; line-height:1.1; }
-			.modal-right h3 { font-size:20px; line-height:1.5; }
-	    	.modal, .modal p { font-size:14px; }
-			.modal-content { background: black; }
+			.modal-right h1 { font-size:36px; line-height:1.1; }
+			.modal-right h3 { font-size:16px; line-height:1.5; font-weight:400; }
+	    	.modal, .modal p { font-size:16px; font-weight:400; }
+			.modal-content { background: #031727; }
 			.modal-image-mobile { display:none; }
 			.modal-image-tablet { display:inline-block; }
 			.modal-top-logo { display:none; margin:0; }
 			.modal-mob-logo { /*z-index:101; display:inline; position:absolute; top:75px; left:20px;*/} 
 			.clue-inner{ width:auto; }
+			.clue-inner-child span { font-weight:bold; font-size:18px; }
+			.clue-inner-child .clue-callout { font-size:14px; line-height:1.8em; }
+			form input[type="email"] { font-size:18px; }
+			form input[type="submit"] { font-size:16px; }
 		} /* min-width 641px, medium screens */
 
 		@media only screen and (min-width: 64.063em) {
 			.modal-left { width:50%; background: none;}
-			.modal-right { width:50%; position:relative; height:auto; margin-top: 0; }
-			.modal-right h1 { font-size:42px; line-height:1.1; }
-			.modal-right h3 { font-size:20px; line-height:1.5; }
-	    	.modal, .modal p { font-size:14px; }
+			.modal-right { width:50%; position:relative; height:100%; margin-top: 0; }
+			.modal-right h1 { font-size:36px; line-height:1.1; }
+			.modal-right h3 { font-size:16px; line-height:1.5; font-weight:400; }
+	    	.modal, .modal p { font-size:16px; font-weight:400; }
 			.modal-content { 
-				background: black url(<?php bloginfo('stylesheet_directory');?>/images/takeover-t3-bg-desk.png); 
+				background: black url(<?php bloginfo('stylesheet_directory');?>/images/takeover-t4-bg-desk.png); 
 				background-repeat: no-repeat;
 				background-position: left center;/*background-position: -300px bottom;*/
 				background-size: cover;/*background-size: auto auto;*/
@@ -202,6 +210,8 @@
 			.modal-top-logo { display:inline; margin: 2em 0em; }
 			.modal-mob-logo { display:none; }
 			.clue-inner{ width:auto; }
+			.clue-inner-child span { font-weight:bold; font-size:18px; }
+			.clue-inner-child .clue-callout { font-size:14px; line-height:1.8em; }
 		} /* min-width 1025px, large screens */
 
 		@media only screen and (min-width: 90.063em) { 
@@ -232,16 +242,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="modal">
     <div class="modal-content">
         <div class="close-button takeover1-close">&times;</div>
-        <img src="<?php bloginfo('stylesheet_directory');?>/images/mad-bw-logo-sm.png" class="modal-mob-logo" style="margin:0 auto;">
+        <img src="<?php bloginfo('stylesheet_directory');?>/images/mad-bw-logo-tcc-sm.png" class="modal-mob-logo" style="margin:0 auto;">
         <div class="modal-left">
-        	<img src="<?php bloginfo('stylesheet_directory');?>/images/takeover-t3-bg-mobile.png" class="modal-image-mobile">
-        	<img src="<?php bloginfo('stylesheet_directory');?>/images/takeover-t3-bg-tablet.png" class="modal-image-tablet">
+        	<img src="<?php bloginfo('stylesheet_directory');?>/images/takeover-t4-bg-mobile.png" class="modal-image-mobile">
+        	<img src="<?php bloginfo('stylesheet_directory');?>/images/takeover-t4-bg-tablet.png" class="modal-image-tablet">
         </div>
         <div class="modal-right"style="display:flex; flex-direction:column; justify-content:center; align-items:center;">
-        	<img src="<?php bloginfo('stylesheet_directory');?>/images/mad-bw-logo-sm.png" class="modal-top-logo">
-        	<h1>The choice will be clear!</h1>
-        	<h3>Get ready for an industry-changing customer experience that sets us apart from our competitors&#8212;and makes Madico the clear choice!</h3>
-        	<br>
+        	<img src="<?php bloginfo('stylesheet_directory');?>/images/mad-bw-logo-tcc-sm.png" class="modal-top-logo">
+        	<h1 style="padding:0px 40px;">The choice is becoming clearer!</h1>
+        	<h3 style="padding:0px 40px;">The New Madico Experience is much more than window film. What can you expect? Find out next month!</h3>
+        	<h3 style="padding:0px 40px; color:#fdb813;">Visit Booth #12461 at the SEMA Show on Oct. 30-Nov. 2 for a sneak peek of the New Madico Experience!</h3>
         	<br>
         	<p>Want the breaking news first? Sign up now!</p>
         	<!-- INSERT MICROFORM HERE -->
@@ -269,17 +279,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</form>
 			</div>
         	<br>
-        	<br>
 			<div class="clue-inner" style="text-align:left; display:flex; margin: 0 auto;">
 				<div class="clue-inner-child" style="flex-grow:0;">
 					<a href="https://www.facebook.com/MadicoInc/" target="_blank"><img src="http://madico.staging.wpengine.com/wp-content/themes/madico.com/images/fb-clue-icon.png" style="float:left; margin-right:10px; margin-top:-10px;"></a>
 				</div>
 				<div class="clue-inner-child">
-					<span style="font-weight:bold;"><a href="https://www.facebook.com/MadicoInc/" target="_blank" style="color:#fff; text-decoration:none;">Want more clues</a></span><br>
-					<p class="clue-callout" style="font-size:.8em; line-height:1.8em"><a href="https://www.facebook.com/MadicoInc/" target="_blank" style="color:#fff; text-decoration:none;">Check out our Facebook Page!</a></p>
+					<span style="font-weight:bold; font-size:18px;"><a href="https://www.facebook.com/MadicoInc/" target="_blank" style="color:#fff; text-decoration:none;">Want more clues</a></span><br>
+					<p class="clue-callout" style="font-size:14px; line-height:1.8em"><a href="https://www.facebook.com/MadicoInc/" target="_blank" style="color:#fff; text-decoration:none;">Check out our Facebook Page!</a></p>
 				</div>
 			</div>
-
+			
 			<!--End mc_embed_signup-->
         	<!-- END MICROFORM -->
     	</div>
