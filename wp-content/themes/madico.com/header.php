@@ -33,6 +33,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800,900" rel="stylesheet">
 
 	<style>
+        @font-face {font-family: 'AvenirLTStd-Light';src: url('http://www.madico.com/webfonts/374950_0_0.eot');src: url('http://www.madico.com/webfonts/374950_0_0.eot?#iefix') format('embedded-opentype'),url('http://www.madico.com/webfonts/374950_0_0.woff2') format('woff2'),url('http://www.madico.com/webfonts/374950_0_0.woff') format('woff'),url('http://www.madico.com/webfonts/374950_0_0.ttf') format('truetype');}
+        @font-face {font-family: 'AvenirLTStd-Book';src: url('http://www.madico.com/webfonts/374950_2_0.eot');src: url('http://www.madico.com/webfonts/374950_2_0.eot?#iefix') format('embedded-opentype'),url('http://www.madico.com/webfonts/374950_2_0.woff2') format('woff2'),url('http://www.madico.com/webfonts/374950_2_0.woff') format('woff'),url('http://www.madico.com/webfonts/374950_2_0.ttf') format('truetype');}
+        @font-face {font-family: 'AvenirLTPro-Roman';src: url('http://www.madico.com/webfonts/374950_4_0.eot');src: url('http://www.madico.com/webfonts/374950_4_0.eot?#iefix') format('embedded-opentype'),url('http://www.madico.com/webfonts/374950_4_0.woff2') format('woff2'),url('http://www.madico.com/webfonts/374950_4_0.woff') format('woff'),url('http://www.madico.com/webfonts/374950_4_0.ttf') format('truetype');}
+        @font-face {font-family: 'AvenirLTStd-Medium';src: url('http://www.madico.com/webfonts/374950_6_0.eot');src: url('http://www.madico.com/webfonts/374950_6_0.eot?#iefix') format('embedded-opentype'),url('http://www.madico.com/webfonts/374950_6_0.woff2') format('woff2'),url('http://www.madico.com/webfonts/374950_6_0.woff') format('woff'),url('http://www.madico.com/webfonts/374950_6_0.ttf') format('truetype');}
+        @font-face {font-family: 'AvenirLTStd-Heavy';src: url('http://www.madico.com/webfonts/374950_8_0.eot');src: url('http://www.madico.com/webfonts/374950_8_0.eot?#iefix') format('embedded-opentype'),url('http://www.madico.com/webfonts/374950_8_0.woff2') format('woff2'),url('http://www.madico.com/webfonts/374950_8_0.woff') format('woff'),url('http://www.madico.com/webfonts/374950_8_0.ttf') format('truetype');}
+        @font-face {font-family: 'AvenirLTStd-Black';src: url('http://www.madico.com/webfonts/374950_A_0.eot');src: url('http://www.madico.com/webfonts/374950_A_0.eot?#iefix') format('embedded-opentype'),url('http://www.madico.com/webfonts/374950_A_0.woff2') format('woff2'),url('http://www.madico.com/webfonts/374950_A_0.woff') format('woff'),url('http://www.madico.com/webfonts/374950_A_0.ttf') format('truetype');}
+        @font-face {font-family: 'AvenirLTStd-BlackOblique';src: url('http://www.madico.com/webfonts/374950_B_0.eot');src: url('http://www.madico.com/webfonts/374950_B_0.eot?#iefix') format('embedded-opentype'),url('http://www.madico.com/webfonts/374950_B_0.woff2') format('woff2'),url('http://www.madico.com/webfonts/374950_B_0.woff') format('woff'),url('http://www.madico.com/webfonts/374950_B_0.ttf') format('truetype');}
+
 		#mc_embed_signup_scroll {
 	    	background-color: white;
     		display: inline-block;
@@ -52,19 +60,20 @@
 	        transform: scale(1.1);
 	        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 	        z-index:100;
-	        font-family: 'Montserrat', sans-serif;
+	        /*font-family: 'AvenirLTStd-Light', sans-serif;*/
+	        font-family: 'AvenirLTPro-Roman', sans-serif;
 	    }
 	    .modal-content {
 	        position: absolute;
 	        top: 50%;
 	        left: 50%;
 	        transform: translate(-50%, -50%);
-	        background-color: #000;
+	        background-color: #fff;
 	        text-align:center;
 	        /*padding: 1rem 1.5rem;*/
 	        width: 80%;
 	        height: 85%;
-			color: #fff;
+			color: #636466;
 	        z-index:100;
 	        -moz-box-shadow:5px 10px 30px rgba(0,0,0,0.6);
 	        -webkit-box-shadow:5px 10px 30px rgba(0,0,0,0.6);
@@ -111,9 +120,21 @@
 	    }
 	    .modal-left img { width:100%; }
 	    .modal-right { float:right; text-align:center; min-width:400px; clear:both; }
-	    .modal-right h1 { font-size:50px; font-weight:600; /*margin-top:2.125em;*/ color:#fff; }
-	    .modal-right h3 { font-size:24px; font-weight:300; margin:.25em 0em; color:#fff; }
-	    .modal, .modal p { font-size:18px; font-weight:300; }
+	    .modal-right h1 { font-size:50px; font-weight:600; /*margin-top:2.125em;*/ color:#00467F; font-family: 'Montserrat', sans-serif; }
+	    .modal-right h3 { font-size:24px; font-weight:normal; margin:.25em 0em; color:#636466; }
+	    .modal, .modal p { font-size:18px; font-weight:normal; }
+	    .yellow-button { 
+	       text-transform: uppercase;
+		    color: #FFF !important;
+		    text-decoration: none !important;
+		    font-weight:bold;
+		    background-color: #e09e10;
+		    padding: 15px 35px;
+		    border-radius: 30px;
+		    font-size: 16px;
+		    letter-spacing: 0.125em;
+		    margin-bottom:40px;
+		}
 		.clue-inner{ text-align: left; width: 300px; margin: 0 auto; display:flex; align-items:center; }
 		.clue-inner-child{ flex-grow:1; }
 		form { margin-bottom:auto; }
@@ -155,9 +176,9 @@
 			}
 			.modal-right { width:auto; position:absolute; margin:0 2em; height:auto; margin-top: 50px; }
 			.modal-right h1 { font-size:36px; line-height:1.1; }
-			.modal-right h3 { font-size:20px; line-height:1.4; font-weight:400;  }
-	    	.modal, .modal p { font-size:16px; font-weight:400; }
-			.modal-content { background: #031727; }
+			.modal-right h3 { font-size:20px; line-height:1.4; font-weight:normal; color:#636466; }
+	    	.modal, .modal p { font-size:16px; font-weight:normal; }
+			/*.modal-content { background: #031727; }*/
 			.modal-image-mobile { display:inline-block; }
 			.modal-image-tablet { display:none; }
 			.modal-top-logo { display:none; margin:0; }
@@ -179,9 +200,9 @@
 			}
 			.modal-right { width:auto; position:absolute; height:auto; margin-top: 50px; }
 			.modal-right h1 { font-size:36px; line-height:1.1; }
-			.modal-right h3 { font-size:16px; line-height:1.5; font-weight:400; }
-	    	.modal, .modal p { font-size:16px; font-weight:400; }
-			.modal-content { background: #031727; }
+			.modal-right h3 { font-size:16px; line-height:1.5; font-weight:normal; color:#636466; }
+	    	.modal, .modal p { font-size:16px; font-weight:normal; }
+			/*.modal-content { background: #031727; }*/
 			.modal-image-mobile { display:none; }
 			.modal-image-tablet { display:inline-block; }
 			.modal-top-logo { display:none; margin:0; }
@@ -197,17 +218,17 @@
 			.modal-left { width:50%; background: none;}
 			.modal-right { width:50%; position:relative; height:100%; margin-top: 0; }
 			.modal-right h1 { font-size:36px; line-height:1.1; }
-			.modal-right h3 { font-size:16px; line-height:1.5; font-weight:400; }
-	    	.modal, .modal p { font-size:16px; font-weight:400; }
+			.modal-right h3 { font-size:16px; line-height:1.5; font-weight:normal; color:#636466; }
+	    	.modal, .modal p { font-size:16px; font-weight:normal; }
 			.modal-content { 
-				background: black url(<?php bloginfo('stylesheet_directory');?>/images/takeover-t4-bg-desk.png); 
+				background: white url(<?php bloginfo('stylesheet_directory');?>/images/takeover-t5-bg-desk.png); 
 				background-repeat: no-repeat;
-				background-position: left center;/*background-position: -300px bottom;*/
-				background-size: cover;/*background-size: auto auto;*/
+				background-position: center left;/*background-position: -300px bottom;*/
+				background-size: contain;/*background-size: auto auto;*/
 			}
 			.modal-image-mobile { display:none; }
 			.modal-image-tablet { display:none; }
-			.modal-top-logo { display:inline; margin: 2em 0em; }
+			.modal-top-logo { display:inline; margin:1em 0em 2em; }
 			.modal-mob-logo { display:none; }
 			.clue-inner{ width:auto; }
 			.clue-inner-child span { font-weight:bold; font-size:18px; }
@@ -231,7 +252,6 @@
 
 <body class="<?php base_body_class(); ?>">
 
-
 <?php if(TRUE): ?>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ2BB3"
@@ -242,55 +262,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="modal">
     <div class="modal-content">
         <div class="close-button takeover1-close">&times;</div>
-        <img src="<?php bloginfo('stylesheet_directory');?>/images/mad-bw-logo-tcc-sm.png" class="modal-mob-logo" style="margin:0 auto;">
         <div class="modal-left">
-        	<img src="<?php bloginfo('stylesheet_directory');?>/images/takeover-t4-bg-mobile.png" class="modal-image-mobile">
-        	<img src="<?php bloginfo('stylesheet_directory');?>/images/takeover-t4-bg-tablet.png" class="modal-image-tablet">
+        	<img src="<?php bloginfo('stylesheet_directory');?>/images/takeover-t5-bg-mobile.png" class="modal-image-mobile">
+        	<img src="<?php bloginfo('stylesheet_directory');?>/images/takeover-t5-bg-tablet.png" class="modal-image-tablet">
         </div>
         <div class="modal-right"style="display:flex; flex-direction:column; justify-content:center; align-items:center;">
-        	<img src="<?php bloginfo('stylesheet_directory');?>/images/mad-bw-logo-tcc-sm.png" class="modal-top-logo">
-        	<h1 style="padding:0px 40px;">The choice is becoming clearer!</h1>
-        	<h3 style="padding:0px 40px;">The New Madico Experience is much more than window film. What can you expect? Find out next month!</h3>
-        	<h3 style="padding:0px 40px; color:#fdb813;">Visit Booth #12461 at the SEMA Show on Oct. 30-Nov. 2 for a sneak peek of the New Madico Experience!</h3>
+        	<img src="<?php bloginfo('stylesheet_directory');?>/images/takeover-t5-logo.png" class="modal-top-logo">
+        	<h1 style="padding:20px 40px;">The New Madico Experience Is Here!</h1>
+        	<h3 style="padding:0px 40px;">Open the door to exciting, new opportunities! Spearheaded by our President and CEO, Shawn Kitchell, we've reimagined customer support in new, innovative ways.</h3>
+        	<h3 style="padding:20px 40px;">The New Madico Experience is all about you!</h3>
         	<br>
-        	<p>Want the breaking news first? Sign up now!</p>
-        	<!-- INSERT MICROFORM HERE -->
-        	<!-- Begin MailChimp Signup Form -->
-			<div id="mc_embed_signup">
-			<!--<form action="https://madico.us11.list-manage.com/subscribe/post?u=9653db4e3db094bc0e2541532&amp;id=9078fc0562" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>-->
-			<form action="https://madico.us11.list-manage.com/subscribe/post-json?u=9653db4e3db094bc0e2541532&amp;id=9078fc0562">
-			    <div id="mc_embed_signup_scroll">
-					<div class="mc-field-group">
-						<!--<label for="mce-EMAIL"><i class="general foundicon-mail"></i></label>-->
-						<label for="mce-EMAIL"><img src="<?php bloginfo('stylesheet_directory');?>/images/env-icon.png"></label>
-						<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your Email Address">
-						<input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="submit">
-					</div>
-					<div id="mce-responses" class="clear">
-						<div class="response" id="mce-error-response" style="display:none"></div>
-						<div class="response" id="mce-success-response" style="display:none"></div>
-					</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-				    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9653db4e3db094bc0e2541532_9078fc0562" tabindex="-1" value=""></div>
-				    <div class="clear">
-				    	<!--<input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="submit">-->
-				    </div>
-			    </div>
-				<div id="result"></div>
-			</form>
-			</div>
+			<a href="<?php echo site_url(); ?>/madico-experience" class="yellow-button">Learn More</a>
         	<br>
 			<div class="clue-inner" style="text-align:left; display:flex; margin: 0 auto;">
 				<div class="clue-inner-child" style="flex-grow:0;">
-					<a href="https://www.facebook.com/MadicoInc/" target="_blank"><img src="http://madico.staging.wpengine.com/wp-content/themes/madico.com/images/fb-clue-icon.png" style="float:left; margin-right:10px; margin-top:-10px;"></a>
+					<a href="https://www.facebook.com/MadicoInc/" target="_blank"><img src="<?php bloginfo('stylesheet_directory');?>/images/takeover-t5-fb-icon.png" style="float:left; margin-right:10px; margin-top:-10px;"></a>
 				</div>
 				<div class="clue-inner-child">
-					<span style="font-weight:bold; font-size:18px;"><a href="https://www.facebook.com/MadicoInc/" target="_blank" style="color:#fff; text-decoration:none;">Want more clues</a></span><br>
-					<p class="clue-callout" style="font-size:14px; line-height:1.8em"><a href="https://www.facebook.com/MadicoInc/" target="_blank" style="color:#fff; text-decoration:none;">Check out our Facebook Page!</a></p>
+					<p class="fb-callout" style="line-height:1.8em; margin-bottom:0.5em;"><a href="https://www.facebook.com/MadicoInc/" target="_blank" style=" text-decoration:none; color:#636466;">Check out our Facebook Page!</a></p>
 				</div>
 			</div>
 			
-			<!--End mc_embed_signup-->
-        	<!-- END MICROFORM -->
     	</div>
     </div>
 </div>
@@ -301,11 +293,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     var closeButton = document.querySelector(".close-button");
 
 	function setTakeoverCookie() {
-	  /*if (document.cookie.replace(/(?:(?:^|.*;\s*)takeover1\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
-	    document.cookie = "takeover1=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-	  }*/
-	  if (document.cookie.replace(/(?:(?:^|.*;\s*)takeover3\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
-	    document.cookie = "takeover3=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+	  if (document.cookie.replace(/(?:(?:^|.*;\s*)takeover4\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
+	    document.cookie = "takeover4=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
 	  }
 	}
 
@@ -323,60 +312,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     //trigger.addEventListener("click", toggleModal);
     closeButton.addEventListener("click", toggleModal);
     window.addEventListener("click", windowOnClick);
+    // REMOVED -- takover form data push
 	window.onload = function() {
-		if ( document.cookie.indexOf('takeover3=') == -1 ) {
-            dataLayer.push({
-              'event': 'takeoverFormTwoShownHidden',
-              'takeover_form_two_form_name': 'Takeover Form 2',
-              'takeover_form_two_form_displayed': 'Shown'
-            });
+		if ( document.cookie.indexOf('takeover4=') == -1 ) {
 			toggleModal();
 		}
 
         else {
-            dataLayer.push({
-              'event': 'takeoverFormTwoShownHidden',
-              'takeover_form_two_form_name': 'Takeover Form 2',
-              'takeover_form_two_form_displayed': 'Hidden'
-            });
         }
 
 	};
-
-	// Newsletter submittal using Javascript
-	function mcCustomFormSubmit(event) {
-	    event.preventDefault();
-	    this._form = this.querySelector("form");
-	    this._action = this._form.getAttribute("action");
-	    this._input = this._form.querySelector("input.email").value;
-	    document.MC_callback = function(response) {
-	        if(response.result == "success") {
-                dataLayer.push({'event': 'takeoverFormTwoSubmit'});
-                document.getElementById("result").innerHTML ="Thank you! Stay tuned for more info!";
-
-	        } else {
-	            document.getElementById('result').innerHTML ="Thank you for your interest! But it looks like you are already on our mailing list!";
-                // dataLayer.push({
-                //   'event': 'takeoverFormOneSubmit',
-                //   'dlv_category': 'Form',
-                //   'dlv_action': 'Submitted'
-                //   'takeover_form_one_form_name': 'Takeover Form 1',
-                //   'takeover_form_one_form_displayed': 'Shown'
-                // });
-	        }
-	    }
-	    // generate script
-	    this._script = document.createElement("script");
-	    this._script.type = "text/javascript";
-	    this._script.src = this._action + "&c=document.MC_callback&EMAIL=" + this._input;
-	    // append script to head
-	    document.getElementsByTagName("head")[0].appendChild(this._script);
-	}
-	var signupform = document.querySelector("#mc_embed_signup")
-	signupform.addEventListener("submit", mcCustomFormSubmit);
+	// REMOVED -- Newsletter submittal using Javascript
 </script>
-
-
 
 
 

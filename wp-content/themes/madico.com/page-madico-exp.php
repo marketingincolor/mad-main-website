@@ -205,7 +205,7 @@
             .recognition { margin:0; }
             .recognition .row { width:100%; max-width:100%; margin:0; }
             .recognition .recognition-content { position:relative; top:50%; transform:translateY(50%); }
-            .recognition .text-block { padding:3em 1em; }
+            .recognition .text-block { padding: 3em 3em 3em 6em; }
             .dealer-marketing .dm-content { position:relative; top:50%; transform:translateY(50%); }
             .consumer-marketing .cm-content { position:relative; top:50%; transform:translateY(15%); }
 
@@ -274,7 +274,7 @@
                 }
                 .hero-text { font-size:60px; }
                 .support .support-content { position:relative; top:25%; transform:translateY(25%); }
-                .recognition .recognition-content { position:relative; top:25%; transform:translateY(25%); }
+                .recognition .recognition-content { position:relative; top:25%; transform:translateY(15%); }
                 .dealer-marketing .dm-content { position:relative; top:25%; transform:translateY(25%); }
                 .consumer-marketing .cm-content { position:relative; top:25%; transform:translateY(25%); }
             }
@@ -287,6 +287,7 @@
                 .hero-text { font-size:60px; }
                 .support .support-content { position:relative; top:inherit; transform:inherit; }
                 .recognition .recognition-content { position:relative; top:inherit; transform:inherit; }
+                .recognition .text-block { padding: 3em 1em; }
                 .dealer-marketing .dm-content { position:relative; top:inherit; transform:inherit;}
                 .consumer-marketing .cm-content { position:relative; top:inherit; transform:inherit; }
             }
@@ -297,9 +298,11 @@
             		font-size: 14px;
             	}
                 .hero-text {  font-size:30px; }
+                .recognition .text-block { padding: 3em 1em; }
             }
             @media(max-width: 425px){
                 .hero-text {  font-size:30px; }
+                .recognition .text-block { padding: 3em 1em; }
             }
         </style>
     </head>
@@ -343,7 +346,7 @@
                 <div class="support-content medium-5 medium-offset-1 columns">
                     <div class="text-block">
                         <h3>Dealer Support Programs</h3>
-                        <p>Enjoy robust support initiatives that provide dealers with access to programs and information designed to help grow sales and profitability. Dealers get rewarded with benefits ranging from leads and bonuses, to co-op advertising, and special promotions.</p>
+                        <p>Enjoy robust support initiatives that will provide dealers with access to programs and information designed to help grow sales and profitability. Dealers will get rewarded with benefits ranging from leads and bonuses, to co-op advertising, and special promotions.</p>
                     </div>
                 </div>
                 <div class="medium-5 end columns hide-for-small-only">
@@ -361,7 +364,7 @@
                 <div class="recognition-content small-12 medium-5 end columns">
                     <div class="text-block">
                         <h3>Dealer Recognition</h3>
-                        <p>Our dealer appreciation initiatives are designed to recognize and reward those who exemplify the Madico spirit and achieve high standards. Rewards include financial bonuses, advertising support, charitable donations, and more.</p>
+                        <p>Our dealer appreciation initiatives are designed to recognize and reward those who exemplify the Madico spirit and achieve high standards. Rewards will include financial bonuses, advertising support, charitable donations, and more.</p>
                     </div>
                 </div>
             </div>
@@ -371,7 +374,7 @@
             <div class="row">
                 <div class="small-10 small-offset-1 columns small-centered">
                     <div class="text-block text-center">
-                        <h3>With the New Madico Experience, dealers receive unrivaled support not typically found in the industry.</h3>
+                        <h3>With the New Madico Experience, dealers will receive unrivaled support not typically found in the industry.</h3>
                         <p><a class="button" href="#madico-experience-form">Tell Me More</a></p>
                     </div>
                 </div>
@@ -384,8 +387,8 @@
                     <div class="text-block">
                         <h3>Dealer Portal</h3>
                         <aside class="yellow-underline left"></aside>
-                        <p>The dealer-exclusive section of our new website gives current Madico dealers the ability to order products online from any internet-connected device, view order history, access support program information, perks, and other exclusive resources. </p>
-                        <p>Potential dealers have the opportunity to view product specs and information, learn about Madico's dealer support programs, and join the ranks as a Madico dealer.</p>
+                        <p>Coming in December, the dealer-exclusive section of our new website will give current Madico dealers the ability to order products online from any internet-connected device, view order history, access support program information, perks, and other exclusive resources. </p>
+                        <p>Potential dealers will have the opportunity to view product specs and information, learn about Madico's dealer support programs, and join the ranks as a Madico dealer.</p>
                     </div>
                 </div>
             </div>
@@ -412,7 +415,7 @@
                     <div class="text-block">
                         <h3>Madico U</h3>
                         <aside class="yellow-underline left"></aside>
-                        <p>Our educational initiative, tailor-made for window film dealers, combines online and in-person learning. Through Madico U, you can access:</p>
+                        <p>Also coming in December, our educational initiative, tailor-made for window film dealers, combines online and in-person learning. Through Madico U, you will be able to access:</p>
                     </div>
                 </div>
             </div>
@@ -452,7 +455,7 @@
             <div class="row">
                 <div class="small-10 small-offset-1 columns small-centered">
                     <div class="text-block text-center">
-                        <h3>The New Madico Experience is all about helping you succeed!</h3>
+                        <h3>The New Madico Experience is all about helping you&mdash;the dealer&mdash;succeed!</h3>
                         <p><a class="button" href="#madico-experience-form">Tell Me More</a></p>
                     </div>
                 </div>
@@ -465,7 +468,7 @@
                     <div class="text-block">
                         <h3>Dealer Marketing</h3>
                         <aside class="yellow-underline left"></aside>
-                        <p>Download marketing materials, documents, forms, and digital assets to include on your own website and ads. It's fast, easy, and convenient.</p>
+                        <p>On our new website, you will be able to download marketing materials, documents, forms, and digital assets to include on your own website and ads. It will be fast, easy, and convenient.</p>
                     </div>
                 </div>
                 <div class="medium-7 columns">
@@ -483,7 +486,7 @@
                     <div class="text-block">
                         <h3>Consumer Marketing</h3>
                         <aside class="yellow-underline left"></aside>
-                        <p>The New Madico Experience includes an integrated ecosystem that educates and nurtures the end-consumer on all things window film—and serves as a lead generator for our dealers. So, it's a win-win for everybody.</p>
+                        <p>The New Madico Experience will include an integrated ecosystem that educates and nurtures the end-consumer on all things window film—and serves as a lead generator for our dealers. So, it's a win-win for everybody.</p>
                     </div>
                 </div>
             </div>
