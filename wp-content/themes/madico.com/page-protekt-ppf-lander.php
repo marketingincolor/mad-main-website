@@ -50,13 +50,12 @@
             html,body,h1,h2,h3,h4,h5,h6,p {
             	font-family: 'Montserrat', sans-serif;
             }
-            h3, h4 {
-            	font-weight: 300;
-            }
+            h2{ font-weight: 300; }
+            h3, h4 { font-weight: 600; }
             a { color:#000; }
             a:hover { color:#787878; }
             a.button { margin-bottom:0; }
-            p { font-size:18px; }
+            p { font-size:18px; font-weight:400; }
             .dm16 .gform_heading {display:none;}
             .dm16 .gform_description h3 { padding:0.175em 0;}
             .dm16 .gform_body { display:inline-block; color:#fff; }
@@ -186,7 +185,7 @@
             .hero img{
             	margin-bottom: 90px;
             }
-            .hero h3 {
+            .hero h2 {
             	color:#000;
             	font-size: 48px;
                 margin-bottom: 0;
@@ -205,7 +204,7 @@
                 margin-bottom:50px;
                 font-size: 18px;
                 letter-spacing:-0.5px;
-                font-weight:500;
+                font-weight:400;
             }
             .hero a{
             	text-transform: uppercase;
@@ -229,8 +228,8 @@
             	background-size: cover;
             	padding: 8% 0;
             }
-            .features p, .features .features-list li, .car li {font-weight:500; color:rgb(26, 26, 26);}
-            .road li {font-weight:500; color:#fff;}
+            .features p, .features .features-list li, .car li {font-weight:400; color:rgb(26, 26, 26);}
+            .road li {font-weight:400; color:#fff;}
             .features .features-list li, .car li, .road li {list-style-type:none;padding:5px 0}
             .features i, .car i, .road i {color: #e09e10; position:absolute;}
             .features ul, .car ul, .road u {margin: 0}
@@ -242,7 +241,7 @@
             	background-size: cover;
             	padding: 8% 0;
             }
-            .car p{ color:rgb(26, 26, 26); font-weight:500; }
+            .car p{ color:rgb(26, 26, 26); font-weight:400; }
             .road{
                 background-image: url(/img/protekt-img-road.jpg);
                 background-position: center center;
@@ -251,9 +250,9 @@
                 padding: 8% 0;
                 color:#fff;
             }
-            .road p{ color:#fff; font-weight:500; }
+            .road p{ color:#fff; font-weight:400; }
             .road h3{ margin-right:3em; }
-            h3 { font-size:30px; font-weight:400; letter-spacing:-1.1px; }
+            h3 { font-size:30px; font-weight:600; letter-spacing:-1.1px; }
 
             .testimonials{
                 background-image: url(/img/protekt-img-car-alt.jpg);
@@ -262,9 +261,9 @@
                 background-size: cover;
                 padding: 8% 0;
             }
-            .testimonials p,.testimonials .author,.testimonials .job{color:rgb(26, 26, 26); font-weight:500; font-style:initial;}
+            .testimonials p,.testimonials .author,.testimonials .job{color:rgb(26, 26, 26); font-weight:400; font-style:initial;}
             .testimonials .author{font-weight: 700;}
-            .testimonials img{margin-bottom: 30px;}
+            .testimonials img{ /*margin-bottom: 30px;*/ }
             .orbit-container{ height: fit-content !important; }
             .orbit-bullets{text-align:left; display:none;}
             .orbit-bullets button{
@@ -305,6 +304,7 @@
                     font-size: 17px;
                 }
                 .testimonials {padding: 8% 0;}
+                .footer{padding:5% 0; }
             }
             @media(max-width: 640px){
                 .top-bar{
@@ -325,7 +325,7 @@
                 }
                 .hero { padding:70px 0px 100px 0px; background-image:linear-gradient( rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.10) ),url(/img/protekt-hero.jpg); }
                 .hero img { margin-bottom:10px; }
-            	.hero h3{font-size: 36px;line-height: 40px; }
+            	.hero h2{font-size: 36px;line-height: 40px; }
             	.hero h4{font-size: 18px; }
                 .hero a { width:100%; }
                 .hero .columns {padding:0 30px}
@@ -334,14 +334,14 @@
             		padding: 0;
             	}
             	.features .columns {padding:0 30px}
-            	.features .mobile-features, .car .mobile-car {padding-top:8%; }
+            	.features .mobile-features, .car .mobile-car {padding-top:8%; padding-bottom:8%; }
 
             	.testimonials{
             		background-image: none;
             		padding: 0;
             		background-color: #eaeef7;
             	}
-            	.testimonials .columns {padding:0 30px}
+            	.testimonials .columns {padding:0 30px 30px 30px}
 
             	.car{
             		background-image: none;
@@ -349,12 +349,13 @@
             	}
             	.car .columns {padding:0 30px}
             	.car .orbit {padding-bottom: 20px}
-                h3 { /*font-size:36px;*/ font-weight:500; }
+                h3 { /*font-size:36px;*/ font-weight:600; }
                 .road h3 { margin-right:auto; }
             	.dm16 .gform_footer .button{
             		padding: 10px 20px;
             		font-size: 14px;
             	}
+                .footer{padding:10% 0; }
             }
             @media(max-width: 425px){
                 .top-bar{top: -127px}
@@ -384,7 +385,7 @@
         	<div class="row">
         	    <div class="header small-12 medium-5 medium-offset-1 columns">
         	     <img class="logo" src="/img/protekt-logo-header.png">
-        	     <h3>The Place to Start for the Perfect Finish</h3>
+        	     <h2>The Place to Start for the Perfect Finish</h2>
         	     <h4>Paint Protection at its best</h4>
         	     <p>Madico<sup>®</sup> introduces its finest paint protection film yet&mdash;Protekt<sup>®</sup>PPF. Designed for exterior automotive paint surfaces, this transparent paint protection film delivers a one-of-a-kind, industry-leading top coat, perfect for your customers who care about preserving a like-new factory finish for their vehicles.</p>
         	     <a href="#protekt-form" class="button">Tell Me More!</a>

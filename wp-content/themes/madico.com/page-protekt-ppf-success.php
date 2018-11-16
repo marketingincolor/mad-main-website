@@ -20,7 +20,7 @@
         <title>Black Pearl&reg; Nano-Ceramic by Madico</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.css" />
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
         <link rel="shortcut icon" type="image/x-icon" href="http://www.madico.com/wp-content/themes/madico.com/images/favicon.ico">
         <style>
             /* Foundation Overrides */
@@ -199,6 +199,7 @@
             /*====== MOBILE ======*/
             @media(max-width: 1024px){
                 .top-bar{top: -124px}
+                .hero{ background-position: center center; }
             }
             @media(max-width: 640px){
                 .top-bar{
@@ -219,7 +220,7 @@
                 }
                 .hero h3{font-size: 36px;line-height: 40px}
                 .hero h4{font-size: 18px}
-
+                .hero{ background-position: 34% 50%; }
                 .features{
                     background-image:none;
                     padding:0;
