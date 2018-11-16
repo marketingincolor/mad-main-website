@@ -71,7 +71,7 @@
 	        background-color: #fff;
 	        text-align:center;
 	        /*padding: 1rem 1.5rem;*/
-	        width: 80%;
+	        width: 60%;
 	        height: 85%;
 			color: #636466;
 	        z-index:100;
@@ -120,7 +120,7 @@
 	    }
 	    .modal-left img { width:100%; }
 	    .modal-right { float:right; text-align:center; min-width:400px; clear:both; }
-	    .modal-right h1 { font-size:50px; font-weight:600; /*margin-top:2.125em;*/ color:#00467F; font-family: 'Montserrat', sans-serif; }
+	    .modal-right h1 { font-size:32px; font-weight:600; /*margin-top:2.125em;*/ color:#00467F; font-family: 'Montserrat', sans-serif; }
 	    .modal-right h3 { font-size:24px; font-weight:normal; margin:.25em 0em; color:#636466; }
 	    .modal, .modal p { font-size:18px; font-weight:normal; }
 	    .yellow-button { 
@@ -133,7 +133,6 @@
 		    border-radius: 30px;
 		    font-size: 16px;
 		    letter-spacing: 0.125em;
-		    margin-bottom:40px;
 		}
 		.clue-inner{ text-align: left; width: 300px; margin: 0 auto; display:flex; align-items:center; }
 		.clue-inner-child{ flex-grow:1; }
@@ -170,17 +169,19 @@
 		}
 
 		@media only screen { 
+			.modal-content { width: 80%; }
 			.modal-left { 
 				width:100%; 
 				/*background: black url(<?php bloginfo('stylesheet_directory');?>/images/takeover-t2-bg-mobile.png) no-repeat top center / contain;*/
 			}
 			.modal-right { width:auto; position:absolute; margin:0 2em; height:auto; margin-top: 50px; }
-			.modal-right h1 { font-size:36px; line-height:1.1; }
+			.modal-right h1 { font-size:32px; line-height:1.1; }
 			.modal-right h3 { font-size:20px; line-height:1.4; font-weight:normal; color:#636466; }
 	    	.modal, .modal p { font-size:16px; font-weight:normal; }
 			/*.modal-content { background: #031727; }*/
 			.modal-image-mobile { display:inline-block; }
 			.modal-image-tablet { display:none; }
+			.modal-image-desk { display:none; }
 			.modal-top-logo { display:none; margin:0; }
 			.modal-mob-logo { z-index:101; display:inline; position:absolute; left:calc(50% - 106px); top:30px;}
 			.clue-inner{ width:auto; }
@@ -191,6 +192,7 @@
 		} /* Define mobile styles */
 
 		@media only screen and (min-width: 40.063em) {
+			.modal-content { width: 80%; }
 			.modal-left { 
 				width:100%; 
 				/*background: black url(<?php bloginfo('stylesheet_directory');?>/images/takeover-t2-bg-tablet.png) no-repeat top center / contain;*/
@@ -199,12 +201,13 @@
 				z-index:-1;
 			}
 			.modal-right { width:auto; position:absolute; height:auto; margin-top: 50px; }
-			.modal-right h1 { font-size:36px; line-height:1.1; }
+			.modal-right h1 { font-size:32px; line-height:1.1; }
 			.modal-right h3 { font-size:16px; line-height:1.5; font-weight:normal; color:#636466; }
 	    	.modal, .modal p { font-size:16px; font-weight:normal; }
 			/*.modal-content { background: #031727; }*/
 			.modal-image-mobile { display:none; }
 			.modal-image-tablet { display:inline-block; }
+			.modal-image-desk { display:none; }
 			.modal-top-logo { display:none; margin:0; }
 			.modal-mob-logo { /*z-index:101; display:inline; position:absolute; top:75px; left:20px;*/} 
 			.clue-inner{ width:auto; }
@@ -215,20 +218,22 @@
 		} /* min-width 641px, medium screens */
 
 		@media only screen and (min-width: 64.063em) {
-			.modal-left { width:50%; background: none;}
-			.modal-right { width:50%; position:relative; height:100%; margin-top: 0; }
-			.modal-right h1 { font-size:36px; line-height:1.1; }
+			.modal-content { width: 60%; }
+			.modal-left { /*width:50%; background: none;*/ display:none;}
+			.modal-right { width:auto; position:relative; height:100%; margin-top: 0; }
+			.modal-right h1 { font-size:32px; line-height:1.1; }
 			.modal-right h3 { font-size:16px; line-height:1.5; font-weight:normal; color:#636466; }
 	    	.modal, .modal p { font-size:16px; font-weight:normal; }
 			.modal-content { 
-				background: white url(<?php bloginfo('stylesheet_directory');?>/images/takeover-t5-bg-desk.png); 
+				/*background: white url(<?php bloginfo('stylesheet_directory');?>/images/takeover-t5-bg-desk.png); */
 				background-repeat: no-repeat;
 				background-position: center left;/*background-position: -300px bottom;*/
 				background-size: contain;/*background-size: auto auto;*/
 			}
 			.modal-image-mobile { display:none; }
 			.modal-image-tablet { display:none; }
-			.modal-top-logo { display:inline; margin:1em 0em 2em; }
+			.modal-image-desk { display:inline-block; /*max-height:400px;*/ max-width:90%; }
+			.modal-top-logo { display:none; /*display:inline; margin:1em 0em 2em;*/ }
 			.modal-mob-logo { display:none; }
 			.clue-inner{ width:auto; }
 			.clue-inner-child span { font-weight:bold; font-size:18px; }
@@ -236,12 +241,13 @@
 		} /* min-width 1025px, large screens */
 
 		@media only screen and (min-width: 90.063em) { 
+			.modal-content { width: 60%; }
 			.modal-right { height:100%; }
 		} /* min-width 1441px, xlarge screens */
 
 
 		@media only screen and (min-width: 120.063em) {
-
+			.modal-content { width: 60%; }
 		} /* min-width 1921px, xxlarge screens */
 
 	</style>
@@ -267,20 +273,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         	<img src="<?php bloginfo('stylesheet_directory');?>/images/takeover-t5-bg-tablet.png" class="modal-image-tablet">
         </div>
         <div class="modal-right"style="display:flex; flex-direction:column; justify-content:center; align-items:center;">
+        	<img src="<?php bloginfo('stylesheet_directory');?>/images/takeover-t5-bg-tablet.png" class="modal-image-desk">
         	<img src="<?php bloginfo('stylesheet_directory');?>/images/takeover-t5-logo.png" class="modal-top-logo">
-        	<h1 style="padding:20px 40px;">The New Madico Experience Is Here!</h1>
+        	<h1>The New Madico Experience Is Here!</h1>
         	<h3 style="padding:0px 40px;">Open the door to exciting, new opportunities! Spearheaded by our President and CEO, Shawn Kitchell, we've reimagined customer support in new, innovative ways.</h3>
-        	<h3 style="padding:20px 40px;">The New Madico Experience is all about you!</h3>
+        	<h3>The New Madico Experience is all about you!</h3>
         	<br>
-			<a href="<?php echo site_url(); ?>/madico-experience" class="yellow-button">Learn More</a>
+			<a href="<?php echo site_url(); ?>/madico-experience" class="yellow-button" target="_blank">Learn More</a>
         	<br>
-			<div class="clue-inner" style="text-align:left; display:flex; margin: 0 auto;">
-				<div class="clue-inner-child" style="flex-grow:0;">
+			<div class="clue-inner" style="text-align:left; display:none; margin: 0 auto;">
+				<!--<div class="clue-inner-child" style="flex-grow:0;">
 					<a href="https://www.facebook.com/MadicoInc/" target="_blank"><img src="<?php bloginfo('stylesheet_directory');?>/images/takeover-t5-fb-icon.png" style="float:left; margin-right:10px; margin-top:-10px;"></a>
 				</div>
 				<div class="clue-inner-child">
 					<p class="fb-callout" style="line-height:1.8em; margin-bottom:0.5em;"><a href="https://www.facebook.com/MadicoInc/" target="_blank" style=" text-decoration:none; color:#636466;">Check out our Facebook Page!</a></p>
-				</div>
+				</div>-->
 			</div>
 			
     	</div>
@@ -299,7 +306,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	}
 
     function toggleModal() {
-    	//setTakeoverCookie();
+    	setTakeoverCookie();
         modal.classList.toggle("show-modal");
     }
 

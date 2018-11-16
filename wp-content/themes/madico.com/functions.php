@@ -215,21 +215,12 @@ function madico_contact_sidebar() {
 		echo '<ul><li><h2>' . $title . '</h2><div class="textwidget">';
         
 		if ( $GLOBALS['section'] == 'window-film' ) {
-            echo '<h3>Window Films Headquarters</h3>';
-            echo '<address>';
-            echo '<strong>Madico Window Films</strong><br />';
-            echo '2630 Fairfield Ave. South<br />';
-            echo 'St. Petersburg, FL<br />';
-            echo '33712<br>';
-            echo '(727)-327-2544';
-            echo '</address>';
-            echo '<hr />';
             echo '<h3>Corporate Headquarters</h3>';
             echo '<address>';
             echo '<strong>Madico, Inc.</strong><br />';
-            echo '64 Industrial Parkway<br />';
-            echo 'Woburn, Mass.<br />';
-            echo '01801';
+            echo '9251 Belcher Road, North<br />';
+            echo 'Pinellas Park, Florida<br />';
+            echo '33782';
             echo '</address><br>';
         } elseif ( $section === 'specialty-film' ) {
             echo '<h3>Madico, Inc.</h3>';

@@ -338,6 +338,10 @@
                             <div class="sm-meta" style="position:relative; display:inline-block; vertical-align:middle; padding:10px;" >
                                 <a href="https://youtube.com/c/MadicoInc" target="_blank" class="sm-ico"><img src="/img/bpnc-ico-yt.png" alt="YouTube" width="54" /></a>
                             </div>
+
+                            <div class="sm-meta" style="position:relative; display:inline-block; vertical-align:middle; padding:10px;" >
+                                <a href="https://www.instagram.com/clearplex/" target="_blank" class="sm-ico"><img src="/img/bpnc-ico-ig.png" alt="Instagram" width="54" /></a>
+                            </div>
                         </div>
                         </div>
                     </div>
